@@ -1,0 +1,12 @@
+language: generic
+
+script: bash ./deploy.sh
+
+env:
+  global:
+  - BOOK: "coinstack-api-reference"
+
+before_install:
+  - sudo apt-get install npm
+  - npm install -g gitbook-cli
+  - sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin

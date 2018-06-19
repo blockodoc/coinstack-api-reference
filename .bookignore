@@ -1,0 +1,5 @@
+.bookignore
+.gitignore
+deploy.sh
+.travis.yml
+package-lock.json
