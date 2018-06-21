@@ -1,0 +1,13 @@
+{
+    "pdf": {
+        "fontSize": 10,
+        "paperSize": "a4",
+        "chapterMark": "both",  
+        "margin": {
+        	"right": 42,
+        	"left": 42,
+        	"top": 56,
+        	"bottom": 56
+      	}  
+    }
+}

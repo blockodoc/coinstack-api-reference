@@ -7,6 +7,8 @@ env:
   - BOOK: "coinstack-api-reference"
 
 before_install:
-  - sudo apt-get install npm
+  - sudo apt-get install -y npm language-pack-ko fonts-nanum fonts-nanum-coding fonts-nanum-extra
+  - sudo locale-gen ko_KR.UTF-8
+  - sudo update-locale LANG=ko_KR.UTF-8 LC_MESSAGES=POSIX
   - npm install -g gitbook-cli
   - sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin

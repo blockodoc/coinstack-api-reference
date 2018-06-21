@@ -7,8 +7,6 @@ TARGET_BRANCH="gh-pages"
 function doCompile {
 	gitbook install && gitbook build
 	gitbook pdf ./ ./_book/${BOOK}.pdf
-	gitbook epub ./ ./_book/${BOOK}.epub
-	gitbook mobi ./ ./_book/${BOOK}.mobi
 }
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
