@@ -8,7 +8,7 @@
 
 블록체인에 관심은 많은데 아직 잘 모르신다고요? 그렇다면 이 문서와 함께 코인스택 홈페이지에서 제공하는 블록체인 [소개](https://coinstack.zendesk.com/hc/ko/articles/222183287)와 [튜토리얼](https://coinstack.zendesk.com/hc/ko/sections/200997727) 등도 살펴보시기 바랍니다. 하지만 블록체인 전문가가 되지 않더라도 코인스택과 함께라면 얼마든지 블록체인 기반 서비스를 만들 수 있다는 사실을 잊지 마세요!
 
-코인스택은 많은 개발자들에게 친숙한 프로그래밍 언어인 자바, 자바스크립트, HTML5 기반 SDK를 제공하며, HTML5 기반의 [웹플레이그라운](https://playground.blocko.io/) 를 통하여 편리한 개발 환경 또한 제공하고 있습니다.
+코인스택은 많은 개발자들에게 친숙한 프로그래밍 언어인 자바, 자바스크립트, HTML5 기반 SDK를 제공하며, HTML5 기반의 [웹플레이그라운드](https://playground.blocko.io/) 를 통하여 편리한 개발 환경 또한 제공하고 있습니다.
 
 지금 당장 시작해 보세요! 그리고 필요한 API나 기능이 있다면 [헬프데스크](https://coinstack.zendesk.com/hc/requests/new) 또는 [개발자 커뮤니티](https://coinstack.zendesk.com/hc/ko/community/topics)에 제안해 주시길 바랍니다.
 
