@@ -1,4 +1,8 @@
 {
+    "plugins": [
+        "hints",
+        "codeblock-filename"
+    ],
     "pdf": {
         "fontSize": 11,
         "fontFamily": "NanumGothic",
