@@ -1,0 +1,508 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>7. Coinstack Multisig · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-codeblock-filename/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="8.-coinstack-open-assets.html" />
+    
+    
+    <link rel="prev" href="6.-coinstack-stamping.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    1. Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="2.-quick-start-guide.html">
+            
+                <a href="2.-quick-start-guide.html">
+            
+                    
+                    2. Quick Start Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="3.-getting-started.html">
+            
+                <a href="3.-getting-started.html">
+            
+                    
+                    3. Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="4.-authentication.html">
+            
+                <a href="4.-authentication.html">
+            
+                    
+                    4. Authentication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="5.-coinstack-basic.html">
+            
+                <a href="5.-coinstack-basic.html">
+            
+                    
+                    5. Coinstack Basic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="6.-coinstack-stamping.html">
+            
+                <a href="6.-coinstack-stamping.html">
+            
+                    
+                    6. Coinstack Stamping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="7.-coinstack-multisig.html">
+            
+                <a href="7.-coinstack-multisig.html">
+            
+                    
+                    7. Coinstack Multisig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="8.-coinstack-open-assets.html">
+            
+                <a href="8.-coinstack-open-assets.html">
+            
+                    
+                    8. Coinstack Open Assets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="9.-coinstack-smart-contract.html">
+            
+                <a href="9.-coinstack-smart-contract.html">
+            
+                    
+                    9. Coinstack Smart Contract
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="10.-coinstack-permission.html">
+            
+                <a href="10.-coinstack-permission.html">
+            
+                    
+                    10. Coinstack Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="11.-additinal-features.html">
+            
+                <a href="11.-additinal-features.html">
+            
+                    
+                    11. Additinal Features
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="api-reference.html">
+            
+                <a href="api-reference.html">
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >7. Coinstack Multisig</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="7-coinstack-multisig">7. Coinstack Multisig</h1>
+<h2 id="1-&#xAC1C;&#xC694;">1. &#xAC1C;&#xC694;</h2>
+<p>&#xBE44;&#xD2B8;&#xCF54;&#xC778; &#xACC4;&#xC815;&#xC740; &#xACF5;&#xAC1C; &#xD0A4; &#xC554;&#xD638; &#xBC29;&#xC2DD;&#xC73C;&#xB85C; &#xAD00;&#xB9AC;&#xB418;&#xBBC0;&#xB85C; &#xC548;&#xC804;&#xD558;&#xACE0; &#xD3B8;&#xB9AC;&#xD558;&#xC9C0;&#xB9CC;, &#xAC1C;&#xC778;&#xD0A4;&#xB97C; &#xBD84;&#xC2E4;&#xD558;&#xB294; &#xACBD;&#xC6B0; &#xD574;&#xB2F9; &#xC8FC;&#xC18C;&#xC5D0; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xB294; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC744; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC5C6;&#xAC8C; &#xB41C;&#xB2E4;&#xB294; &#xC704;&#xD5D8;&#xC131;&#xC774; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC2E4;&#xC81C;&#xB85C; &#xC0C1;&#xB2F9;&#xB7C9;&#xC758; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC774; &#xAC1C;&#xC778;&#xD0A4;&#xC758; &#xBD84;&#xC2E4;&#xB85C; &#xC778;&#xD574; &#xD2B9;&#xC815; &#xC8FC;&#xC18C;&#xC5D0;&#xC11C; &#xB354;&#xC774;&#xC0C1; &#xC0AC;&#xC6A9;&#xB418;&#xC9C0; &#xBABB;&#xD558;&#xACE0; &#xC7A0;&#xB4E4;&#xC5B4; &#xC788;&#xC744; &#xAC83;&#xC73C;&#xB85C; &#xCD94;&#xC815;&#xB418;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB610;&#xD55C; &#xD5C8;&#xC220;&#xD55C; &#xAD00;&#xB9AC;&#xB85C; &#xC778;&#xD574; &#xAC1C;&#xC778;&#xD0A4;&#xAC00; &#xC720;&#xCD9C;&#xB418;&#xB294; &#xACBD;&#xC6B0; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC744; &#xC27D;&#xAC8C; &#xB3C4;&#xB09C;&#xB2F9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB9CC;&#xC57D; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC758; &#xD2B9;&#xC815; &#xC8FC;&#xC18C;&#xC5D0; &#xC5EC;&#xB7EC; &#xAC1C;&#xC758; &#xD0A4;&#xB97C; &#xC124;&#xC815;&#xD560; &#xC218; &#xC788;&#xACE0;, &#xADF8; &#xC911; &#xBA87; &#xAC1C;&#xC758; &#xD0A4;&#xAC00; &#xC788;&#xC5B4;&#xC57C; &#xD574;&#xB2F9; &#xC8FC;&#xC18C;&#xC758; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC744; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xAC8C; &#xD55C;&#xB2E4;&#xBA74; &#xB2E8; &#xD55C; &#xAC1C;&#xBFD0;&#xC778; &#xAC1C;&#xC778;&#xD0A4;&#xC758; &#xBD84;&#xC2E4;&#xC774;&#xB098; &#xC720;&#xCD9C;&#xB9CC;&#xC73C;&#xB85C; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC744; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC5C6;&#xAC8C; &#xB418;&#xAC70;&#xB098; &#xB3C4;&#xB09C;&#xB2F9;&#xD558;&#xB294; &#xBB38;&#xC81C;&#xB97C; &#xC644;&#xD654;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC608;&#xB97C; &#xB4E4;&#xC5B4; 2&#xAC1C;&#xC758; &#xD0A4;&#xB97C; &#xC124;&#xC815;&#xD558;&#xACE0; &#xADF8; &#xC911; &#xD558;&#xB098;&#xB9CC;&#xC73C;&#xB85C;&#xB3C4; &#xD2B9;&#xC815; &#xC8FC;&#xC18C;&#xC758; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC744; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xAC8C; &#xD574; &#xB450;&#xBA74;, &#xC0AC;&#xC6A9;&#xC790;&#xB294; 2&#xAC1C;&#xC758; &#xD0A4;&#xB97C; &#xAC01;&#xAC01; &#xB2E4;&#xB978; &#xACF5;&#xAC04;&#xC5D0; &#xBCF4;&#xAD00;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB9CC;&#xC57D; &#xD55C; &#xAC1C;&#xC758; &#xD0A4;&#xB97C; &#xC783;&#xC5B4;&#xBC84;&#xB9AC;&#xB354;&#xB77C;&#xB3C4; &#xBCC4;&#xB3C4;&#xB85C; &#xBCF4;&#xAD00;&#xD558;&#xACE0; &#xC788;&#xB358; &#xB2E4;&#xB978; &#xD0A4;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; &#xD574;&#xB2F9; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC744; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB610; &#xB2E4;&#xB978; &#xD65C;&#xC6A9;&#xC740; 3&#xAC1C;&#xC758; &#xD0A4;&#xB97C; &#xC124;&#xC815;&#xD558;&#xACE0; &#xADF8; &#xC911; &#xB450; &#xAC1C;&#xAC00; &#xC788;&#xC5B4;&#xC57C; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC744; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xAC8C; &#xD558;&#xB294; &#xBC29;&#xC2DD;&#xC785;&#xB2C8;&#xB2E4;. 3&#xAC1C;&#xC758; &#xD0A4; &#xC911; &#xD558;&#xB098;&#xB294; &#xAC70;&#xB798;&#xC18C;&#xB098; &#xC9C0;&#xAC11; &#xAC19;&#xC740; &#xC11C;&#xBE44;&#xC2A4; &#xD68C;&#xC0AC;&#xC5D0;&#xC11C; &#xAD00;&#xB9AC;&#xD558;&#xAC8C; &#xD558;&#xBA74; &#xC0AC;&#xC6A9;&#xC790;&#xB294; &#xD56D;&#xC0C1; &#xB450; &#xAC1C;&#xC758; &#xD0A4;&#xB97C; &#xC900;&#xBE44;&#xD574;&#xC57C; &#xD558;&#xB294; &#xBD88;&#xD3B8; &#xC5C6;&#xC774; &#xC11C;&#xBE44;&#xC2A4;&#xB97C; &#xC774;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD558;&#xC9C0;&#xB9CC; &#xD3C9;&#xC18C; &#xC0AC;&#xC6A9;&#xD558;&#xB358; &#xD0A4;&#xB97C; &#xBD84;&#xC2E4;&#xD558;&#xB354;&#xB77C;&#xB3C4; &#xBCC4;&#xB3C4;&#xB85C; &#xBCF4;&#xAD00;&#xD558;&#xB358; &#xD0A4;&#xB97C; &#xC774;&#xC6A9;&#xD574; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC744; &#xC548;&#xC804;&#xD558;&#xAC8C; &#xC62E;&#xAE38; &#xC218; &#xC788;&#xACE0;, &#xC11C;&#xBE44;&#xC2A4; &#xD68C;&#xC0AC; &#xC785;&#xC7A5;&#xC5D0;&#xC11C;&#xB294; &#xD0A4;&#xAC00; &#xD558;&#xB098;&#xBC16;&#xC5D0; &#xC5C6;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xC0AC;&#xC6A9;&#xC790;&#xB97C; &#xC18D;&#xC77C; &#xC218; &#xC5C6;&#xC73C;&#xBA70;, &#xD574;&#xD0B9;&#xC744; &#xB2F9;&#xD558;&#xB354;&#xB77C;&#xB3C4; &#xC0AC;&#xC6A9;&#xC790;&#xC758; &#xC9C0;&#xAC11;&#xC744; &#xC548;&#xC804;&#xD558;&#xAC8C; &#xBCF4;&#xD638;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC774;&#xCC98;&#xB7FC; &#xD2B9;&#xC815; &#xBE44;&#xD2B8;&#xCF54;&#xC778; &#xC8FC;&#xC18C;&#xC5D0; n&#xAC1C;(n&gt;1)&#xC758; &#xAC1C;&#xC778; &#xD0A4;&#xB97C; &#xC124;&#xC815;&#xD574; &#xB450;&#xACE0;, &#xD574;&#xB2F9; &#xC8FC;&#xC18C;&#xC758; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC744; &#xC0AC;&#xC6A9;&#xD560; &#xB54C;&#xB294; &#xADF8; &#xC911; m&#xAC1C;(n&gt;=m&gt;=1)&#xC758; &#xAC1C;&#xC778; &#xD0A4;&#xAC00; &#xD544;&#xC694;&#xD558;&#xB3C4;&#xB85D; &#xC124;&#xC815;&#xD558;&#xB294; &#xBC29;&#xC2DD;&#xC744; Multisig&#xB77C;&#xACE0; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<h2 id="2-multisig-funding">2. Multisig Funding</h2>
+<ol>
+<li>P2SH &#xC8FC;&#xC18C; &#xC0DD;&#xC131;</li>
+<li>P2SH &#xC8FC;&#xC18C;&#xC5D0; Bitcoin &#xC804;&#xC1A1;&#xD558;&#xB294; Transaction &#xC0DD;&#xC131;</li>
+</ol>
+<p>Multisig &#xC8FC;&#xC18C;&#xC5D0; Bitcoin&#xC744; &#xC804;&#xC1A1;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; &#xC6B0;&#xC120; Multisig &#xC8FC;&#xC18C;&#xB97C; &#xC0DD;&#xC131;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xC77C;&#xBC18;&#xC801;&#xC73C;&#xB85C; &#xB9CE;&#xC774; &#xC4F0;&#xC774;&#xB294; Multisig &#xC8FC;&#xC18C;&#xB77C;&#xB294; &#xC6A9;&#xC5B4;&#xB294; &#xC0AC;&#xC2E4; P2SH &#xC8FC;&#xC18C;&#xC785;&#xB2C8;&#xB2E4;. P2SH &#xC758; Pubkey script&#xB294; &#xC77C;&#xBC18;&#xC801;&#xC73C;&#xB85C; &#xB2E4;&#xC74C; &#xD615;&#xD0DC;&#xB97C; &#xAC00;&#xC9D1;&#xB2C8;&#xB2E4;.</p>
+<p><code>Pubkey script: OP_HASH160 &lt;Hash160(redeemScript)&gt; OP_EQUAL</code></p>
+<p>&#xC704; Pubkey script&#xC758; input&#xC73C;&#xB85C; &#xC0AC;&#xC6A9;&#xB418;&#xB294; redeemScript&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xAD6C;&#xC131; &#xC694;&#xC18C;&#xB97C; &#xAC00;&#xC9D1;&#xB2C8;&#xB2E4;.</p>
+<p><code>Pubkey script: &lt;m&gt; &lt;A pubkey&gt; [B pubkey] [C pubkey...] &lt;n&gt; OP_CHECKMULTISIG</code></p>
+<p>m of n multisig&#xC758; &#xACBD;&#xC6B0;&#xC5D0; n&#xAC1C;&#xC758; pubkey&#xC640; &#xC774; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xAE30; &#xC704;&#xD574; &#xD544;&#xC218;&#xC801;&#xC73C;&#xB85C; &#xC81C;&#xCD9C;&#xD574;&#xC57C; &#xD558;&#xB294; signature &#xC218; m&#xC744; input&#xC73C;&#xB85C; &#xAC00;&#xC9C0;&#xB294; &#xAC83;&#xC744; &#xC54C; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; Coinstack&#xC5D0;&#xC11C; &#xC81C;&#xACF5;&#xD558;&#xB294; Multisig &#xC8FC;&#xC18C; &#xAD00;&#xB828; &#xD568;&#xC218;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-java"><span class="hljs-comment">//Redeemscript &#xC0DD;&#xC131;</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">testRedeemScript</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> UnsupportedEncodingException, DecoderException </span>{
+        String publickey1 = <span class="hljs-string">&quot;04a93d29a957d3e0064f6fde7a6c296e1ab2643f877d98ca5f52bdb9df43d3f70dfc040ee212b9bae63b2cf266ca677d31d72db53d1e928851d131d1cb9d9bde25&quot;</span>;
+        String publickey2 = <span class="hljs-string">&quot;04c30518fb1d5f0e96ba9f262f31260c8ce02e322494436e4ccb0981ba687a1a2626ab30911ddad22023bcbdac1329fc73e999ff2836c608e9c8e405f4e6c0b615&quot;</span>;
+        String publickey3 = <span class="hljs-string">&quot;04486a7c8754177b488982dcb13bd37fa6005a439dce55101c35ba3c5f60928036920e72a59429f0425967b735a1c52c9d2018a5ef4f63b8a8473ded4a29d5bad0&quot;</span>;
+        List&lt;<span class="hljs-keyword">byte</span>[]&gt; pubkeys = <span class="hljs-keyword">new</span> ArrayList&lt;<span class="hljs-keyword">byte</span>[]&gt;(<span class="hljs-number">3</span>);
+
+        pubkeys.add(Hex.decodeHex(publickey1.toCharArray()));
+        pubkeys.add(Hex.decodeHex(publickey2.toCharArray()));
+        pubkeys.add(Hex.decodeHex(publickey3.toCharArray()));
+
+        String redeemScript = MultiSig.createRedeemScript(<span class="hljs-number">2</span>, pubkeys);
+    }
+</code></pre>
+<p>public key 3&#xAC1C;&#xC640; &#xC774; UTXO&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xAE30; &#xC704;&#xD574; 2&#xAC1C;&#xC758; pubkey&#xB97C; &#xC81C;&#xCD9C;&#xD574;&#xC57C; &#xD558;&#xB294; redeemscript&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xB294; &#xC608;&#xC2DC;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-java"><span class="hljs-comment">//  P2SH &#xC8FC;&#xC18C; &#xC0DD;&#xC131; </span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">createAddressFromRedeemScript</span><span class="hljs-params">(String redeemScript, <span class="hljs-keyword">boolean</span> isMainNet)</span> <span class="hljs-keyword">throws</span> MalformedInputException </span>{
+        Script redeem = <span class="hljs-keyword">null</span>;
+        String from = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">try</span> {
+            redeem = <span class="hljs-keyword">new</span> Script(Hex.decodeHex(redeemScript.toCharArray()));
+        } <span class="hljs-keyword">catch</span> (ScriptException e) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> MalformedInputException(<span class="hljs-string">&quot;Invalid redeem script&quot;</span>, <span class="hljs-string">&quot;Parsing redeem script failed&quot;</span>);
+        } <span class="hljs-keyword">catch</span> (DecoderException e) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> MalformedInputException(<span class="hljs-string">&quot;Invalid redeem script&quot;</span>, <span class="hljs-string">&quot;Parsing redeem script failed&quot;</span>);
+        }
+        from = createAddressFromRedeemScript(redeem, isMainNet);
+        <span class="hljs-keyword">return</span> from.toString();
+    }
+</code></pre>
+<p>Redeemscript&#xB97C; &#xC774;&#xC6A9;&#xD558;&#xC5EC; P2SH &#xC8FC;&#xC18C;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xB294; &#xD568;&#xC218;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xCD5C;&#xC885;&#xC801;&#xC73C;&#xB85C; &#xC0DD;&#xC131;&#xB418;&#xB294; P2SH &#xC8FC;&#xC18C;&#xB294; &#xC77C;&#xBC18;&#xC801;&#xC73C;&#xB85C; &#xC0AC;&#xC6A9;&#xB418;&#xB294; P2PKH &#xC8FC;&#xC18C;&#xC640; &#xB3D9;&#xC77C;&#xD558;&#xAC8C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC989;, P2SH &#xC8FC;&#xC18C;&#xC5D0; Bitcoin&#xC744; &#xC804;&#xC1A1;&#xD558;&#xBA74; Multisig Transaction&#xC744; &#xC0DD;&#xC131;&#xD55C; &#xAC83;&#xC774;&#xACE0; &#xC774; &#xC8FC;&#xC18C;&#xB97C; &#xACC4;&#xC18D;&#xC801;&#xC73C;&#xB85C; Funding&#xC744; &#xD558;&#xAC70;&#xB098; Spending&#xC744; &#xD558;&#xBA74;&#xC11C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. Funding&#xC740; &#xB2E8;&#xC21C;&#xD788; &#xC774; &#xC8FC;&#xC18C;&#xC5D0; Bitcoin&#xC744; &#xBCF4;&#xB0B4;&#xAE30;&#xB9CC; &#xD558;&#xBA74; &#xB418;&#xACE0; Spending&#xC740; m&#xAC1C;(m of n Multisig)&#xC758; Private key&#xB85C; &#xC11C;&#xBA85;&#xD55C; signature script&#xAC00; &#xC81C;&#xCD9C;&#xB418;&#xC5B4;&#xC57C;&#xB9CC; &#xAC00;&#xB2A5;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<h2 id="3-multisig-spending">3. Multisig Spending</h2>
+<p>&#xC704; &#xC7A5;&#xC5D0;&#xC11C; Funding&#xD55C; Multisig transaction UTXO&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; m&#xAC1C;&#xC758; Private key&#xAC00; &#xD544;&#xC694;&#xD569;&#xB2C8;&#xB2E4;.<br>m&#xAC1C;&#xC758; private key&#xB97C; array list&#xB85C; &#xC804;&#xB2EC;&#xD558;&#xACE0; &#xC218;&#xC2E0; &#xC8FC;&#xC18C;&#xB97C; &#xC785;&#xB825;&#xD558;&#xBA74; Multisig spending transaction&#xC744; &#xC0DD;&#xC131;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">testMultiSigTransaction</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception </span>{
+        String privateKey1 = <span class="hljs-string">&quot;5Jh46BhaJJeiW8C9tTz6ockGEgYnLYfrJmGnwYdcDpBbAvWvCbv&quot;</span>;
+        <span class="hljs-comment">// String privateKey2 = &quot;5KF55BbKeZZqmAmpQAovn7KoBRjVdW4UN9uPGZoK1y9RrkPhnhA&quot;;</span>
+        String privateKey3 = <span class="hljs-string">&quot;5JSad8KB82c3XW69e1hz8g1YFFts4GTdjHuWHkh4d4A8MZWw12N&quot;</span>;
+        String redeemScript = <span class="hljs-string">&quot;52410468806910b7a3589f40c09092d3a45c64f1ef950e23d4b5aa92ad4c3de7804ed95f0f50aca9ae928fb6e00223fad667693bf3e2b716dd6c9d474ad79f5b7a107e410494bae4aa9a4c2ca6103899098ca0867f62ca24af02fee2d6473a698d92fbc8c449aa2e236c0684ebb9e0fbb23d847d4624fd8ca4a1fdc940df432c6e312e18e84104cbc882d221f567005ea61aa45d5414f25371472f6ab5973e13a39a9edc26359b6980aa4f6f34cea62e82bbe13adc7fde9fc26bba2be2e7c5f8011a68bea39bae53ae&quot;</span>;
+
+        List&lt;String&gt; prikeys = <span class="hljs-keyword">new</span> ArrayList&lt;String&gt;();
+        prikeys.add(privateKey1);
+        prikeys.add(privateKey3);
+
+        String to = <span class="hljs-string">&quot;1F444Loh6KzUQ8u8mAsz5upBtQ356vN95s&quot;</span>;
+        <span class="hljs-keyword">long</span> amount = Math.convertToSatoshi(<span class="hljs-string">&quot;0.0039&quot;</span>);
+        <span class="hljs-keyword">long</span> fee = Math.convertToSatoshi(<span class="hljs-string">&quot;0.0001&quot;</span>);
+
+        TransactionBuilder builder = <span class="hljs-keyword">new</span> TransactionBuilder();
+        builder.addOutput(to, amount);
+        builder.setFee(fee);
+
+        String signedTx = coinStackClient.createMultiSigTransaction(builder, prikeys, redeemScript);
+
+        assertNotNull(signedTx);
+
+        coinStackClient.sendTransaction(signedTx);
+    }
+</code></pre>
+<h2 id="4-multisig-partial-sign">4. Multisig Partial Sign</h2>
+<p>&#xC704;&#xC5D0; &#xC124;&#xBA85;&#xD55C; Multisig Spending&#xC740; &#xC2E4;&#xC81C; use case&#xC5D0;&#xB294; &#xADF8; &#xC4F0;&#xC784;&#xC774; &#xD55C;&#xC815;&#xC801;&#xC77C; &#xC218; &#xBC16;&#xC5D0; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC124;&#xBA85;&#xC5D0;&#xC11C; &#xBCF4;&#xB4EF;&#xC774; &#xC81C;&#xCD9C;&#xD558;&#xB294; Private key&#xB4E4;&#xC744; &#xBAA8;&#xB450; &#xC54C;&#xACE0; &#xC788;&#xC5B4;&#xC57C; &#xD558;&#xACE0; &#xADF8;&#xAC83;&#xC744; &#xC774;&#xC6A9;&#xD558;&#xC5EC; &#xD55C;&#xBC88;&#xC5D0; sign&#xC744; &#xD574;&#xC57C;&#xB9CC; Spending&#xC774; &#xAC00;&#xB2A5;&#xD558;&#xAE30; &#xB54C;&#xBB38;&#xC785;&#xB2C8;&#xB2E4;. &#xD558;&#xC9C0;&#xB9CC;, &#xC2E4;&#xC81C; &#xC0AC;&#xC6A9;&#xC5D0;&#xC11C;&#xB294; &#xAC1C;&#xC778;&#xB4E4; &#xAC04;&#xC5D0;, &#xB610;&#xB294; &#xAE30;&#xAD00;&#xACFC; &#xAC1C;&#xC778;, machine&#xACFC; &#xAC1C;&#xC778; &#xB4F1;&#xB4F1;&#xC774; &#xAC01;&#xAC01; private key&#xB97C; &#xB098;&#xB220; &#xAC16;&#xACE0; &#xC790;&#xC2E0;&#xC774; &#xAC00;&#xC9C4; private key&#xB97C; &#xC790;&#xC2E0;&#xB9CC;&#xC774; &#xBCF4;&#xAD00;&#xD558;&#xACE0; &#xC720;&#xC9C0;&#xD574;&#xC57C; &#xD558;&#xB294; &#xACBD;&#xC6B0;&#xAC00; &#xB300;&#xBD80;&#xBD84;&#xC785;&#xB2C8;&#xB2E4;. &#xB530;&#xB77C;&#xC11C;, &#xC790;&#xC2E0;&#xC774; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xB294; private key&#xB85C; sign&#xC744; &#xCD94;&#xAC00;&#xD558;&#xACE0; incomplete&#xD55C; transaction&#xC744; &#xB610; &#xB2E4;&#xB978; &#xAC1C;&#xC778;&#xC5D0;&#xAC8C; &#xC804;&#xB2EC;&#xD560; &#xC218; &#xC788;&#xB294; &#xAE30;&#xB2A5;&#xC774; &#xD544;&#xC694;&#xD569;&#xB2C8;&#xB2E4;. &#xC774;&#xAC83;&#xC774; Multisig partial sign&#xC785;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">testPartialSignTransaction</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception </span>{
+        String privateKey3 = <span class="hljs-string">&quot;5JiqywVBWDphZbR2UWnUtj3yTX52LmGhnBy8gGED7GDdxzPuRaZ&quot;</span>;
+        String privateKey2 = <span class="hljs-string">&quot;5J4ZadEdMs3zaqTutP1eQoKnCGKSYrUgkPwBZrk3hNmFiz7B6Ke&quot;</span>;
+        <span class="hljs-comment">//String privateKey1 = &quot;5JKhaPecauUSKKZTJ2R8zhNZqFxLSDu3Q5dPU3ijSqkf2WGVekn&quot;;</span>
+        String redeemScript = <span class="hljs-string">&quot;524104162a5b6239e12d3d52f2c880555934525dbb014dae7165380f77dcbf58b121b8033f59a1f7a4dcea589fc4405ac756542dfa393d53f7a559038f59b8d1084de541046a8fca1041f6ecf55aaa4e431b6c4ee72b51492330e777f2967697eb633e277eabf5d6e2ab3132b218a2d03b013ac90a80a4a2b5a27d1fa2a78cccad64d43b6f4104e850211b270fe7c97335411fcb774f6c7af0a8dd2e3360ba577e0c2979c51a375f5c256e2c8701d1b9777c15b7fc8b42af435977fe338e4a4e19683c884ad0fd53ae&quot;</span>;
+        String to = <span class="hljs-string">&quot;1F444Loh6KzUQ8u8mAsz5upBtQ356vN95s&quot;</span>;
+        <span class="hljs-keyword">long</span> amount = Math.convertToSatoshi(<span class="hljs-string">&quot;0.0001&quot;</span>);
+        <span class="hljs-keyword">long</span> fee = Math.convertToSatoshi(<span class="hljs-string">&quot;0.0001&quot;</span>);
+
+        TransactionBuilder builder = <span class="hljs-keyword">new</span> TransactionBuilder();
+        builder.addOutput(to, amount);
+        builder.setFee(fee);
+
+        String signedTx = coinStackClient.createMultiSigTransactionWithPartialSign(builder, privateKey3, redeemScript);
+
+        signedTx = coinStackClient.signMultiSigTransaction(signedTx, privateKey2, redeemScript);
+
+        assertNotNull(signedTx);
+
+        coinStackClient.sendTransaction(signedTx);
+    }
+</code></pre>
+<p>&#xC704; &#xC608;&#xC81C;&#xB294; 2 of 3 Multisig spending transaction&#xC744; partial sign&#xC744; &#xD1B5;&#xD574; &#xC0DD;&#xC131;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;. createMultiSigTransactionWithPartialSign &#xBA54;&#xC18C;&#xB4DC;&#xB294; bitcoin &#xC218;&#xB7C9;, &#xC218;&#xC218;&#xB8CC;, &#xC218;&#xC2E0;&#xC790; &#xC8FC;&#xC18C;&#xC640; &#xAC19;&#xC740; Transaction &#xC0DD;&#xC131;&#xC744; &#xC704;&#xD55C; &#xAE30;&#xBCF8;&#xC801;&#xC778; &#xC815;&#xBCF4;&#xB97C; &#xD65C;&#xC6A9;&#xD558;&#xC5EC; incomplete transaction&#xC744; &#xB9CC;&#xB4E4;&#xC5B4; &#xB0C5;&#xB2C8;&#xB2E4;. &#xC2E4;&#xC81C;&#xB85C; &#xC774; &#xBA54;&#xC18C;&#xB4DC;&#xB97C; &#xD65C;&#xC6A9;&#xD55C; &#xACB0;&#xACFC;&#xAC12; transaction&#xC744; broadcast&#xD560; &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC65C;&#xB0D0;&#xD558;&#xBA74; &#xCD5C;&#xC18C; &#xC694;&#xAD6C; signature &#xC218;&#xB7C9;&#xC774; 2&#xC778;&#xB370; privateKey3&#xC744; &#xD65C;&#xC6A9;&#xD558;&#xC5EC; 1&#xAC1C;&#xC758; signature&#xB9CC;&#xC744; &#xCD94;&#xAC00;&#xD55C; transaction&#xC774;&#xAE30; &#xB54C;&#xBB38;&#xC785;&#xB2C8;&#xB2E4;. &#xC774; &#xC784;&#xC2DC; Transaction&#xC744; &#xC644;&#xB8CC;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; 1&#xAC1C;&#xC758; signature&#xB97C; &#xCD94;&#xAC00;&#xD574;&#xC57C; &#xD558;&#xB294;&#xB370; &#xC774;&#xB54C; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xBA54;&#xC18C;&#xB4DC;&#xAC00; signMultiSigTransaction&#xC785;&#xB2C8;&#xB2E4;. &#xB9CC;&#xC57D; signature &#xCD5C;&#xC18C; &#xC694;&#xAD6C; &#xC218;&#xB7C9;&#xC744; &#xB9CC;&#xC871;&#xD558;&#xBA74; &#xC644;&#xC131;&#xB41C; transaction&#xC774; return&#xB418;&#xACE0; &#xC5EC;&#xC804;&#xD788; &#xBD80;&#xC871;&#xD558;&#xBA74; 1&#xAC1C;&#xC758; signature&#xAC00; &#xCD94;&#xAC00;&#xB41C; incomplete transaction&#xC774; return&#xB429;&#xB2C8;&#xB2E4;.</p>
+<h2 id="5-assets-multisig-sign">5. Assets Multisig Sign</h2>
+<p>&#xB2E4;&#xC74C; &#xC7A5;&#xC5D0;&#xC11C; &#xC124;&#xBA85;&#xD560; Open Assets Protocol &#xB610;&#xD55C; Multisig Spending &#xC758; &#xC801;&#xC6A9;&#xC774; &#xAC00;&#xB2A5;&#xD569;&#xB2C8;&#xB2E4;. Assets &#xC758; &#xC18C;&#xC720;&#xC790;&#xC640; Assets &#xB97C; &#xAD00;&#xB9AC;&#xD558;&#xB294; &#xC2DC;&#xC2A4;&#xD15C;&#xC774; &#xC11C;&#xB85C; &#xAD8C;&#xD55C;&#xC744; &#xB098;&#xB220; &#xC6B4;&#xC601; &#xD560; &#xC218; &#xC788;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;. 1 of 2 Multisig &#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xC6B4;&#xC601; &#xC2DC;&#xC2A4;&#xD15C;&#xC5D0;&#xC11C;&#xC758; Assets &#xC5D0; &#xB300;&#xD55C; &#xAD00;&#xB9AC;&#xAC00; &#xAC00;&#xB2A5;&#xD558;&#xBA70; Assets spending transaction &#xC5D0; &#xB300;&#xD55C; &#xC11C;&#xBA85; &#xC8FC;&#xCCB4; &#xB610;&#xD55C; &#xBA85;&#xD655;&#xD558;&#xAC8C; &#xAD6C;&#xBD84;&#xB429;&#xB2C8;&#xB2E4;. &#xC544;&#xB798; &#xC608;&#xC81C;&#xC640; &#xAC19;&#xC740; &#xBC29;&#xBC95;&#xC73C;&#xB85C; Assets &#xC5D0; Multisig &#xB97C; &#xC801;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">testTransferAssetMultisig</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception </span>{
+        String privateKey1 = <span class="hljs-string">&quot;5JpxHsHWAFDJmGhQTypRf62s4UQYf59a2BnzDD2P7YxhXywraNF&quot;</span>;
+        String privateKey2 = <span class="hljs-string">&quot;5JMH6KfwymcUXo1FgLJS2hC8NwicLWwTMVdHkiEgkwzvuymbast&quot;</span>;
+        String redeemScript = <span class="hljs-string">&quot;5241047f78d43ff2db4c6b5e46bbc7ee6a9a253b1e66c2aece8422bd1412c6997acd8cf8561dc5ff3dbaa8a4edd94cd270204db833e0db3d6ee53276736b30184fe57741049de5e58cb6f2a3e059958a69934618b6d02277926b2d3fcf5ad8b387ffc54119ff3bd8369c893455ff7f06e1304252ccd19efb3198f1f8feb94710173123fcdd4104bc61f87c32d0262c81a0fe95979fc54133c1c97f1da7882e586728fa0e7743863841a0a09e02ac1e13ac022e0d66ac84a42aae90c9ef96866e663234dceab49353ae&quot;</span>;
+
+        List&lt;String&gt; prikeys = <span class="hljs-keyword">new</span> ArrayList&lt;String&gt;();
+
+        prikeys.add(privateKey1);
+        prikeys.add(privateKey2);
+
+        String assetID = <span class="hljs-string">&quot;AKdiAtZGMuEUnZXm9tA3TPN6YJHzUarxRn&quot;</span>;
+        <span class="hljs-keyword">long</span> assetAmount = <span class="hljs-number">114</span>;
+        String to = <span class="hljs-string">&quot;akDQMunRtK15fVpBR83Jnv4ezQLtyerTJTB&quot;</span>;
+        <span class="hljs-keyword">long</span> fee = Math.convertToSatoshi(<span class="hljs-string">&quot;0.0001&quot;</span>);
+        String rawTx = coloringEngine.transferMultisigAsset(prikeys, redeemScript, assetID, assetAmount, to, fee);
+        assertNotNull(rawTx);
+        System.out.println(rawTx);
+        assertNotNull(TransactionUtil.getTransactionHash(rawTx));
+        coinstackClient.sendTransaction(rawTx);
+    }
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="6.-coinstack-stamping.html" class="navigation navigation-prev " aria-label="Previous page: 6. Coinstack Stamping">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="8.-coinstack-open-assets.html" class="navigation navigation-next " aria-label="Next page: 8. Coinstack Open Assets">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"7. Coinstack Multisig","level":"1.7","depth":1,"next":{"title":"8. Coinstack Open Assets","level":"1.8","depth":1,"path":"8.-coinstack-open-assets.md","ref":"8.-coinstack-open-assets.md","articles":[]},"previous":{"title":"6. Coinstack Stamping","level":"1.6","depth":1,"path":"6.-coinstack-stamping.md","ref":"6.-coinstack-stamping.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hints","codeblock-filename"],"pluginsConfig":{"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"codeblock-filename":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":11,"fontFamily":"NanumGothic","paperSize":"a4","chapterMark":"both","pageBreaksBefore":"/","margin":{"right":42,"left":42,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"7.-coinstack-multisig.md","mtime":"2019-05-09T07:20:40.590Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-09T07:21:54.746Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

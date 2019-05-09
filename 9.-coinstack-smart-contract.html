@@ -1,0 +1,902 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>9. Coinstack Smart Contract · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-codeblock-filename/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="10.-coinstack-permission.html" />
+    
+    
+    <link rel="prev" href="8.-coinstack-open-assets.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    1. Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="2.-quick-start-guide.html">
+            
+                <a href="2.-quick-start-guide.html">
+            
+                    
+                    2. Quick Start Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="3.-getting-started.html">
+            
+                <a href="3.-getting-started.html">
+            
+                    
+                    3. Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="4.-authentication.html">
+            
+                <a href="4.-authentication.html">
+            
+                    
+                    4. Authentication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="5.-coinstack-basic.html">
+            
+                <a href="5.-coinstack-basic.html">
+            
+                    
+                    5. Coinstack Basic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="6.-coinstack-stamping.html">
+            
+                <a href="6.-coinstack-stamping.html">
+            
+                    
+                    6. Coinstack Stamping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="7.-coinstack-multisig.html">
+            
+                <a href="7.-coinstack-multisig.html">
+            
+                    
+                    7. Coinstack Multisig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="8.-coinstack-open-assets.html">
+            
+                <a href="8.-coinstack-open-assets.html">
+            
+                    
+                    8. Coinstack Open Assets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="9.-coinstack-smart-contract.html">
+            
+                <a href="9.-coinstack-smart-contract.html">
+            
+                    
+                    9. Coinstack Smart Contract
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="10.-coinstack-permission.html">
+            
+                <a href="10.-coinstack-permission.html">
+            
+                    
+                    10. Coinstack Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="11.-additinal-features.html">
+            
+                <a href="11.-additinal-features.html">
+            
+                    
+                    11. Additinal Features
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="api-reference.html">
+            
+                <a href="api-reference.html">
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >9. Coinstack Smart Contract</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="9-coinstack-smart-contract">9. Coinstack Smart Contract</h1>
+<h2 id="1-&#xAC1C;&#xC694;">1. &#xAC1C;&#xC694;</h2>
+<p>&#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB77C;&#xB294; &#xAC1C;&#xB150;&#xC740; 1990&#xB144;&#xB300;&#xAE4C;&#xC9C0; &#xAC70;&#xC2AC;&#xB7EC; &#xC62C;&#xB77C;&#xAC11;&#xB2C8;&#xB2E4;. &#xCEF4;&#xD4E8;&#xD130; &#xACFC;&#xD559;&#xC790;&#xC774;&#xC790;, &#xBC95;&#xD559;&#xC790;&#xC774;&#xC790; &#xC554;&#xD638; &#xC804;&#xBB38;&#xAC00;&#xC778; Nick Szabo&#xB294; &#xB2F9;&#xC2DC; &#xB514;&#xC9C0;&#xD138; &#xACC4;&#xC57D;, &#xB514;&#xC9C0;&#xD138; &#xD1B5;&#xD654;&#xC5D0; &#xAD00;&#xD55C; &#xC5F0;&#xAD6C; &#xBC0F; &#xAE30;&#xACE0;&#xB97C; &#xAFB8;&#xC900;&#xD788; &#xD558;&#xACE0; &#xC788;&#xC5C8;&#xB294;&#xB370;, &#xADF8;&#xAC00; &#xC81C;&#xC2DC;&#xD588;&#xB358; Bit Gold &#xCCB4;&#xACC4;&#xB97C; &#xC0B4;&#xD3B4; &#xBCF4;&#xBA74; &#xC0C1;&#xB2F9; &#xBD80;&#xBD84; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xACFC; &#xC720;&#xC0AC;&#xD558;&#xC5EC; &#xADF8;&#xC758; &#xD0C1;&#xC6D4;&#xD55C; &#xC120;&#xACAC;&#xC9C0;&#xBA85;&#xC744; &#xBCF4;&#xC5EC; &#xC90D;&#xB2C8;&#xB2E4;. &#xC774; &#xB54C;&#xBB38;&#xC5D0; &#xC0AC;&#xD1A0;&#xC2DC; &#xB098;&#xCE74;&#xBAA8;&#xD1A0;&#xC758; &#xC815;&#xCCB4;&#xAC00; &#xADF8;&#xAC00; &#xC544;&#xB2D0;&#xAE4C; &#xD558;&#xB294; &#xC758;&#xC2EC;&#xB3C4; &#xC788;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>Nick Szabo&#xB294; &#xAD6D;&#xC81C;&#xC801; &#xADDC;&#xBAA8;&#xC758; &#xBE44;&#xC9C0;&#xB2C8;&#xC2A4; &#xD658;&#xACBD;&#xC5D0;&#xC11C; &#xBE44;&#xC6A9;&#xC758; &#xD601;&#xBA85;&#xC774; &#xC9C0;&#xC18D;&#xC801;&#xC73C;&#xB85C; &#xBC1C;&#xC0DD;&#xD588;&#xB2E4;&#xACE0; &#xC774;&#xC57C;&#xAE30;&#xD569;&#xB2C8;&#xB2E4;. &#xCC98;&#xC74C;&#xC5D0;&#xB294; &#xAD50;&#xD1B5;, &#xB2E4;&#xC74C;&#xC5D0;&#xB294; &#xC81C;&#xC870;, &#xADF8;&#xB9AC;&#xACE0; &#xCD5C;&#xADFC;&#xC5D0;&#xB294; &#xD1B5;&#xC2E0; &#xBE44;&#xC6A9;&#xC774; &#xADF9;&#xC801;&#xC73C;&#xB85C; &#xC904;&#xC5B4;&#xB4E4;&#xC5C8;&#xC74C;&#xC744; &#xC81C;&#xC2DC;&#xD558;&#xBA70; &#xB2E4;&#xC74C; &#xB2E8;&#xACC4;&#xB294; &apos;&#xAD00;&#xACC4;&apos; &#xBE44;&#xC6A9;&#xC758; &#xCC28;&#xB840;&#xB77C;&#xACE0; &#xC8FC;&#xC7A5;&#xD569;&#xB2C8;&#xB2E4;. &#xC9C0;&#xC5ED;&#xBCC4;&#xB85C; &#xC0C1;&#xC774;&#xD55C; &#xC0AC;&#xBC95;&#xC801; &#xAD00;&#xD560;, &#xBCF4;&#xC548;, &#xC2E0;&#xC6A9; &#xBB38;&#xC81C;&#xB97C; &#xD574;&#xACB0;&#xD558;&#xAE30; &#xC704;&#xD574; &#xB300;&#xBD80;&#xBD84;&#xC758; &#xCD08;&#xAD6D;&#xAC00;&#xC801; &#xAE30;&#xC5C5;&#xB4E4;&#xC740; &#xB9CE;&#xC740; &#xBE44;&#xC6A9;&#xC744; &#xB4E4;&#xC774;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC774; &#xBE44;&#xC6A9;&#xC744; &#xC7AC;&#xC815;&#xC758;&#xD558;&#xBA74; &apos;&#xAD00;&#xACC4;&apos;&#xB97C; &#xC124;&#xC815;&#xD558;&#xACE0;, &#xC720;&#xC9C0;&#xD558;&#xBA70;, &#xADF8; &#xC601;&#xD5A5;&#xB825;&#xC744; &#xBCF4;&#xC7A5;&#xD558;&#xB294; &#xB370; &#xB4DC;&#xB294; &#xBE44;&#xC6A9;&#xC774;&#xB77C;&#xACE0; &#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br>&#xC778;&#xD130;&#xB137;&#xACFC; &#xCEF4;&#xD4E8;&#xD130; &#xB124;&#xD2B8;&#xC6CC;&#xD06C;&#xAC00; &#xC9C0;&#xBC30;&#xD558;&#xB294; &#xD604;&#xC7AC;&#xC5D0;&#xB3C4; &#xC6B0;&#xB9AC;&#xB294; &#xC774; &#xAD00;&#xACC4;&#xB97C; &#xAD00;&#xB9AC;&#xD558;&#xB294; &#xB370; &#xC5EC;&#xC804;&#xD788; &#xC885;&#xC774;&#xC758; &#xC138;&#xC0C1;&#xC5D0; &#xBA38;&#xBB3C;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC885;&#xC774;&#xC5D0; &#xC50C;&#xC5B4;&#xC9C4; &#xACC4;&#xC57D;&#xC11C;, &#xBC95; &#xC870;&#xD56D;&#xC73C;&#xB85C; &#xC6B0;&#xB9AC;&#xC758; &#xAD00;&#xACC4;&#xB97C; &#xC124;&#xC815;&#xD558;&#xBA70;, &#xC774;&#xB97C; &#xC720;&#xC9C0;&#xD558;&#xAE30; &#xC704;&#xD574; &#xBE44;&#xC2F8;&#xBA74;&#xC11C;&#xB3C4; &#xBE44;&#xD6A8;&#xC728;&#xC801;&#xC778; &#xBC95;&#xC870;&#xACC4; &#xC2DC;&#xC2A4;&#xD15C;&#xC5D0; &#xC758;&#xC874;&#xD574;&#xC57C; &#xD558;&#xACE0;, &#xC57D;&#xC18D;&#xC758; &#xC774;&#xD589;&#xC744; &#xC704;&#xD55C; &#xC18C;&#xC1A1;&#xC744; &#xD1B5;&#xD574; &#xACF5;&#xAD8C;&#xB825;&#xC758; &#xD22C;&#xC785;&#xC744; &#xC694;&#xCCAD;&#xD574;&#xC57C; &#xD560; &#xB54C;&#xB3C4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xAE30;&#xC5C5; &#xD658;&#xACBD;&#xC5D0;&#xC11C;&#xC758; &#xC774;&#xB7EC;&#xD55C; &#xAD00;&#xACC4;&#xB97C; &#xD45C;&#xD604;&#xD558;&#xB294; &#xAC00;&#xC7A5; &#xC804;&#xD1B5;&#xC801;&#xC774;&#xACE0; &#xD615;&#xC2DD;&#xC801;&#xC778; &#xAC1C;&#xB150;&#xC740; &#xBC14;&#xB85C; &apos;&#xACC4;&#xC57D;&apos;&#xC785;&#xB2C8;&#xB2E4;. Nick Szabo&#xB294; &#xCEF4;&#xD4E8;&#xD130;&#xC758; &#xAE30;&#xB2A5;&#xC5D0; &#xC8FC;&#xBAA9;&#xD558;&#xC5EC; &#xC774; &#xACC4;&#xC57D;&#xC744; &#xC54C;&#xACE0;&#xB9AC;&#xC998;&#xC801;&#xC73C;&#xB85C; &#xD45C;&#xD604;&#xD560; &#xC218; &#xC788;&#xC73C;&#xB9AC;&#xB77C; &#xBCF4;&#xC558;&#xC2B5;&#xB2C8;&#xB2E4;. &#xADF8;&#xB807;&#xAC8C; &#xB41C;&#xB2E4;&#xBA74; &#xC11C;&#xB85C; &#xB2E4;&#xB978; &#xC5B8;&#xC5B4;&#xC758; &#xBBF8;&#xBB18;&#xD55C; &#xB258;&#xC559;&#xC2A4; &#xCC28;&#xC774; &#xB610;&#xB294; &#xC870;&#xD56D; &#xC790;&#xCCB4;&#xC758; &#xC560;&#xB9E4;&#xBAA8;&#xD638;&#xD568;&#xC774; &#xC57C;&#xAE30;&#xD558;&#xB294; &#xBD84;&#xC7C1;&#xC758; &#xC694;&#xC18C;&#xB97C; &#xD68D;&#xAE30;&#xC801;&#xC73C;&#xB85C; &#xC904;&#xC77C; &#xC218; &#xC788;&#xACE0;, &#xACC4;&#xC57D;&#xC758; &#xAC15;&#xC81C;&#xC801; &#xC774;&#xD589;&#xB3C4; &#xBCF4;&#xC7A5;&#xB420; &#xC218; &#xC788;&#xC744; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;. &#xD558;&#xC9C0;&#xB9CC; &#xC774; &#xC544;&#xC774;&#xB514;&#xC5B4;&#xAC00; &#xC2E4;&#xD604; &#xAC00;&#xB2A5;&#xD558;&#xB824;&#xBA74; &#xC774;&#xB97C; &#xAE30;&#xB85D;&#xD558;&#xACE0; &#xC2E4;&#xD589;&#xD558;&#xACE0; &#xACF5;&#xC720;&#xD560; &#xC2E0;&#xB8B0;&#xD560; &#xC218; &#xC788;&#xB294; &apos;&#xBD84;&#xC0B0; &#xCEF4;&#xD4E8;&#xD305; &#xD658;&#xACBD;&apos; &#xBC0F; &#xC54C;&#xACE0;&#xB9AC;&#xC998;&#xC73C;&#xB85C; &#xD45C;&#xD604;&#xB41C; &#xACC4;&#xC57D;&#xC758; &#xAC15;&#xC81C;&#xC801; &#xC774;&#xD589;&#xC744; &#xC704;&#xD574; &#xC2E4;&#xC9C8;&#xC801; &#xAC00;&#xCE58;&#xB97C; &#xB0B4;&#xD3EC;&#xD558;&#xB294; &apos;&#xB514;&#xC9C0;&#xD138; &#xC790;&#xC0B0;&apos;&#xC774; &#xD544;&#xC694;&#xD558;&#xB2E4;&#xACE0; &#xBCF4;&#xC558;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC740; &#xBE14;&#xB85D;&#xCCB4;&#xC778;&#xC744; &#xD1B5;&#xD574; &#xB514;&#xC9C0;&#xD138; &#xC790;&#xC0B0;&#xC73C;&#xB85C;&#xC11C;&#xC758; &#xAC00;&#xCE58;&#xB97C; &#xC99D;&#xBA85;&#xD574; &#xBCF4;&#xC600;&#xC73C;&#xB098;, &#xC81C;&#xD55C;&#xB41C; &#xD45C;&#xD604;&#xB825;&#xC73C;&#xB85C; &#xC778;&#xD574; &#xC77C;&#xBC18;&#xD654;&#xB41C; &#xBD84;&#xC0B0; &#xCEF4;&#xD4E8;&#xD305;&#xC5D0;&#xB294; &#xD65C;&#xC6A9;&#xD560; &#xC218; &#xC5C6;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC774;&#xC5D0; &#xC774;&#xB354;&#xB9AC;&#xC6C0;&#xC758; &#xCC3D;&#xC2DC;&#xC790; Vitalik Buterin&#xC740; &#xC774;&#xB97C; &#xD655;&#xC7A5;&#xD558;&#xC5EC; &#xB514;&#xC9C0;&#xD138; &#xC790;&#xC0B0;&#xC774;&#xB77C;&#xB294; &#xC18D;&#xC131;&#xC5D0; &#xCD94;&#xAC00;&#xB85C; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB77C;&#xB294; &#xBA85;&#xD655;&#xD55C; &#xD504;&#xB85C;&#xADF8;&#xB7A8; &#xCF54;&#xB4DC;&#xB85C; &#xD45C;&#xD604;&#xB418;&#xB294; &#xACC4;&#xC57D; &#xC218;&#xD589; &#xBC29;&#xC548;&#xC744; &#xC81C;&#xC548;&#xD568;&#xC73C;&#xB85C;&#xC368; &#xC77C;&#xBC18;&#xD654;&#xB41C; &#xBD84;&#xC0B0; &#xC5B4;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158; &#xD50C;&#xB7AB;&#xD3FC;&#xC73C;&#xB85C;&#xC368;&#xC758; &#xAC00;&#xB2A5;&#xC131;&#xC744; &#xBCF4;&#xC5EC;&#xC8FC;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xBE14;&#xB85C;&#xCF54;&#xC5D0;&#xC11C;&#xB3C4; &#xC790;&#xCCB4;&#xC801;&#xC73C;&#xB85C; &#xBE44;&#xD2B8;&#xCF54;&#xC778; &#xD504;&#xB85C;&#xD1A0;&#xCF5C;&#xC744; &#xD655;&#xC7A5;&#xD558;&#xC5EC; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xD50C;&#xB7AB;&#xD3FC;&#xC744; &#xAD6C;&#xCD95;, &#xC81C;&#xACF5;&#xD558;&#xACE0; &#xC788;&#xC73C;&#xBA70; &#xC774;&#xB97C; &#xD1B5;&#xD574; &#xB2E4;&#xC591;&#xD55C; &#xBE44;&#xC9C0;&#xB2C8;&#xC2A4; &#xB85C;&#xC9C1;&#xC744; &#xBE14;&#xB85D;&#xCCB4;&#xC778; &#xC0C1;&#xC5D0;&#xC11C; &#xAD6C;&#xD604;&#xD560; &#xC218; &#xC788;&#xB3C4;&#xB85D; &#xC9C0;&#xC6D0;&#xD558;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xCF54;&#xC778;&#xC2A4;&#xD0DD;&#xC740; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xC758; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D; &#xC5B8;&#xC5B4;&#xB85C; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xC5B8;&#xC5B4;&#xC778; Lua&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB294; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xBCC4;&#xB85C; &#xD0A4;-&#xBC38;&#xB958; &#xC30D;&#xC758; &#xC0C1;&#xD0DC; &#xC815;&#xBCF4;&#xB97C; &#xC800;&#xC7A5;&#xD558;&#xACE0; &#xC788;&#xACE0; &#xBAA8;&#xB4E0; &#xB178;&#xB4DC;&#xB294; &#xBE14;&#xB85D;&#xCCB4;&#xC778;&#xC744; &#xD1B5;&#xD574; &#xB3D9;&#xC77C;&#xD55C; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB97C; &#xB2E8;&#xACC4;&#xC801;&#xC73C;&#xB85C; &#xC218;&#xD589;&#xD568;&#xC73C;&#xB85C;&#xC368; &#xD56D;&#xC0C1; &#xB3D9;&#xC77C;&#xD55C; &#xC0C1;&#xD0DC; &#xC815;&#xBCF4;&#xB97C; &#xC720;&#xC9C0; &#xD569;&#xB2C8;&#xB2E4;. &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB294; &#xC815;&#xC758;, &#xC218;&#xD589;, &#xC870;&#xD68C;&#xC758; &#xC138;&#xB2E8;&#xACC4;&#xB85C; &#xB098;&#xB269;&#xB2C8;&#xB2E4;. &#xC815;&#xC758; &#xB2E8;&#xACC4;&#xC5D0;&#xB294; Lua&#xC5B8;&#xC5B4;&#xB85C; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xCF54;&#xB4DC;&#xB97C; &#xC791;&#xC131;, &#xBE14;&#xB85D;&#xCCB4;&#xC778; &#xC0C1;&#xC5D0; &#xBC30;&#xD3EC;&#xD558;&#xB294; &#xB2E8;&#xACC4;&#xC774;&#xACE0;, &#xC218;&#xD589; &#xB2E8;&#xACC4;&#xB294; &#xC55E;&#xC11C; &#xC815;&#xC758;&#xD55C; &#xCF54;&#xB4DC; &#xB0B4;&#xC758; &#xD568;&#xC218;&#xB97C; &#xC2E4;&#xC81C;&#xB85C; &#xC778;&#xC790;&#xAC12;&#xC744; &#xB123;&#xC5B4; &#xD638;&#xCD9C;&#xD558;&#xC5EC; &#xC0C1;&#xD0DC;&#xAC12;&#xC744; &#xBCC0;&#xACBD;&#xD558;&#xB294; &#xB2E8;&#xACC4;&#xC785;&#xB2C8;&#xB2E4;. &#xB9C8;&#xC9C0;&#xB9C9;&#xC73C;&#xB85C; &#xC870;&#xD68C; &#xB2E8;&#xACC4;&#xB294; &#xC218;&#xD589; &#xACB0;&#xACFC;&#xAC00; &#xBC18;&#xC601;&#xB41C; &#xD604;&#xC7AC; &#xC0C1;&#xD0DC;&#xAC12;&#xC744; &#xC77D;&#xC5B4;&#xC624;&#xB294; &#xB2E8;&#xACC4;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC774; &#xC7A5;&#xC5D0;&#xC11C;&#xB294; &#xAC01;&#xAC01;&#xC758; &#xB2E8;&#xACC4;&#xC5D0;&#xC11C; &#xCF54;&#xC778;&#xC2A4;&#xD0DD; SDK&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xAD6C;&#xCCB4;&#xC801;&#xC778; &#xBC29;&#xBC95;&#xC744; &#xAE30;&#xC220;&#xD558;&#xACE0; &#xBD84;&#xC0B0;&#xD654;&#xB41C; &#xC5B4;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;(Distributed Application, DApp)&#xC744; &#xAD6C;&#xCD95;&#xD558;&#xB294; &#xBC29;&#xC548;&#xC744; &#xC81C;&#xC2DC;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<h2 id="2-programming-language">2. Programming Language</h2>
+<p>&#xCF54;&#xC778;&#xC2A4;&#xD0DD;&#xC740; &#xAC00;&#xBCBC;&#xC6B4; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xC5B8;&#xC5B4;&#xC778; Lua&#xB97C; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xC5B8;&#xC5B4;&#xB85C; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;. &#xBE14;&#xB85C;&#xCF54;&#xC5D0;&#xC11C;&#xB294; &#xAC1C;&#xBC1C;&#xC758; &#xD3B8;&#xC758;&#xB97C; &#xC704;&#xD574; &#xCF54;&#xC778;&#xC2A4;&#xD0DD; &#xCF54;&#xB4DC;&#xB77C;&#xB294; Lua &#xAC1C;&#xBC1C; &#xBC0F; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xBC30;&#xD3EC; &#xC9C0;&#xC6D0;&#xB3C4;&#xAD6C;(IDE)&#xB97C; &#xC81C;&#xACF5;&#xD569;&#xB2C8;&#xB2E4;. &#xCF54;&#xC778;&#xC2A4;&#xD0DD; &#xCF54;&#xB4DC;&#xC5D0; &#xB300;&#xD574;&#xC11C;&#xB294; &#xBCF8; &#xBB38;&#xC11C;&#xC758; &#xBC94;&#xC704;&#xC5D0;&#xC11C; &#xBC97;&#xC5B4;&#xB098;&#xBBC0;&#xB85C; &#xBCC4;&#xB3C4;&#xB85C; &#xBB38;&#xC758;&#xD574; &#xC8FC;&#xC2DC;&#xAE30; &#xBC14;&#xB78D;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xBE14;&#xB85D;&#xCCB4;&#xC778; &#xC0C1;&#xD0DC; &#xC800;&#xC7A5;&#xC18C;&#xC5D0; &#xD0A4;-&#xBC38;&#xB958; &#xAC12;&#xC744; &#xC800;&#xC7A5;&#xD558;&#xACE0; &#xAC12;&#xC744; &#xC77D;&#xC5B4;&#xC624;&#xB294; Lua&#xB85C; &#xC791;&#xC131;&#xB41C; &#xAC04;&#xB2E8;&#xD55C; &#xCF54;&#xC778;&#xC2A4;&#xD0DD; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xC758; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-lua"><span class="hljs-keyword">local</span> system = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;system&quot;</span>);
+
+<span class="hljs-comment">-- &#xC0C1;&#xD0DC; &#xC800;&#xC7A5;&#xC18C;&#xC5D0; &#xD0A4;-&#xBC38;&#xB958; &#xC800;&#xC7A5;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">set</span><span class="hljs-params">(key, value)</span></span>
+    system.setItem(key, value);
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-comment">-- &#xC0C1;&#xD0DC; &#xC800;&#xC7A5;&#xC18C;&#xC5D0;&#xC11C; &#xD0A4;&#xC5D0; &#xD574;&#xB2F9;&#xD558;&#xB294; &#xAC12; &#xBC18;&#xD658;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">get</span><span class="hljs-params">(key)</span></span>
+    <span class="hljs-keyword">return</span> system.getItem(key);
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-comment">-- &#xD604;&#xC7AC; &#xBE14;&#xB85D;&#xC758; &#xD574;&#xC2DC;&#xAC12;&#xC744; &#xCD9C;&#xB825;. &#xCD9C;&#xB825; &#xACB0;&#xACFC;&#xB294; &#xC11C;&#xBC84; &#xB85C;&#xADF8;&#xC5D0; &#xCC0D;&#xD798;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">printBlock</span><span class="hljs-params">()</span></span>
+    system.<span class="hljs-built_in">print</span>(system.getBlockhash());
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#xBE14;&#xB85D;&#xCCB4;&#xC778; &#xD568;&#xC218; &#xB0B4;&#xBD80;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xC790;&#xC758; &#xC811;&#xADFC;&#xC744; &#xC81C;&#xC5B4;&#xD558;&#xAC70;&#xB098; &#xBE14;&#xB85D;&#xCCB4;&#xC778; &#xC0C1;&#xC5D0; &#xB370;&#xC774;&#xD130;&#xB97C; &#xC77D;&#xACE0; &#xC4F0;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; &#xBE14;&#xB85C;&#xCF54;&#xC5D0;&#xC11C; &#xC81C;&#xACF5;&#xD558;&#xB294; &#xC2DC;&#xC2A4;&#xD15C; &#xD328;&#xD0A4;&#xC9C0;&#xB97C; &#xC0AC;&#xC6A9;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xC704;&#xC758; &#xC608;&#xC81C;&#xC5D0;&#xC11C;&#xB294; system &#xD328;&#xD0A4;&#xC9C0;&#xC758; setItem, getItem &#xD568;&#xC218;&#xB97C; &#xD1B5;&#xD574;&#xC11C; &#xCF54;&#xC778;&#xC2A4;&#xD0DD; &#xB0B4;&#xBD80;&#xC758; &#xD0A4;-&#xBC38;&#xB958; &#xC800;&#xC7A5;&#xC18C;&#xC5D0; &#xC811;&#xADFC;&#xD558;&#xC5EC; &#xB370;&#xC774;&#xD130;&#xB97C; &#xC601;&#xC18D;&#xC801;&#xC73C;&#xB85C; &#xC800;&#xC7A5;&#xD558;&#xB294; &#xD568;&#xC218;&#xB97C; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xC0AC;&#xC6A9;&#xC790;&#xC5D0;&#xAC8C; &#xC81C;&#xACF5;&#xD569;&#xB2C8;&#xB2E4;. &#xB610;&#xD55C; &#xAC04;&#xB2E8;&#xD55C; &#xB514;&#xBC84;&#xADF8; &#xBA54;&#xC2DC;&#xC9C0;&#xB97C; print &#xD568;&#xC218;&#xB97C; &#xD1B5;&#xD574; &#xB178;&#xB4DC;&#xC758; &#xB85C;&#xADF8;&#xD30C;&#xC77C;&#xC5D0; &#xCD9C;&#xB825; &#xD560; &#xC218; &#xC788;&#xB3C4;&#xB85D; &#xD558;&#xC600;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC2DC;&#xC2A4;&#xD15C; &#xD328;&#xD0A4;&#xC9C0;&#xC758; &#xAE30;&#xB2A5;&#xC740; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC774; &#xD55C;&#xC815;&#xC801;&#xC778;&#xB370; &#xC774;&#xB294; &#xD5C8;&#xC6A9;&#xB418;&#xC9C0; &#xC54A;&#xC740; &#xAE30;&#xB2A5;&#xC744; &#xC0AC;&#xC6A9;&#xD568;&#xC73C;&#xB85C;&#xC368; &#xC2DC;&#xC2A4;&#xD15C; &#xC0C1;&#xC5D0; &#xC624;&#xB958; &#xD639;&#xC740; &#xB178;&#xB4DC;&#xAC04; &#xB370;&#xC774;&#xD130; &#xBD88;&#xC77C;&#xCE58;(e.g. &#xD30C;&#xC77C; &#xC0AD;&#xC81C;, &#xB79C;&#xB364; &#xC0AC;&#xC6A9;)&#xB97C; &#xC0AC;&#xC804;&#xC5D0; &#xBC29;&#xC9C0;&#xD558;&#xAE30; &#xC704;&#xD568;&#xC785;&#xB2C8;&#xB2E4;. &#xAC19;&#xC740; &#xC774;&#xC720;&#xB85C; &#xC678;&#xBD80; &#xD328;&#xD0A4;&#xC9C0;&#xC758; &#xC0AC;&#xC6A9;&#xC744; &#xC81C;&#xD55C;&#xD558;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC2DC;&#xC2A4;&#xD15C; &#xD328;&#xD0A4;&#xC9C0;&#xB294; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xCF54;&#xB4DC; &#xB0B4;&#xC5D0;&#xC11C; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; require &#xBA85;&#xB839;&#xC5B4;&#xB97C; &#xD1B5;&#xD574; &#xC0AC;&#xC6A9; &#xAC00;&#xB2A5;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-lua"><span class="hljs-keyword">local</span> system = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;system&quot;</span>);
+</code></pre>
+<p>&#xC2DC;&#xC2A4;&#xD15C; &#xD328;&#xD0A4;&#xC9C0;&#xC5D0;&#xC11C; &#xC81C;&#xACF5;&#xD558;&#xB294; &#xAE30;&#xBCF8; &#xD568;&#xC218; &#xBAA9;&#xB85D;&#xACFC; &#xADF8;&#xC5D0; &#xB300;&#xD55C; &#xC124;&#xBA85;&#xC740; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#xD568;&#xC218;&#xBA85;</th>
+<th style="text-align:left">&#xC778;&#xC790;</th>
+<th style="text-align:left">&#xBC18;&#xD658;&#xAC12;</th>
+<th style="text-align:left">&#xAE30;&#xB2A5;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">print</td>
+<td style="text-align:left">(string) message</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">&#xB178;&#xB4DC;&#xC0C1;&#xC5D0;&#xC11C; &#xB514;&#xBC84;&#xADF8; &#xBA54;&#xC2DC;&#xC9C0;&#xB97C; &#xCD9C;&#xB825;</td>
+</tr>
+<tr>
+<td style="text-align:left">setItem</td>
+<td style="text-align:left">(string) key, (any) value</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">&#xAC12;&#xC744; &#xBE14;&#xB85D;&#xCCB4;&#xC778;&#xC5D0; &#xC800;&#xC7A5;. Query&#xBB38;&#xC5D0;&#xB294; &#xC0AC;&#xC6A9; &#xBD88;&#xAC00;</td>
+</tr>
+<tr>
+<td style="text-align:left">getItem</td>
+<td style="text-align:left">(string) key</td>
+<td style="text-align:left">(any) value</td>
+<td style="text-align:left">&#xC800;&#xC7A5;&#xB41C; &#xAC12;&#xC744; &#xBC18;&#xD658;</td>
+</tr>
+<tr>
+<td style="text-align:left">getSender</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">(string) address</td>
+<td style="text-align:left">&#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB97C; &#xD638;&#xCD9C;&#xD55C; &#xC8FC;&#xC18C; &#xBC18;&#xD658;</td>
+</tr>
+<tr>
+<td style="text-align:left">getCreator</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">(string) address</td>
+<td style="text-align:left">&#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB97C; &#xC815;&#xC758;&#xD55C; &#xC8FC;&#xC18C; &#xBC18;&#xD658;</td>
+</tr>
+<tr>
+<td style="text-align:left">getBlockhash</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">(string) hash</td>
+<td style="text-align:left">&#xD638;&#xCD9C; &#xC2DC;&#xC810; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xAC00; &#xD3EC;&#xD568;&#xB41C; &#xBE14;&#xB85D;&#xC758; &#xD574;&#xC2DC; &#xBC18;&#xD658;</td>
+</tr>
+<tr>
+<td style="text-align:left">getBlockheight</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">(number) height</td>
+<td style="text-align:left">&#xD638;&#xCD9C; &#xC2DC;&#xC810; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xAC00; &#xD3EC;&#xD568;&#xB41C; &#xBE14;&#xB85D;&#xC758; &#xB192;&#xC774; &#xBC18;&#xD658;</td>
+</tr>
+<tr>
+<td style="text-align:left">getTimestamp</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">(number) timestamp</td>
+<td style="text-align:left">UNIX &#xD0C0;&#xC784;&#xC2A4;&#xD0EC;&#xD504;&#xB97C; &#xBC18;&#xD658;</td>
+</tr>
+<tr>
+<td style="text-align:left">getContractID</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">(string) id</td>
+<td style="text-align:left">&#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; ID&#xB97C; &#xBC18;&#xD658;</td>
+</tr>
+<tr>
+<td style="text-align:left">getTxhash</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">(string) hash</td>
+<td style="text-align:left">&#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xAC00; &#xD3EC;&#xD568;&#xB41C; &#xD2B8;&#xB79C;&#xC7B0;&#xC158;&#xC758; &#xD574;&#xC2DC; &#xBC18;&#xD658;</td>
+</tr>
+<tr>
+<td style="text-align:left">getNode</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">(string) id</td>
+<td style="text-align:left">&#xCF54;&#xC778;&#xC2A4;&#xD0DD; &#xB178;&#xB4DC; &#xC2DD;&#xBCC4;&#xC790;&#xB97C; &#xBC18;&#xD658;. &#xC124;&#xC815; &#xD30C;&#xC77C;&#xC5D0;&#xC11C; nodeid &#xAC12;&#xC5D0; &#xD574;&#xB2F9;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-built-in-functions">3. Built-in Functions</h2>
+<p>Lua&#xB294; &#xC5B8;&#xC5B4; &#xC790;&#xCCB4;&#xC801;&#xC73C;&#xB85C; &#xC720;&#xC6A9;&#xD55C; &#xD568;&#xC218; &#xBC0F; &#xAE30;&#xBCF8; &#xD328;&#xD0A4;&#xC9C0; &#xC81C;&#xACF5;&#xD569;&#xB2C8;&#xB2E4;. &#xBB38;&#xC790;&#xC5F4; &#xAD00;&#xB9AC; &#xD568;&#xC218; &#xB4F1; &#xC720;&#xC6A9;&#xD55C; &#xD568;&#xC218;&#xB97C; &#xC81C;&#xACF5;&#xD558;&#xBBC0;&#xB85C; &#xC774;&#xAC83;&#xB4E4;&#xC744; &#xD65C;&#xC6A9;&#xD558;&#xC5EC; &#xC27D;&#xAC8C; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB97C; &#xC791;&#xC131; &#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC774;&#xC5D0; &#xB300;&#xD55C; &#xC0C1;&#xC138;&#xD55C; &#xBB38;&#xBC95;, &#xC124;&#xBA85;, &#xAE30;&#xBCF8; &#xB0B4;&#xC7A5; &#xD568;&#xC218;&#xC640; &#xD328;&#xD0A4;&#xC9C0;&#xB294; <a href="http://www.lua.org/manual/5.1/manual.html" target="_blank">Lua Reference Manual</a>&#xC744; &#xCC38;&#xC870;&#xD558;&#xC2DC;&#xAE30; &#xBC14;&#xB78D;&#xB2C8;&#xB2E4;.</p>
+<p>Lua Smart Contract &#xB294; &#xCF54;&#xC778;&#xC2A4;&#xD0DD;&#xC5D0;&#xC11C; &#xC218;&#xD589;&#xB418;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; Input/Output &#xC744; &#xD3EC;&#xD568;&#xD55C; OS &#xC5D0; &#xAD00;&#xB828;&#xB41C; &#xD568;&#xC218;&#xB294; &#xC548;&#xC815;&#xC131; &#xBC0F; &#xBCF4;&#xC548;&#xC744; &#xC704;&#xD574; &#xC81C;&#xACF5;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC5C6;&#xB294; &#xAE30;&#xBCF8; &#xD568;&#xC218; &#xBAA9;&#xB85D;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<blockquote>
+<p>print, dofile, loadfile, module</p>
+</blockquote>
+<p>&#xB2E4;&#xC74C;&#xC758; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC5C6;&#xB294; &#xAE30;&#xBCF8; &#xD328;&#xD0A4;&#xC9C0; &#xBAA9;&#xB85D;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<blockquote>
+<p>coroutine, io, os, debug</p>
+</blockquote>
+<p><code>string, math, table</code> &#xD328;&#xD0A4;&#xC9C0;&#xB294; &#xC0AC;&#xC6A9;&#xC774; &#xAC00;&#xB2A5;&#xD569;&#xB2C8;&#xB2E4;. &#xB2E8;, <code>math</code> &#xD328;&#xD0A4;&#xC9C0;&#xC758; <code>random, randomseed</code> &#xD568;&#xC218;&#xB294; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h2 id="4-smart-contract-definition">4. Smart Contract Definition</h2>
+<p>&#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xCF54;&#xB4DC;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; &#xCF54;&#xC778;&#xC2A4;&#xD0DD; &#xCF54;&#xB4DC; IDE &#xD639;&#xC740; &#xC9C1;&#xC811; SDK&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; &#xBE14;&#xB85D;&#xCCB4;&#xC778; &#xC0C1;&#xC5D0; &#xC791;&#xC131;&#xD55C; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB97C; &#xB4F1;&#xB85D;, &#xBC30;&#xD3EC;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xC774;&#xB7EC;&#xD55C; &#xACFC;&#xC815;&#xC740; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xC815;&#xC758; (smart contract definition)&#xB77C;&#xACE0; &#xBD88;&#xB9BD;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xCF54;&#xC778;&#xC2A4;&#xD0DD; SDK&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; &#xBE14;&#xB85D;&#xCCB4;&#xC778;&#xC5D0; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB97C; &#xB4F1;&#xB85D;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<h4 id="java">JAVA</h4>
+<pre><code class="lang-java">CoinStackClient client = <span class="hljs-keyword">new</span> CoinStackClient(<span class="hljs-string">&quot;CONNECTION_INFO&quot;</span>);
+String contractAddress = <span class="hljs-string">&quot;ADDRESS_FOR_SMARTCONTRACT&quot;</span>; <span class="hljs-comment">//&#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB85C; &#xC0AC;&#xC6A9;&#xD560; &#xC8FC;&#xC18C;</span>
+String privateKey = <span class="hljs-string">&quot;MY_PRIVATEKEY&quot;</span>; <span class="hljs-comment">//&#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB85C; &#xC0AC;&#xC6A9;&#xD560; &#xC8FC;&#xC18C;&#xC758; &#xAC1C;&#xC778;&#xD0A4;</span>
+String definition = <span class="hljs-string">&quot;SMARTCONTRACT_CODE&quot;</span>; <span class="hljs-comment">//&#xC55E;&#xC11C; &#xC815;&#xC758;&#xD55C; &#xC608;&#xC81C; &#xCF54;&#xB4DC;&#xB85C; &#xB300;&#xCCB4;</span>
+
+<span class="hljs-comment">// SmartContract Builder Instance &#xC0DD;&#xC131;</span>
+LuaContractBuilder builder = <span class="hljs-keyword">new</span> LuaContractBuilder(); 
+<span class="hljs-comment">// &#xC0AC;&#xC6A9;&#xD560; Contract &#xC8FC;&#xC18C; &#xC124;&#xC815;. Transaction&#xC744; Sign&#xD560; &#xAC1C;&#xC778;&#xD0A4;&#xC758; &#xC8FC;&#xC18C;&#xC640; &#xB3D9;&#xC77C;&#xD574;&#xC57C; &#xD568;</span>
+builder.setContractId(contractAddress); 
+<span class="hljs-comment">// &#xC815;&#xC758;&#xC5D0; &#xC0AC;&#xC6A9;&#xD560; Lua Contract &#xC18C;&#xC2A4;&#xCF54;&#xB4DC; &#xC124;&#xC815;</span>
+builder.setDefinition(definition);
+<span class="hljs-comment">// &#xD2B8;&#xB79C;&#xC7AD;&#xC158; &#xC218;&#xC218;&#xB8CC; &#xC124;&#xC815;, &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC758; &#xD06C;&#xAE30;&#xC5D0; &#xB530;&#xB77C; &#xC99D;&#xAC00;&#xC2DC;&#xCF1C;&#xC57C; &#xD568;</span>
+builder.setFee(<span class="hljs-number">10000</span>);
+<span class="hljs-comment">// &#xD2B8;&#xB79C;&#xC7AD;&#xC158; &#xBE4C;&#xB4DC; </span>
+String rawTx = builder.buildTransaction(client, ContractPk); 
+<span class="hljs-comment">// &#xD2B8;&#xB79C;&#xC7AD;&#xC158; &#xD574;&#xC2DC;&#xAC12; &#xCD94;&#xCD9C;</span>
+String txHash = TransactionUtil.getTransactionHash(rawTx); 
+<span class="hljs-comment">// &#xD2B8;&#xB79C;&#xC7AD;&#xC158; &#xC804;&#xC1A1;</span>
+client.sendTransaction(rawTx);
+
+<span class="hljs-comment">// &#xBE14;&#xB85D;&#xC5D0; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC774; &#xD3EC;&#xD568; &#xB420; &#xB54C;&#xAE4C;&#xC9C0; &#xB300;&#xAE30;</span>
+<span class="hljs-keyword">while</span>(<span class="hljs-keyword">true</span>) {
+  Thread.sleep(<span class="hljs-number">1000</span>);
+  <span class="hljs-comment">// &#xBE14;&#xB85D; &#xD3EC;&#xD568; &#xC5EC;&#xBD80; &#xAC80;&#xC0AC;. &#xBE14;&#xB85D;&#xC5D0; &#xD3EC;&#xD568;&#xC774; &#xB418;&#xC5B4;&#xC57C;&#xB9CC; &#xC2A4;&#xB9C8;&#xD2B8;&#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xC218;&#xD589; &#xAC00;&#xB2A5;</span>
+  <span class="hljs-keyword">if</span> (client.getTransaction(txHash).getBlockHeights().length != <span class="hljs-number">0</span>)  
+    System.out.println(<span class="hljs-string">&quot;Smart Contract Definition is Committed: &quot;</span>+ txHash);
+}
+</code></pre>
+<h4 id="nodejs">Node.js</h4>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> CoinStack = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;coinstack-sdk-js&apos;</span>);
+<span class="hljs-keyword">var</span> client = <span class="hljs-keyword">new</span> CoinStack(<span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;127.0.0.1:8080&quot;</span>, <span class="hljs-string">&quot;http&quot;</span>);
+<span class="hljs-keyword">var</span> contractAddress = <span class="hljs-string">&quot;ADDRESS_FOR_SMARTCONTRACT&quot;</span>; <span class="hljs-comment">//&#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB85C; &#xC0AC;&#xC6A9;&#xD560; &#xC8FC;&#xC18C;</span>
+<span class="hljs-keyword">var</span> privateKey = <span class="hljs-string">&quot;MY_PRIVATEKEY&quot;</span>; <span class="hljs-comment">//&#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB85C; &#xC0AC;&#xC6A9;&#xD560; &#xC8FC;&#xC18C;&#xC758; &#xAC1C;&#xC778;&#xD0A4;</span>
+<span class="hljs-keyword">var</span> definitionCode = <span class="hljs-string">&quot;SMARTCONTRACT_DEFINITION_CODE&quot;</span>; <span class="hljs-comment">//&#xC55E;&#xC11C; &#xC815;&#xC758;&#xD55C; &#xC608;&#xC81C; &#xCF54;&#xB4DC;&#xB85C; &#xB300;&#xCCB4;</span>
+
+<span class="hljs-keyword">var</span> builder = client.createLuaContractBuilder();
+builder.setInput(contractAddress);
+builder.setContractID(contractAddress);
+builder.setFee(fee);
+builder.setDefinition(definitionCode);
+
+builder.buildTransaction(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, tx</span>) </span>{
+  <span class="hljs-keyword">if</span> (err) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Failed to create a transaction: &quot;</span>, err);
+    <span class="hljs-keyword">return</span>;
+  }
+  <span class="hljs-keyword">try</span> {
+    tx.sign(privatekey);
+    <span class="hljs-keyword">var</span> rawTx = tx.serialize();
+    <span class="hljs-keyword">var</span> txHash = tx.getHash();
+    client.sendTransaction(rawTx, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err</span>) </span>{
+      <span class="hljs-keyword">if</span> (err) {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Failed to send transaction: &quot;</span>, err);
+        <span class="hljs-keyword">return</span>;
+      }
+    });
+    client.getTransaction(txHash, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, result</span>) </span>{
+      <span class="hljs-built_in">console</span>.log(result);
+    });
+  } <span class="hljs-keyword">catch</span> (e) {
+    <span class="hljs-built_in">console</span>.log(e);
+  }
+});
+</code></pre>
+<p>&#xCF54;&#xC778;&#xC2A4;&#xD0DD; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB294; &#xAE30;&#xC874;&#xC758; &#xBE44;&#xD2B8;&#xCF54;&#xC778; &#xD45C;&#xC900; &#xD504;&#xB85C;&#xD1A0;&#xCF5C;&#xC744; &#xD655;&#xC7A5;&#xD55C; &#xC790;&#xCCB4;&#xC801;&#xC778; &#xD504;&#xB85C;&#xD1A0;&#xCF5C;&#xC744; &#xAC00;&#xC9C0;&#xBBC0;&#xB85C; &#xC774;&#xB97C; &#xB530;&#xB974;&#xB294; &#xD2B8;&#xB79C;&#xC7AD;&#xC158; &#xC0DD;&#xC131;&#xC744; &#xC9C0;&#xC6D0;&#xD558;&#xAE30; &#xC704;&#xD574; LuaContractBuilder&#xB77C;&#xB294; &#xD074;&#xB798;&#xC2A4;&#xB97C; &#xC81C;&#xACF5;&#xD569;&#xB2C8;&#xB2E4;. LuaContractBuilder&#xB294; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xC758; &#xC815;&#xC758; &#xBC0F; &#xC218;&#xD589;&#xC2DC; &#xC0AC;&#xC6A9;&#xD558;&#xBA70; &#xC774;&#xB97C; &#xC704;&#xD574; Transaction&#xC744; &#xB9CC;&#xB4E4;&#xC5B4; &#xBCF4;&#xB0B4;&#xC57C; &#xD558;&#xBBC0;&#xB85C; &#xD070; &#xD2C0;&#xC5D0;&#xC11C; TransactionBuilder&#xC640; &#xD615;&#xD0DC;&#xAC00; &#xC720;&#xC0AC;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xBA3C;&#xC800; &#xC0DD;&#xC131;&#xC790;&#xB97C; &#xD1B5;&#xD574; &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xACE0; &#xB09C; &#xB4A4;&#xC5D0; setContractId(String contractID)&#xB77C;&#xB294; &#xD568;&#xC218;&#xB85C; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB85C; &#xC0AC;&#xC6A9;&#xD560; &#xC8FC;&#xC18C;&#xB97C; &#xC9C0;&#xC815;&#xD569;&#xB2C8;&#xB2E4;. &#xC774; &#xC8FC;&#xC18C;&#xB294; &#xACE0;&#xC720;&#xD55C; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xC758; ID&#xB85C; &#xC0AC;&#xC6A9;&#xB418;&#xC5B4;, &#xC774;&#xD6C4; &#xB2E4;&#xB978; &#xC0AC;&#xC6A9;&#xC790;&#xB4E4;&#xB3C4; &#xC774; &#xC8FC;&#xC18C;&#xB97C; &#xB300;&#xC0C1;&#xC73C;&#xB85C; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC744; &#xC218;&#xD589;&#xD558;&#xAC70;&#xB098; &#xC0C1;&#xD0DC;&#xAC12;&#xC744; &#xC870;&#xD68C;&#xD574; &#xBCFC; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB530;&#xB77C;&#xC11C; &#xAE30;&#xC874;&#xC5D0; &#xB2E4;&#xB978; &#xC751;&#xC6A9;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xD558;&#xB358; &#xC8FC;&#xC18C; &#xD639;&#xC740; &#xB9C8;&#xC774;&#xB2DD; &#xBCF4;&#xC0C1;&#xC744; &#xBC1B;&#xB294;&#xB370; &#xC0AC;&#xC6A9;&#xD558;&#xB358; &#xC8FC;&#xC18C;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xAE30; &#xBCF4;&#xB2E4;&#xB294; &#xC0C8;&#xB85C;&#xC6B4; &#xC8FC;&#xC18C;&#xB97C; &#xB9CC;&#xB4E4;&#xACE0; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xC815;&#xC758; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC744; &#xC218;&#xD589;&#xD560; &#xC815;&#xB3C4;&#xB85C; &#xC18C;&#xB7C9;&#xC758; &#xC794;&#xACE0;&#xB97C; &#xCDA9;&#xC804;&#xD558;&#xC5EC; &#xC0AC;&#xC6A9;&#xD558;&#xC2DC;&#xAE30;&#xB97C; &#xAD8C;&#xACE0;&#xD569;&#xB2C8;&#xB2E4;.<br>&#xD0C0; &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB97C; &#xC7AC;&#xC815;&#xC758; &#xD558;&#xB294; &#xAC83;&#xC744; &#xBC29;&#xC9C0;&#xD558;&#xAE30; &#xC704;&#xD574; &#xD2B9;&#xC815; &#xC8FC;&#xC18C;&#xB85C;&#xC758; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xC815;&#xC758;(define)&#xB294; &#xD574;&#xB2F9; &#xC8FC;&#xC18C;&#xC758; &#xAC1C;&#xC778;&#xD0A4; &#xC18C;&#xC720;&#xC790;&#xB9CC; &#xAC00;&#xB2A5;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xC815;&#xC758;&#xB97C; &#xC704;&#xD55C; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC744; &#xC0DD;&#xC131;&#xD560; &#xB54C;&#xB294; setDefinition(String contractCode)&#xC5D0; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xCF54;&#xB4DC;&#xB97C; &#xBB38;&#xC790;&#xC5F4;&#xB85C; &#xD560;&#xB2F9;&#xD569;&#xB2C8;&#xB2E4;. &#xADF8;&#xB9AC;&#xACE0; &#xCD5C;&#xC885;&#xC801;&#xC73C;&#xB85C; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC744; &#xBE4C;&#xB4DC;&#xD558;&#xACE0; &#xBCF4;&#xB0B4;&#xAC8C; &#xB418;&#xBA74;, &#xD574;&#xB2F9; &#xCF54;&#xB4DC;&#xB294; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC758; op_return nullData &#xC601;&#xC5ED;&#xC5D0; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xD504;&#xB85C;&#xD1A0;&#xCF5C;&#xC5D0; &#xB9DE;&#xCD94;&#xC5B4; &#xB2F4;&#xACA8; &#xBE14;&#xB85D;&#xCCB4;&#xC778;&#xC744; &#xD1B5;&#xD574; &#xBAA8;&#xB4E0; &#xB178;&#xB4DC;&#xC5D0; &#xC804;&#xD30C;&#xB418;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB9CC;&#xC57D;&#xC5D0; &#xCF54;&#xB4DC;&#xC758; &#xD06C;&#xAE30;&#xAC00; &#xCEE4;&#xC11C; Serialize&#xD55C; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC758; &#xD06C;&#xAE30;&#xAC00; 1kb&#xB97C; &#xB118;&#xB294;&#xB2E4;&#xBA74; &#xC218;&#xC218;&#xB8CC;&#xB97C; &#xAE30;&#xBCF8; &#xD2B8;&#xB79C;&#xC7AD;&#xC158; &#xC218;&#xC218;&#xB8CC;&#xC778; 10000 &#xC0AC;&#xD1A0;&#xC2DC;&#xC5D0; &#xB354;&#xD574; &#xD2B8;&#xB79C;&#xC7AD;&#xC158; &#xC0AC;&#xC774;&#xC988;&#xC5D0; &#xB530;&#xB77C; (&#xAE30;&#xBCF8;&#xAC12;&#xC740; 10000 &#xC0AC;&#xD1A0;&#xC2DC;/1kb)&#xB354; &#xB123;&#xC5B4;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xC815;&#xC758; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC740; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC758; &#xC218;&#xD589;&#xC21C;&#xC11C;&#xB97C; &#xBCF4;&#xC7A5;&#xD558;&#xAE30; &#xC704;&#xD574; &#xB9F4;&#xD480;&#xC774; &#xC544;&#xB2CC; &#xBE14;&#xB85D;&#xC5D0; &#xB2F4;&#xACA8;&#xC838; &#xC788;&#xB294; &#xC0C1;&#xD0DC;&#xC5EC;&#xC57C;&#xB9CC; &#xC791;&#xB3D9;&#xD569;&#xB2C8;&#xB2E4;. &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC774; &#xC2E4;&#xC81C; &#xBE14;&#xB85D;&#xC5D0; &#xD3EC;&#xD568;&#xB418;&#xC5B4;&#xC788;&#xB294;&#xC9C0;&#xC758; &#xC5EC;&#xBD80;&#xB294; &#xC704;&#xC758; &#xC608;&#xC81C;&#xC640; &#xAC19;&#xC774; getTransaction(String transactionHash)&#xB85C; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC744; &#xC77D;&#xC5B4; &#xC628; &#xD6C4;, int[] getBlockHeights() &#xD568;&#xC218;&#xB97C; &#xD638;&#xCD9C;&#xD558;&#xC5EC; &#xCD5C;&#xC18C; &#xD55C;&#xAC1C; &#xC774;&#xC0C1;&#xC758; &#xAC12;&#xC774; &#xC874;&#xC7AC;&#xD558;&#xB294;&#xC9C0; &#xD655;&#xC778;&#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;. getBlockHeights()&#xC758; &#xACB0;&#xACFC;&#xAC12;&#xC774; &#xBC30;&#xC5F4;&#xC778; &#xC774;&#xC720;&#xB294; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC774; &#xBE0C;&#xB79C;&#xCE58;&#xAC00; &#xC0DD;&#xACA8; &#xC5EC;&#xB7EC; &#xBE14;&#xB85D;&#xC5D0; &#xD3EC;&#xD568;&#xB418;&#xB294; &#xACBD;&#xC6B0;, &#xC5EC;&#xB7EC; &#xB192;&#xC774;&#xAC00; &#xC874;&#xC7AC;&#xD560; &#xC218; &#xC788;&#xAE30; &#xB54C;&#xBB38;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<h2 id="5-smart-contract-execution">5. Smart Contract Execution</h2>
+<p>&#xC815;&#xC758; &#xD6C4; &#xBE14;&#xB85D;&#xC5D0; &#xD3EC;&#xD568;&#xB41C; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB294; &#xC218;&#xD589; &#xCF54;&#xB4DC;&#xB97C; &#xD1B5;&#xD574;&#xC11C; &#xD638;&#xCD9C;&#xD558;&#xACE0; &#xADF8; &#xACB0;&#xACFC;&#xB97C; &#xBE14;&#xB85D;&#xCCB4;&#xC778;&#xC5D0; &#xBC18;&#xC601;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD55C;&#xBC88; &#xBE14;&#xB85D;&#xCCB4;&#xC778;&#xC5D0; &#xBC18;&#xC601;&#xB41C; &#xC218;&#xD589; &#xACB0;&#xACFC;&#xB294; &#xBAA8;&#xB4E0; &#xB178;&#xB4DC;&#xAC00; &#xB3D9;&#xC77C;&#xD558;&#xBA70; &#xC9C0;&#xC18D;&#xC801;&#xC73C;&#xB85C; &#xC720;&#xC9C0;&#xB429;&#xB2C8;&#xB2E4;. &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB97C; &#xC218;&#xD589;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; &#xC815;&#xC758;&#xD55C; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xB0B4;&#xC758; &#xD568;&#xC218;&#xB97C; &#xD638;&#xCD9C;&#xD558;&#xB294; &#xC218;&#xD589; &#xCF54;&#xB4DC;&#xB97C; &#xC791;&#xC131;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xB2E4;&#xC74C;&#xC740; &#xC55E;&#xC11C; &#xC815;&#xC758;&#xD55C; &#xCF54;&#xB4DC;&#xB97C; &#xC218;&#xD589;&#xD558;&#xC5EC; &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xC124;&#xC815;&#xD55C; &#xD0A4;&#xC5D0; &#xD2B9;&#xC815; &#xAC12;&#xC744; &#xC800;&#xC7A5;&#xD558;&#xB294; &#xC608;&#xC81C; &#xCF54;&#xB4DC;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-lua">call(<span class="hljs-string">&quot;set&quot;</span>, <span class="hljs-string">&quot;Key1&quot;</span>, <span class="hljs-number">365</span>);
+</code></pre>
+<p>&#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xC218;&#xD589; &#xCF54;&#xB4DC;&#xB97C; &#xC791;&#xC131;&#xD55C; &#xB4A4;&#xC5D0;&#xB294; &#xCF54;&#xC778;&#xC2A4;&#xD0DD; &#xCF54;&#xB4DC;&#xB97C; &#xD1B5;&#xD574;&#xC11C; &#xC2E4;&#xD589;&#xD558;&#xAC70;&#xB098;, SDK&#xB97C; &#xD1B5;&#xD574;&#xC11C; &#xC9C1;&#xC811; &#xC218;&#xD589; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC744; &#xC0DD;&#xC131;, &#xC804;&#xC1A1;&#xD558;&#xC5EC; &#xC2E4;&#xD589;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB2E4;&#xC74C;&#xC740; SDK&#xB97C; &#xC774;&#xC6A9;&#xD574; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB97C; &#xC218;&#xD589;&#xD558;&#xB294; &#xC608;&#xC81C; &#xCF54;&#xB4DC;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<h4 id="java">JAVA</h4>
+<pre><code class="lang-java">CoinStackClient client = <span class="hljs-keyword">new</span> CoinStackClient(<span class="hljs-string">&quot;CONNECTION_INFO&quot;</span>);
+String contractAddress = <span class="hljs-string">&quot;ADDRESS_FOR_SMARTCONTRACT&quot;</span>; <span class="hljs-comment">//&#xC218;&#xD589;&#xD560; &#xB300;&#xC0C1; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xC8FC;&#xC18C;</span>
+String privateKey = <span class="hljs-string">&quot;MY_PRIVATEKEY&quot;</span>; <span class="hljs-comment">//&#xB098;&#xC758; &#xAC1C;&#xC778;&#xD0A4;</span>
+String executionCode = <span class="hljs-string">&quot;SMARTCONTRACT_EXECUTION_CODE&quot;</span>; <span class="hljs-comment">//&#xC55E;&#xC11C; &#xC815;&#xC758;&#xD55C; &#xC608;&#xC81C; &#xCF54;&#xB4DC;&#xB85C; &#xB300;&#xCCB4;</span>
+
+LuaContractBuilder builder = <span class="hljs-keyword">new</span> LuaContractBuilder();
+ <span class="hljs-comment">// &#xC774;&#xC804;&#xC5D0; &#xC815;&#xC758;&#xD55C; Smart Contract Address &#xD560;&#xB2F9;</span>
+builder.setContractId(contractAddress);
+<span class="hljs-comment">// &#xC218;&#xD589;&#xD560; &#xD568;&#xC218; &#xBC0F; &#xC778;&#xC790;&#xC758; &#xCF54;&#xB4DC;&#xB97C; &#xBE4C;&#xB354;&#xC5D0; &#xC124;&#xC815;</span>
+builder.setExecution(executionCode);
+builder.setFee(<span class="hljs-number">10000</span>); 
+String rawTx = builder.buildTransaction(client, privateKey);
+client.sendTransaction(rawTx);
+</code></pre>
+<h4 id="nodejs">Node.js</h4>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> CoinStack = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;coinstack-sdk-js&apos;</span>);
+<span class="hljs-keyword">var</span> client = <span class="hljs-keyword">new</span> CoinStack(<span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;127.0.0.1:8080&quot;</span>, <span class="hljs-string">&quot;http&quot;</span>);
+<span class="hljs-keyword">var</span> contractAddress = <span class="hljs-string">&quot;SMARTCONTRACT_ADDRESS&quot;</span>;
+<span class="hljs-keyword">var</span> executionCode = <span class="hljs-string">&quot;SMARTCONTRACT_EXECUTION_CODE&quot;</span>;
+
+<span class="hljs-keyword">var</span> builder = client.createLuaContractBuilder();
+builder.setInput(contractAddress);
+builder.setContractID(contractAddress);
+builder.setFee(<span class="hljs-number">10000</span>);
+builder.setExecution(executionCode);
+builder.buildTransaction(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, tx</span>) </span>{
+  <span class="hljs-keyword">if</span> (err) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Failed to create a transaction -&quot;</span>, err);
+    <span class="hljs-keyword">return</span>;
+  }
+
+  <span class="hljs-keyword">try</span> {
+    tx.sign(privatekey);
+    <span class="hljs-keyword">var</span> rawTx = tx.serialize();
+    <span class="hljs-keyword">var</span> hash = tx.getHash();
+    client.sendTransaction(rawTx, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err</span>) </span>{
+      <span class="hljs-keyword">if</span> (err) {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Failed to send transaction:&quot;</span>, hash, <span class="hljs-string">&quot;(&quot;</span>, err, <span class="hljs-string">&quot;)&quot;</span>)
+        <span class="hljs-keyword">return</span>;
+      }
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Sent transaction: &quot;</span>, hash);
+    });
+  } <span class="hljs-keyword">catch</span> (e) {
+    <span class="hljs-built_in">console</span>.log(e);
+  }
+});
+</code></pre>
+<p>&#xC55E;&#xC11C; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xC815;&#xC758;&#xC640; &#xC720;&#xC0AC;&#xD558;&#xAC8C; &#xC0DD;&#xC131;&#xC790;&#xB97C; &#xD1B5;&#xD574; LuaContractBuilder &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xACE0; &#xB09C; &#xB4A4;&#xC5D0; setContractId(String contractID)&#xB77C;&#xB294; &#xD568;&#xC218;&#xB85C; &#xB300;&#xC0C1; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xC8FC;&#xC18C;&#xB97C; &#xC9C0;&#xC815;&#xD569;&#xB2C8;&#xB2E4;. &#xC5EC;&#xAE30;&#xC5D0;&#xC11C;&#xB294; &#xC55E;&#xC11C; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB97C; &#xC815;&#xC758;&#xD558;&#xB294;&#xB370; &#xC0AC;&#xC6A9;&#xD55C; &#xC8FC;&#xC18C;&#xB97C; &#xB3D9;&#xC77C;&#xD558;&#xAC8C; &#xC785;&#xB825;&#xD558;&#xC5EC; &#xC55E;&#xC11C; &#xC815;&#xC758;&#xD55C; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB97C; &#xC218;&#xD589;&#xD558;&#xB3C4;&#xB85D; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xC218;&#xD589;&#xC744; &#xC704;&#xD55C; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC744; &#xC0DD;&#xC131;&#xD560; &#xB54C;&#xB294; setExecution(String contractCode) &#xD568;&#xC218;&#xC5D0; &#xC218;&#xD589;&#xD560; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xCF54;&#xB4DC;&#xB97C; &#xBB38;&#xC790;&#xC5F4;&#xB85C; &#xD560;&#xB2F9;&#xD569;&#xB2C8;&#xB2E4;. (&#xD574;&#xB2F9; &#xCF54;&#xB4DC;&#xB294; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC758; op_return nullData &#xC601;&#xC5ED;&#xC5D0; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xD504;&#xB85C;&#xD1A0;&#xCF5C;&#xC5D0; &#xB9DE;&#xCD94;&#xC5B4; &#xC801;&#xC7AC;&#xB429;&#xB2C8;&#xB2E4;.) &#xADF8;&#xB9AC;&#xACE0; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xC8FC;&#xC18C;&#xC5D0; &#xB300;&#xC751;&#xD558;&#xB294; &#xAC1C;&#xC778;&#xD0A4;&#xAC00; &#xC544;&#xB2CC; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB97C; &#xC218;&#xD589;&#xD560; &#xAC01; &#xC0AC;&#xC6A9;&#xC790; &#xAC1C;&#xAC1C;&#xC778;&#xC758; &#xAC1C;&#xC778;&#xD0A4;&#xB85C; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC744; &#xBE4C;&#xB4DC;&#xD569;&#xB2C8;&#xB2E4;. &#xCD5C;&#xC885;&#xC801;&#xC73C;&#xB85C; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC744; &#xC804;&#xC1A1;&#xD558;&#xBA74; &#xBE14;&#xB85D;&#xCCB4;&#xC778;&#xC744; &#xD1B5;&#xD574; &#xBAA8;&#xB4E0; &#xB178;&#xB4DC;&#xC5D0; &#xC218;&#xD589; &#xCF54;&#xB4DC;&#xAC00; &#xC804;&#xD30C;&#xB429;&#xB2C8;&#xB2E4;. &#xADF8;&#xB9AC;&#xACE0; &#xC0AC;&#xC804;&#xC5D0; &#xC815;&#xC758;&#xB41C; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xC5D0; &#xB530;&#xB77C; &#xCF54;&#xB4DC;&#xAC00; &#xC218;&#xD589;&#xB418;&#xC5B4; &#xBE14;&#xB85D;&#xCCB4;&#xC778; &#xC0C1;&#xD0DC;&#xB97C; &#xBCC0;&#xD654;&#xC2DC;&#xD0A4;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;. &#xCC38;&#xACE0;&#xB85C; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xBCC4;&#xB85C; &#xD0A4;-&#xBC38;&#xB958; &#xC0C1;&#xD0DC;&#xAC12;&#xC740; &#xAD6C;&#xBD84;&#xB418;&#xC5B4; &#xC9D1;&#xB2C8;&#xB2E4;. &#xC989; A &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xC758; Key1&#xC744; &#xBCC0;&#xACBD;&#xD574;&#xB3C4; B &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xC758; Key1&#xC5D0;&#xB294; &#xC601;&#xD5A5;&#xC774; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC704;&#xC758; &#xC608;&#xC81C;&#xC5D0;&#xC11C;&#xB294; 1&#xBC88;&#xC9F8; &#xC778;&#xC790;&#xC5D0; &apos;Key1&apos;&#xC744; &#xB123;&#xACE0; 2&#xBC88;&#xC9F8; &#xC778;&#xC790;&#xC5D0; &apos;365&apos;&#xB97C; &#xB123;&#xC5B4; &#xAE30; &#xC815;&#xC758;&#xD55C; set &#xD568;&#xC218;&#xB97C; &#xD638;&#xCD9C;&#xD558;&#xB294; &#xCF54;&#xB4DC;&#xB97C; &#xC218;&#xD589;&#xD558;&#xC600;&#xC2B5;&#xB2C8;&#xB2E4;. &#xADF8;&#xB7EC;&#xBA74; set&#xD568;&#xC218; &#xB0B4;&#xC5D0;&#xC11C; system.setItem&#xC774; &#xBD88;&#xB9AC;&#xC6B0;&#xACE0; contractAddress&#xC5D0; &#xD574;&#xB2F9;&#xD558;&#xB294; &#xC0C1;&#xD0DC; &#xC800;&#xC7A5;&#xC18C;&#xC758; Key1&#xC5D0; 365&#xB77C;&#xB294; &#xAC12;&#xC774; &#xC800;&#xC7A5;&#xB418;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<h2 id="6-smart-contract-query">6. Smart Contract Query</h2>
+<p>&#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xC758; &#xC218;&#xD589;&#xC740; &#xD2B8;&#xB79C;&#xC7AD;&#xC158; &#xD615;&#xD0DC;&#xB85C; &#xBE14;&#xB85D;&#xCCB4;&#xC778;&#xC5D0; &#xC804;&#xB2EC;&#xB418;&#xC5B4; &#xBE14;&#xB85D;&#xC5D0; &#xD3EC;&#xD568;&#xB41C; &#xD6C4; &#xC218;&#xD589; &#xACB0;&#xACFC;&#xAC00; &#xC784;&#xC758;&#xC758; &#xC2DC;&#xAC04; &#xD6C4;&#xC5D0; &#xBC18;&#xC601;&#xB418;&#xBBC0;&#xB85C;, &#xD074;&#xB77C;&#xC774;&#xC5B8;&#xD2B8;&#xC5D0; &#xACB0;&#xACFC;&#xB97C; &#xBC14;&#xB85C; &#xBC18;&#xD658;&#xD560; &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB530;&#xB77C;&#xC11C; &#xC0C1;&#xD0DC;&#xAC12;&#xC744; &#xD655;&#xC778;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; &#xBA3C;&#xC800; &#xC218;&#xD589; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC774; &#xBE14;&#xB85D;&#xC5D0; &#xD3EC;&#xD568;&#xB418;&#xC5B4; &#xC788;&#xB294;&#xC9C0;&#xC758; &#xC5EC;&#xBD80;&#xB97C; &#xD655;&#xC778;&#xD558;&#xACE0;, &#xC774;&#xD6C4; &#xC870;&#xD68C; &#xAE30;&#xB2A5;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; &#xC0C1;&#xD0DC;&#xAC12;&#xC744; &#xC77D;&#xC5B4;&#xC640;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xAC19;&#xC740; &#xC774;&#xC720;&#xB85C; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xC218;&#xD589;&#xC911;&#xC5D0; &#xC5D0;&#xB7EC;&#xAC00; &#xB098;&#xB3C4; &#xBC14;&#xB85C; &#xD655;&#xC778;&#xC774; &#xBD88;&#xAC00;&#xB2A5;&#xD569;&#xB2C8;&#xB2E4;. &#xB530;&#xB77C;&#xC11C; &#xCF54;&#xC778;&#xC2A4;&#xD0DD; &#xCF54;&#xB4DC;&#xB4F1;&#xC744; &#xD1B5;&#xD574; &#xBA3C;&#xC800; &#xCDA9;&#xBD84;&#xD55C; &#xD14C;&#xC2A4;&#xD2B8;&#xB97C; &#xAC70;&#xCCD0; &#xCF54;&#xB4DC;&#xB97C; &#xBC30;&#xD3EC;&#xD558;&#xAE30;&#xB97C; &#xAD8C;&#xD558;&#xBA70;, &#xD544;&#xC694;&#xC2DC; print &#xAE30;&#xB2A5;&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xC11C;&#xBC84;&#xC5D0; &#xB514;&#xBC84;&#xADF8; &#xBA54;&#xC2DC;&#xC9C0; &#xB0A8;&#xACA8; &#xBC84;&#xADF8;&#xB97C; &#xD655;&#xC778;&#xD558;&#xC2DC;&#xAE30;&#xB97C; &#xAD8C;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xC758; &#xC870;&#xD68C; &#xAD00;&#xB828; &#xD568;&#xC218;&#xB97C; &#xD638;&#xCD9C;&#xD558;&#xC5EC; &#xC0C1;&#xD0DC;&#xAC12;&#xC744; &#xC870;&#xD68C;&#xD558;&#xB294; Lua &#xCF54;&#xB4DC;&#xC758; &#xC608;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-lua">res, ok = call(<span class="hljs-string">&quot;get&quot;</span>, <span class="hljs-string">&quot;Key1&quot;</span>); 
+<span class="hljs-built_in">assert</span>(ok); 
+
+<span class="hljs-keyword">return</span> res;
+</code></pre>
+<p>&#xB0B4;&#xBD80;&#xC801;&#xC73C;&#xB85C; getItem &#xD568;&#xC218;&#xB97C; &#xAC10;&#xC2F8;&#xACE0; &#xC788;&#xB294; get &#xD568;&#xC218;&#xB97C; &#xC870;&#xD68C;&#xD560; &#xD0A4;&#xAC12;(Key1)&#xC744; &#xC778;&#xC790;&#xB85C; &#xD638;&#xCD9C;&#xD574; &#xD574;&#xB2F9; &#xD0A4;&#xC5D0; &#xC800;&#xC7A5;&#xB41C; &#xAC12;&#xC744; &#xC77D;&#xC5B4;&#xC635;&#xB2C8;&#xB2E4;.<br>&#xC704;&#xC640; &#xAC19;&#xC740; &#xCF54;&#xB4DC;&#xB97C; &#xC791;&#xC131;&#xD55C; &#xB4A4;&#xC5D0;&#xB294; &#xCF54;&#xC778;&#xC2A4;&#xD0DD; &#xCF54;&#xB4DC;&#xB97C; &#xD1B5;&#xD574;&#xC11C; &#xC870;&#xD68C; &#xD574; &#xBCF4;&#xAC70;&#xB098;, SDK&#xB97C; &#xC0AC;&#xC6A9;&#xD574; &#xC870;&#xD68C;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; SDK&#xB97C; &#xD65C;&#xC6A9;&#xD55C; &#xC0C1;&#xD0DC;&#xAC12; &#xC870;&#xD68C; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<h4 id="java">JAVA</h4>
+<pre><code class="lang-java">String lookupCode = <span class="hljs-string">&quot;SMARTCONTRACT_LOOKUP_CODE&quot;</span>;
+ContractResult res = client.queryContract(ContractAddress, ContractBody.TYPE_LSC, lookupCode); 
+<span class="hljs-keyword">if</span> (res == <span class="hljs-keyword">null</span>) {
+  System.out.println(<span class="hljs-string">&quot;Result is null&quot;</span>); } 
+<span class="hljs-keyword">else</span> {
+  System.out.println(res.asJson());
+}
+</code></pre>
+<h4 id="nodejs">Node.js</h4>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> client = <span class="hljs-keyword">new</span> CoinStack(<span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;127.0.0.1:8080&quot;</span>, <span class="hljs-string">&quot;http&quot;</span>);
+
+client.queryContract(contract, <span class="hljs-string">&quot;LSC&quot;</span>, query, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, res</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(err);
+  <span class="hljs-built_in">console</span>.log(res);
+});
+</code></pre>
+<p>&#xC774;&#xC804;&#xC758; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xC815;&#xC758;, &#xC218;&#xD589; &#xC2DC;&#xC640; &#xB2E4;&#xB978;&#xC810;&#xC740; &#xC870;&#xD68C;&#xB294; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC744; &#xC0DD;&#xC131;&#xD574;&#xC11C; &#xC4F0;&#xAE30; &#xC694;&#xCCAD;&#xC744; &#xBCF4;&#xB0B4;&#xC9C0; &#xC54A;&#xACE0; client&#xB97C; &#xD1B5;&#xD574; &#xC77D;&#xAE30; &#xC694;&#xCCAD;&#xC744; &#xBCF4;&#xB0B4;&#xB294; &#xAC83;&#xC774;&#xB77C;&#xB294; &#xC810; &#xC785;&#xB2C8;&#xB2E4;. &#xC870;&#xD68C; &#xC2DC;&#xC5D0;&#xB294; &#xB0B4;&#xBD80;&#xC801;&#xC73C;&#xB85C; &#xD568;&#xC218;&#xC5D0; setItem &#xD568;&#xC218;&#xB97C; &#xD638;&#xCD9C;&#xD574;&#xB3C4; &#xBE14;&#xB85D;&#xCCB4;&#xC778; &#xC800;&#xC7A5;&#xC18C;&#xC5D0; &#xBC18;&#xC601;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<blockquote>
+<p>Json&#xC73C;&#xB85C; &#xBCC0;&#xD658;&#xD55C; &#xACB0;&#xACFC;&#xAC12;&#xC740; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xCD9C;&#xB825;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-javascript">{<span class="hljs-string">&quot;result&quot;</span>:<span class="hljs-string">&quot;365&quot;</span>, <span class="hljs-string">&quot;success&quot;</span>:<span class="hljs-literal">true</span>}
+</code></pre>
+</blockquote>
+<p>&#xACB0;&#xACFC;&#xB294; json &#xD3EC;&#xB9F7;&#xC73C;&#xB85C; &#xBC18;&#xD658;&#xB418;&#xBA70;, result&#xB97C; dApp&#xC758; &#xC6A9;&#xB3C4;&#xC5D0; &#xB9DE;&#xAC8C; &#xD30C;&#xC2F1;&#xD558;&#xC5EC; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<h2 id="7-&#xD655;&#xC7A5;-&#xAE30;&#xB2A5;">7. &#xD655;&#xC7A5; &#xAE30;&#xB2A5;</h2>
+<p>&#xAE30;&#xBCF8; system &#xD328;&#xD0A4;&#xC9C0; &#xC678;&#xC5D0; &#xAC1C;&#xBC1C;&#xC758; &#xD3B8;&#xC758;&#xC131;&#xC744; &#xC704;&#xD574; &#xCD94;&#xAC00;&#xC801;&#xC73C;&#xB85C; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xAE30;&#xB2A5;&#xB4E4;&#xC744; &#xC81C;&#xACF5;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<h3 id="71-json">7.1. Json</h3>
+<p>&#xC785;&#xCD9C;&#xB825; &#xC2DC;&#xC758; &#xC0AC;&#xC6A9;&#xC790; &#xD3B8;&#xC758;&#xC131;&#xC744; &#xC704;&#xD574; Json &#xD328;&#xD0A4;&#xC9C0;&#xB97C; &#xC81C;&#xACF5;&#xD569;&#xB2C8;&#xB2E4;. &#xC774; &#xD328;&#xD0A4;&#xC9C0;&#xB85C; Json &#xD615;&#xC2DD;&#xC758; &#xBB38;&#xC790;&#xC5F4;&#xACFC; Lua Table &#xAD6C;&#xC870;&#xCCB4; &#xAC04;&#xC758; &#xC790;&#xB3D9; &#xBCC0;&#xD658;&#xC774; &#xAC00;&#xB2A5;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#xD568;&#xC218;&#xBA85;</th>
+<th style="text-align:left">&#xC778;&#xC790;</th>
+<th style="text-align:left">&#xBC18;&#xD658;&#xAC12;</th>
+<th style="text-align:left">&#xAE30;&#xB2A5;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">encode</td>
+<td style="text-align:left">(any)</td>
+<td style="text-align:left">(string) JSON &#xD615;&#xC2DD; &#xBB38;&#xC790;&#xC5F4;</td>
+<td style="text-align:left">&#xC778;&#xC790;&#xB85C; &#xC8FC;&#xC5B4;&#xC9C4; &#xB8E8;&#xC544;&#xAC12;&#xC744; JSON &#xD615;&#xC2DD;&#xC758; &#xBB38;&#xC790;&#xC5F4;&#xB85C; &#xBCC0;&#xD658;&#xD55C;&#xB2E4;.</td>
+</tr>
+<tr>
+<td style="text-align:left">decode</td>
+<td style="text-align:left">(string) JSON &#xD615;&#xC2DD; &#xBB38;&#xC790;&#xC5F4;</td>
+<td style="text-align:left">(any)</td>
+<td style="text-align:left">JSON &#xD615;&#xC2DD;&#xC758; &#xBB38;&#xC790;&#xC5F4;&#xC744; &#xB300;&#xC751;&#xB418;&#xB294; Lua &#xAD6C;&#xC870;&#xB85C; &#xBCC0;&#xD658;&#xD55C;&#xB2E4;.</td>
+</tr>
+</tbody>
+</table>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xC2E4;&#xC81C;&#xB85C; &#xBB38;&#xC790;&#xC5F4;&#xC744; <code>decode</code> &#xD55C; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;. (Lua &#xD14C;&#xC774;&#xBE14;&#xB85C; &#xD45C;&#xD604;&#xB418;&#xB294; &#xC77C;&#xBC18; Array &#xB294; 1 &#xBD80;&#xD130; &#xC2DC;&#xC791;&#xB418;&#xB2C8; &#xC0AC;&#xC6A9;&#xC2DC;&#xC5D0; &#xC8FC;&#xC758;&#xAC00; &#xD544;&#xC694;&#xD569;&#xB2C8;&#xB2E4;.)</p>
+<pre><code class="lang-lua"><span class="hljs-keyword">local</span> json = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;json&quot;</span>)
+
+arrayVar = json.decode(<span class="hljs-string">&quot;[V1, V2, V3]&quot;</span>)
+system.<span class="hljs-built_in">print</span>(arrayVar[<span class="hljs-number">1</span>])  <span class="hljs-comment">-- 1&#xBC88;&#xC9F8; &#xBC30;&#xC5F4; &#xAC12; &#xCD9C;&#xB825;</span>
+system.<span class="hljs-built_in">print</span>(arrayVar[<span class="hljs-number">2</span>])  <span class="hljs-comment">-- 2&#xBC88;&#xC9F8; &#xBC30;&#xC5F4; &#xAC12; &#xCD9C;&#xB825;</span>
+system.<span class="hljs-built_in">print</span>(arrayVar[<span class="hljs-number">3</span>])  <span class="hljs-comment">-- 3&#xBC88;&#xC9F8; &#xBC30;&#xC5F4; &#xAC12; &#xCD9C;&#xB825;</span>
+</code></pre>
+<blockquote>
+<p>&#xC218;&#xD589;&#xACB0;&#xACFC;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-text">V1
+V2
+V3
+</code></pre>
+</blockquote>
+<p>&#xB2E4;&#xC74C;&#xC740; Lua &#xD14C;&#xC774;&#xBE14;&#xC744; &#xBB38;&#xC790;&#xC5F4;&#xB85C; <code>encode</code>&#xD55C; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-lua"><span class="hljs-keyword">local</span> json = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;json&quot;</span>)
+
+jsonVar = {V1, V2, V3; name=<span class="hljs-string">&quot;john&quot;</span>}
+jsonStr = json.encode(jsonVar)
+system.<span class="hljs-built_in">print</span>(jsonStr)
+jsonVar = {{V1, V2, V3}, name=<span class="hljs-string">&quot;john&quot;</span>}
+jsonStr = json.encode(jsonVar)
+system.<span class="hljs-built_in">print</span>(jsonStr)
+</code></pre>
+<blockquote>
+<p>&#xC218;&#xD589;&#xACB0;&#xACFC;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-text">{ &quot;1&quot;:V1, &quot;2&quot;:V2, &quot;3&quot;:V3, &quot;name&quot;:&quot;john&quot;}
+{ &quot;1&quot;:[V1, V2, V3], &quot;name&quot;:&quot;john&quot;}
+</code></pre>
+</blockquote>
+<p>&#xC704;&#xC640; &#xAC19;&#xC774; encode &#xC2DC;&#xC5D0;&#xB294; &#xD544;&#xB4DC; &#xBA85;&#xC774; &#xBA85;&#xC2DC; &#xB41C; &#xACBD;&#xC6B0; &#xAC01; &#xAC12;&#xC5D0; &#xD544;&#xB4DC; &#xBA85;&#xC744;, &#xD544;&#xB4DC; &#xBA85;&#xC774; &#xC5C6;&#xB294; &#xACBD;&#xC6B0;&#xB294; &#xC790;&#xB3D9;&#xC73C;&#xB85C; &#xD544;&#xB4DC; &#xBA85;&#xC744; &#xCD94;&#xAC00;&#xD558;&#xC5EC; &#xBB38;&#xC790;&#xC5F4;&#xB85C; &#xBCC0;&#xD658;&#xD569;&#xB2C8;&#xB2E4;. &#xB9CC;&#xC57D;&#xC5D0; &#xAC12;&#xC744; &#xBC30;&#xC5F4;&#xB85C; &#xC800;&#xC7A5;&#xD558;&#xACE0; &#xC2F6;&#xB2E4;&#xBA74;, &#xB450;&#xBC88;&#xC9F8; &#xACB0;&#xACFC;&#xC640; &#xAC19;&#xC774; &#xD544;&#xB4DC; &#xBA85;&#xC744; &#xBD99;&#xC774;&#xC9C0; &#xC54A;&#xACE0; &quot;{}&quot;&#xB85C; &#xBC30;&#xC5F4;&#xB85C; &#xC800;&#xC7A5;&#xD560; &#xAC12;&#xC744; &#xBB36;&#xC5B4;&#xC11C; &#xBCC0;&#xD658;&#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<h3 id="72-execution-permission">7.2. Execution Permission</h3>
+<p>&#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xC758; &#xC815;&#xC758;&#xB97C; &#xC704;&#xD574;&#xC11C;&#xB294; &#xBC30;&#xD3EC;&#xD560; &#xC8FC;&#xC18C;&#xC758; &#xAC1C;&#xC778;&#xD0A4;&#xAC00; &#xD544;&#xC694;&#xD558;&#xC9C0;&#xB9CC;, &#xC218;&#xD589;&#xC740; &#xAE30;&#xBCF8;&#xC801;&#xC73C;&#xB85C; &#xBAA8;&#xB4E0; &#xC8FC;&#xC18C;&#xC5D0;&#xC11C; &#xD574;&#xB2F9; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB97C; &#xB300;&#xC0C1;&#xC73C;&#xB85C; &#xAC00;&#xB2A5;&#xD569;&#xB2C8;&#xB2E4;. &#xCF54;&#xC778;&#xC2A4;&#xD0DD; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xC5D0;&#xC11C;&#xB294; &#xC774;&#xB97C; &#xC81C;&#xD55C;&#xD558;&#xC5EC; &#xAD8C;&#xD55C;&#xC774; &#xC788;&#xB294; &#xC0AC;&#xC6A9;&#xC790;&#xB9CC; &#xD568;&#xC218;&#xB97C; &#xC218;&#xD589;&#xD560; &#xC218; &#xC788;&#xB3C4;&#xB85D; &#xD558;&#xB294; &#xAE30;&#xB2A5;&#xC744; &#xC81C;&#xACF5;&#xD569;&#xB2C8;&#xB2E4;. &#xC774;&#xB97C; &#xC704;&#xD574;&#xC11C;&#xB294; <code>grant</code> &#xD568;&#xC218;&#xB85C; &#xC218;&#xD589; &#xAD8C;&#xD55C;&#xC744; &#xD2B9;&#xC815; &#xC8FC;&#xC18C;&#xC5D0; &#xBD80;&#xC5EC;&#xD558;&#xACE0;, &#xAC01; &#xD568;&#xC218; &#xB0B4;&#xC5D0;&#xC11C; &#xBA85;&#xC2DC;&#xC801;&#xC73C;&#xB85C; <code>system.hasPermission</code> &#xD568;&#xC218;&#xB85C; &#xAD8C;&#xD55C;&#xC774; &#xC788;&#xB294;&#xC9C0;&#xB97C; &#xD655;&#xC778;&#xD558;&#xC5EC; &#xAD8C;&#xD55C;&#xC774; &#xC788;&#xB294; &#xC0AC;&#xC6A9;&#xC790;&#xB9CC; &#xD574;&#xB2F9; &#xD568;&#xC218;&#xB97C; &#xC218;&#xD589;&#xD558;&#xB3C4;&#xB85D; &#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xC218;&#xD589; &#xAD8C;&#xD55C; &#xC124;&#xC815;&#xC744; &#xC704;&#xD574; &#xC81C;&#xACF5;&#xB418;&#xB294;<code>system</code> &#xD328;&#xD0A4;&#xC9C0; &#xD568;&#xC218; &#xC124;&#xBA85;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#xD568;&#xC218;&#xBA85;</th>
+<th style="text-align:left">&#xC778;&#xC790;</th>
+<th style="text-align:left">&#xBC18;&#xD658;&#xAC12;</th>
+<th style="text-align:left">&#xAE30;&#xB2A5;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">grant</td>
+<td style="text-align:left">(string)address, (string)tokenName</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">&#xC785;&#xB825;&#xD55C; &#xC8FC;&#xC18C;&#xC5D0; tokenName &#xB300;&#xD55C; &#xAD8C;&#xD55C;&#xC744; &#xBD80;&#xC5EC;</td>
+</tr>
+<tr>
+<td style="text-align:left">revoke</td>
+<td style="text-align:left">(string)address, (string)tokenName</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">&#xC785;&#xB825;&#xD55C; &#xC8FC;&#xC18C;&#xC5D0; tokenName &#xB300;&#xD55C; &#xAD8C;&#xD55C;&#xC744; &#xC81C;&#xAC70;</td>
+</tr>
+<tr>
+<td style="text-align:left">hasPermission</td>
+<td style="text-align:left">(string)tokenName</td>
+<td style="text-align:left">(bool)</td>
+<td style="text-align:left">&#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB97C; &#xD638;&#xCD9C;&#xD55C; &#xC8FC;&#xC18C;&#xC5D0; tokenName &#xB300;&#xD55C; &#xAD8C;&#xD55C;&#xC774; &#xC5EC;&#xBD80; &#xBC18;&#xD658;</td>
+</tr>
+</tbody>
+</table>
+<p>&#xC218;&#xD589; &#xAD8C;&#xD55C;&#xC744; &#xC124;&#xC815;&#xD558;&#xB824;&#xBA74; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xBC29;&#xBC95;&#xC744; &#xB530;&#xB985;&#xB2C8;&#xB2E4;.</p>
+<ol>
+<li>&#xC218;&#xD589; &#xAD8C;&#xD55C;&#xC744; &#xC124;&#xC815; &#xD558;&#xACE0;&#xC790; &#xD558;&#xB294; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xD568;&#xC218;&#xC5D0; <code>hasPermission</code> &#xB97C; &#xC774;&#xC6A9;&#xD55C; &#xAD8C;&#xD55C; &#xC5EC;&#xBD80; &#xCCB4;&#xD06C; &#xB85C;&#xC9C1;&#xC744; &#xCD94;&#xAC00;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li>&#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xBC30;&#xD3EC;&#xC790;&#xB294; &#xD638;&#xCD9C; &#xAD8C;&#xD55C;&#xC744; &#xD2B9;&#xC815; &#xC0AC;&#xC6A9;&#xC790;&#xC5D0;&#xAC8C; <code>grant</code>&#xD558;&#xB294; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB97C; &#xC218;&#xD589; &#xD569;&#xB2C8;&#xB2E4;.</li>
+</ol>
+<p>&#xB2E4;&#xC74C;&#xC740; <code>example()</code> &#xD568;&#xC218;&#xC5D0; &#xAD8C;&#xD55C; &#xCCB4;&#xD06C; &#xB85C;&#xC9C1;&#xC744; &#xCD94;&#xAC00;&#xD55C; &#xC608;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-lua"><span class="hljs-keyword">local</span> system = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;system&quot;</span>)
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">example</span><span class="hljs-params">()</span></span>
+  <span class="hljs-comment">-- example&#xC774;&#xB77C;&#xB294; &#xD1A0;&#xD070;&#xC744; &#xAC00;&#xC9C4; sender&#xB9CC; &#xC774; &#xBE14;&#xB85D;&#xC548;&#xC758; &#xCF54;&#xB4DC;&#xB97C; &#xC218;&#xD589; &#xAC00;&#xB2A5; </span>
+  <span class="hljs-keyword">if</span> system.hasPermission(<span class="hljs-string">&quot;example&quot;</span>) {
+  <span class="hljs-comment">-- &#xC2E4;&#xC81C; &#xC218;&#xD589; &#xB85C;&#xC9C1; &#xC791;&#xC131;</span>
+  }
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#xAD8C;&#xD55C;&#xC744; &#xBD80;&#xC5EC;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xB0B4;&#xC7A5; <code>grant</code> &#xD568;&#xC218;&#xB97C; &#xD638;&#xCD9C;&#xD558;&#xB294; Lua &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC744; &#xC218;&#xD589;&#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-lua">  <span class="hljs-comment">-- CallerAddress&#xC5D0; example &#xC774;&#xB77C;&#xB294; &#xD1A0;&#xD070;&#xC744; &#xD560;&#xB2F9; &#xD568;</span>
+  grant(<span class="hljs-string">&quot;CallerAddress&quot;</span>, <span class="hljs-string">&quot;example&quot;</span>)
+</code></pre>
+<p>&#xBC18;&#xB300;&#xB85C; &#xAE30; &#xBD80;&#xC5EC;&#xD55C; &#xAD8C;&#xD55C;&#xC744; &#xC0AD;&#xC81C;&#xD558;&#xB824;&#xBA74; <code>revoke</code> &#xD568;&#xC218;&#xB97C; &#xD638;&#xCD9C;&#xD558;&#xB294; Lua &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC744; &#xC218;&#xD589;&#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-lua">  <span class="hljs-comment">-- CallerAddress&#xC5D0; &#xAE30; &#xBD80;&#xC5EC;&#xB418;&#xC5B4; &#xC788;&#xB358; example &#xD1A0;&#xD070; &#xAD8C;&#xD55C;&#xC744; &#xC81C;&#xAC70;</span>
+  revoke(<span class="hljs-string">&quot;CallerAddress&quot;</span>, <span class="hljs-string">&quot;example&quot;</span>)
+</code></pre>
+<p>SDK&#xC5D0;&#xC11C;&#xB294; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xAD8C;&#xD55C; &#xBD80;&#xC5EC;, &#xC81C;&#xAC70; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC758; &#xC190;&#xC26C;&#xC6B4; &#xC0DD;&#xC131;&#xC744; &#xC704;&#xD574; &#xC720;&#xD2F8;&#xB9AC;&#xD2F0; &#xD568;&#xC218;&#xB97C; &#xC81C;&#xACF5;&#xD569;&#xB2C8;&#xB2E4;. &#xC544;&#xB798;&#xB294; SDK&#xB97C; &#xC774;&#xC6A9;&#xD55C; &#xAD8C;&#xD55C; &#xBD80;&#xC5EC;&#xC758; &#xC608;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-java">CoinStackClient client = <span class="hljs-keyword">new</span> CoinStackClient(<span class="hljs-string">&quot;CONNECTION_INFO&quot;</span>);
+String contractAddress = <span class="hljs-string">&quot;ADDRESS_FOR_SMARTCONTRACT&quot;</span>; <span class="hljs-comment">// &#xC218;&#xD589;&#xD560; &#xB300;&#xC0C1; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xC8FC;&#xC18C;</span>
+String privateKey = <span class="hljs-string">&quot;SMARTCONTRACT_PRIVATEKEY&quot;</span>; <span class="hljs-comment">//&#xB300;&#xC0C1; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xAC1C;&#xC778;&#xD0A4;</span>
+String granteeAddress = <span class="hljs-string">&quot;ADDRESS_TO_GIVE_PERMISSION&quot;</span>; <span class="hljs-comment">// &#xAD8C;&#xD55C;&#xC744; &#xBD80;&#xC5EC;&#xD560; &#xC8FC;&#xC18C;</span>
+
+LuaContractBuilder builder = <span class="hljs-keyword">new</span> LuaContractBuilder();
+ <span class="hljs-comment">// &#xC774;&#xC804;&#xC5D0; &#xC815;&#xC758;&#xD55C; Smart Contract Address &#xD560;&#xB2F9;</span>
+builder.setContractId(contractAddress);
+<span class="hljs-comment">// &#xBE4C;&#xB354;&#xC5D0; &#xAD8C;&#xD55C;&#xC744; &#xBD80;&#xC5EC;&#xD560; &#xC8FC;&#xC18C;, &#xAD8C;&#xD55C; &#xB610;&#xB294; &#xD568;&#xC218;&#xBA85;, &#xBD80;&#xC5EC; &#xC5EC;&#xBD80;&#xB97C; &#xC124;&#xC815;</span>
+<span class="hljs-comment">// &#xBD80;&#xC5EC; &#xC5EC;&#xBD80;&#xB294; true &#xBD80;&#xC5EC;, false&#xBA74; &#xAE30;&#xC874;&#xC758; &#xAD8C;&#xD55C; &#xC81C;&#xAC70;</span>
+builder.setPermission(granteeAddress, <span class="hljs-string">&quot;example&quot;</span>, <span class="hljs-keyword">true</span>);
+
+String rawTx = builder.buildTransaction(client, privateKey);
+client.sendTransaction(rawTx);
+</code></pre>
+<h3 id="73-event-notification">7.3. Event Notification</h3>
+<p>&#xCF54;&#xC778;&#xC2A4;&#xD0DD;&#xC740; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xC218;&#xD589;&#xC911;&#xC5D0; &#xC678;&#xBD80;&#xB85C; &#xB370;&#xC774;&#xD130;&#xB97C; &#xC804;&#xC1A1;&#xD558;&#xB294; &#xAE30;&#xB2A5;(Event Notification)&#xC744; &#xC81C;&#xACF5;&#xD569;&#xB2C8;&#xB2E4;. &#xB370;&#xC774;&#xD130;&#xB294; &#xC804;&#xC1A1; &#xC0C1;&#xD669;&#xC5D0; &#xB300;&#xD55C; &#xC2DD;&#xBCC4;&#xC790;(&#xC774;&#xBCA4;&#xD2B8; &#xC2DD;&#xBCC4;&#xC790;)&#xC640; &#xBD80;&#xAC00;&#xC801;&#xC778; &#xC815;&#xBCF4;&#xB85C; &#xAD6C;&#xC131;&#xB429;&#xB2C8;&#xB2E4;. &#xB370;&#xC774;&#xD130;&#xB294; JSON &#xC774;&#xBA70; &#xD615;&#xC2DD;&#xC740; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-javascript">{<span class="hljs-string">&quot;UDEvent&quot;</span>:eventname,<span class="hljs-string">&quot;data&quot;</span>:&#xC0AC;&#xC6A9;&#xC790;&#xC9C0;&#xC815;&#xAC12;}
+</code></pre>
+<ul>
+<li><em>eventname</em> &#xC740; &#xC804;&#xC1A1; &#xC0C1;&#xD669;&#xC5D0; &#xB300;&#xD55C; &#xC2DD;&#xBCC4;&#xC790; &#xC785;&#xB2C8;&#xB2E4;. <code>pushEvent</code> &#xC758; <code>eventname</code> &#xC778;&#xC790;&#xAC12;&#xACFC; &#xB3D9;&#xC77C;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li><em>&#xC0AC;&#xC6A9;&#xC790;&#xC9C0;&#xC815;&#xAC12;</em> &#xC740; &#xC784;&#xC758;&#xC758; Lua &#xAC12;&#xC785;&#xB2C8;&#xB2E4;. <code>pushEvent</code> &#xC758; <code>data</code> &#xC778;&#xC790;&#xAC12;&#xC758; JSON &#xD45C;&#xD604;&#xC785;&#xB2C8;&#xB2E4;.</li>
+</ul>
+<p>&#xB370;&#xC774;&#xD130;&#xB97C; &#xC804;&#xC1A1; &#xBC1B;&#xACE0;&#xC790;&#xD558;&#xB294; &#xC678;&#xBD80; &#xAC1D;&#xCCB4;&#xB97C; endpoint &#xB85C; &#xBD80;&#xB985;&#xB2C8;&#xB2E4;. &#xCF54;&#xC778;&#xC2A4;&#xD0DD;&#xC740; endpoint &#xB85C; HTTP PUSH request &#xB97C; &#xBCF4;&#xB0C5;&#xB2C8;&#xB2E4;. &#xB530;&#xB77C;&#xC11C;, Endpoint &#xB294; HTTP PUSH Method &#xB97C; &#xAD6C;&#xD604;&#xD558;&#xACE0; JSON &#xB370;&#xC774;&#xD130;&#xB97C; &#xCC98;&#xB9AC;&#xD558;&#xB294; HTTP &#xC11C;&#xBC84;&#xC758; URL &#xC774;&#xC5B4;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; Event Notification &#xC744; &#xC704;&#xD574; &#xC81C;&#xACF5;&#xB418;&#xB294; <code>system</code> &#xD328;&#xD0A4;&#xC9C0; &#xD568;&#xC218; &#xC124;&#xBA85;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#xD568;&#xC218;&#xBA85;</th>
+<th style="text-align:left">&#xC778;&#xC790;</th>
+<th style="text-align:left">&#xBC18;&#xD658;&#xAC12;</th>
+<th style="text-align:left">&#xAE30;&#xB2A5;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">registEvent</td>
+<td style="text-align:left">(string) eventname   (string) endpoint  (string) nodeid</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">eventname &#xC73C;&#xB85C; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xB4F1;&#xB85D;&#xD569;&#xB2C8;&#xB2E4;. endpoint &#xB294; HTTP PUSH Method &#xB97C; &#xCC98;&#xB9AC;&#xD558;&#xB294; &#xC11C;&#xBC84;&#xC758; url &#xC785;&#xB2C8;&#xB2E4;. &#xB3D9;&#xC77C; eventname &#xC73C;&#xB85C; &#xC5EC;&#xB7EC; &#xAC1C;&#xC758; endpoint &#xB97C; &#xB4F1;&#xB85D;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB4F1;&#xB85D;&#xC2DC; &#xB3D9;&#xC77C;&#xD55C; endpoint &#xAC00; &#xC874;&#xC7AC;&#xD558;&#xBA74; &#xC5C5;&#xB370;&#xC774;&#xD2B8; &#xB429;&#xB2C8;&#xB2E4;. nodeid &#xB97C; &#xC0AC;&#xC6A9;&#xD574;&#xC11C; &#xD2B9;&#xC815; &#xB178;&#xB4DC;&#xC5D0;&#xB9CC; &#xB4F1;&#xB85D;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xBA85;&#xC2DC;&#xD558;&#xC9C0; &#xC54A;&#xC73C;&#xBA74; &#xBAA8;&#xB4E0; &#xB178;&#xB4DC;&#xC5D0; &#xB4F1;&#xB85D;&#xB429;&#xB2C8;&#xB2E4;.</td>
+</tr>
+<tr>
+<td style="text-align:left">unregistEvent</td>
+<td style="text-align:left">(string) eventname   (string)  endpoint</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">eventname, endpoint &#xB85C; &#xB4F1;&#xB85D;&#xB41C; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xC81C;&#xAC70;&#xD569;&#xB2C8;&#xB2E4;.</td>
+</tr>
+<tr>
+<td style="text-align:left">pushEvent</td>
+<td style="text-align:left">(string) eventname   (any) data</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">eventname &#xC5D0; &#xD574;&#xB2F9;&#xD558;&#xB294; endpoint&#xB85C; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xBC1C;&#xC0DD;&#xC2DC;&#xD0B5;&#xB2C8;&#xB2E4;. data&#xB294; &#xC784;&#xC758;&#xC758; &#xC0AC;&#xC6A9;&#xC790; &#xC9C0;&#xC815; &#xAC12;&#xC785;&#xB2C8;&#xB2E4;.</td>
+</tr>
+<tr>
+<td style="text-align:left">delEvent</td>
+<td style="text-align:left">(string) eventname</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">eventname &#xC73C;&#xB85C; &#xB4F1;&#xB85D;&#xB41C; &#xC804;&#xCCB4; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xC81C;&#xAC70;&#xD569;&#xB2C8;&#xB2E4;.</td>
+</tr>
+</tbody>
+</table>
+<p>&#xC544;&#xB798;&#xB294; Event Notification API &#xB97C; &#xC774;&#xC6A9;&#xD558;&#xC5EC; &#xC785;&#xCD9C;&#xAE08; &#xC0C1;&#xD669;&#xC744; &#xD1B5;&#xBCF4;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xBAA8;&#xB4E0; &#xB178;&#xB4DC;&#xC5D0;&#xC11C; &#xC774;&#xBCA4;&#xD2B8; &#xD1B5;&#xBCF4;&#xB97C; &#xBCF4;&#xB0B4;&#xBA74; &#xD63C;&#xB780;&#xC2A4;&#xB7FD;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xBC1C;&#xC0DD; &#xB178;&#xB4DC;&#xB97C; &#xC9C0;&#xC815;&#xD569;&#xB2C8;&#xB2E4;. &#xC124;&#xC815; &#xD30C;&#xC77C;&#xC758; nodeid &#xB97C; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC774; &#xC218;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-text">nodeid=alpha
+</code></pre>
+<p>&#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8; &#xAD6C;&#xD604;&#xC744; &#xB4F1;&#xB85D;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p><em>event_def.lua</em></p>
+<pre><code class="lang-lua"><span class="hljs-keyword">local</span> system = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;system&quot;</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addEventListener</span><span class="hljs-params">(eventName, endPoint)</span></span>
+    system.registEvent(eventName, endPoint, <span class="hljs-string">&quot;alpha&quot;</span>)
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">deposit</span><span class="hljs-params">(name, amount)</span></span>
+    changeBalance(name, amount)
+    system.pushEvent(<span class="hljs-string">&quot;balance&quot;</span>, {op = <span class="hljs-string">&quot;deposit&quot;</span>, name = name, amount = amount})
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">withdraw</span><span class="hljs-params">(name, amount)</span></span>
+    changeBalance(name, -amount)
+    system.pushEvent(<span class="hljs-string">&quot;balance&quot;</span>, {op = <span class="hljs-string">&quot;withdraw&quot;</span>, name = name, amount = amount})
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">balance</span><span class="hljs-params">(name)</span></span>
+    accounts = system.getItem(<span class="hljs-string">&quot;accounts&quot;</span>)
+    <span class="hljs-keyword">if</span> accounts == <span class="hljs-keyword">nil</span> <span class="hljs-keyword">then</span>
+        accounts = {}
+        accounts[name] = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">return</span> accounts[name]
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">changeBalance</span><span class="hljs-params">(name, amount)</span></span>
+    accounts = system.getItem(<span class="hljs-string">&quot;accounts&quot;</span>)
+    <span class="hljs-keyword">if</span> accounts == <span class="hljs-keyword">nil</span> <span class="hljs-keyword">then</span>
+        accounts = {}
+        accounts[name] = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">end</span>
+    balance = accounts[name] + amount
+    accounts[name] = balance
+    system.setItem(<span class="hljs-string">&quot;accounts&quot;</span>, accounts)
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#xC774;&#xBCA4;&#xD2B8; &#xB4F1;&#xB85D;&#xC744; &#xC704;&#xD55C; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB97C; &#xD638;&#xCD9C;&#xD569;&#xB2C8;&#xB2E4;. (&#xC608;&#xC81C;&#xC758; HTTP Server &#xB294; JSON &#xB370;&#xC774;&#xD130;&#xB97C; &#xB2E8;&#xC21C; &#xCD9C;&#xB825;&#xD558;&#xB3C4;&#xB85D; &#xAD6C;&#xD604;&#xD588;&#xC73C;&#xBA70; &#xC0C1;&#xC138; &#xB0B4;&#xC6A9;&#xC740; &#xC0DD;&#xB7B5;&#xD569;&#xB2C8;&#xB2E4;.)</p>
+<pre><code class="lang-lua">call(<span class="hljs-string">&quot;addEventListener&quot;</span>, <span class="hljs-string">&quot;balance&quot;</span>, <span class="hljs-string">&quot;http://postserver:3001&quot;</span>)
+</code></pre>
+<p><code>addEventListener</code> &#xD568;&#xC218;&#xB294; <code>system.registEvent</code> &#xD568;&#xC218;&#xB97C; &#xC774;&#xC6A9;&#xD574;&#xC11C; &#xC124;&#xC815; &#xD30C;&#xC77C;&#xC5D0; &#xBA85;&#xC2DC;&#xD55C; &quot;alpha&quot; &#xB178;&#xB4DC;&#xC5D0; &quot;balance&quot; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xB4F1;&#xB85D;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC785;&#xCD9C;&#xAE08; &#xC2A4;&#xB9C8;&#xD2B8; &#xCEE8;&#xD2B8;&#xB799;&#xD2B8;&#xB97C; &#xC218;&#xD589;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-lua">call(<span class="hljs-string">&quot;deposit&quot;</span>, <span class="hljs-string">&quot;ktlee&quot;</span>, <span class="hljs-number">100</span>)
+call(<span class="hljs-string">&quot;deposit&quot;</span>, <span class="hljs-string">&quot;ktlee&quot;</span>, <span class="hljs-number">200</span>)
+call(<span class="hljs-string">&quot;withdraw&quot;</span>, <span class="hljs-string">&quot;ktlee&quot;</span>, <span class="hljs-number">50</span>)
+</code></pre>
+<p><code>deposit/withdraw</code> &#xD568;&#xC218;&#xB294; &#xC785;&#xCD9C;&#xAE08; &#xCC98;&#xB9AC; &#xD6C4;&#xC5D0; <code>pushEvent</code> &#xD568;&#xC218;&#xB97C; &#xD1B5;&#xD574; &#xC785;&#xCD9C;&#xAE08; &#xB0B4;&#xC5ED;&#xC744; &#xD1B5;&#xBCF4;&#xD558;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p><a href="http://postserver:3001" target="_blank">http://postserver:3001</a> &#xB294; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC774; &#xCD9C;&#xB825;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-javascript">{<span class="hljs-string">&quot;UDEvent&quot;</span>:<span class="hljs-string">&quot;balance&quot;</span>,<span class="hljs-string">&quot;data&quot;</span>:{<span class="hljs-string">&quot;amount&quot;</span>:<span class="hljs-number">100</span>,<span class="hljs-string">&quot;name&quot;</span>:<span class="hljs-string">&quot;ktlee&quot;</span>,<span class="hljs-string">&quot;op&quot;</span>:<span class="hljs-string">&quot;deposit&quot;</span>}}
+{<span class="hljs-string">&quot;UDEvent&quot;</span>:<span class="hljs-string">&quot;balance&quot;</span>,<span class="hljs-string">&quot;data&quot;</span>:{<span class="hljs-string">&quot;amount&quot;</span>:<span class="hljs-number">200</span>,<span class="hljs-string">&quot;name&quot;</span>:<span class="hljs-string">&quot;ktlee&quot;</span>,<span class="hljs-string">&quot;op&quot;</span>:<span class="hljs-string">&quot;deposit&quot;</span>}}
+{<span class="hljs-string">&quot;UDEvent&quot;</span>:<span class="hljs-string">&quot;balance&quot;</span>,<span class="hljs-string">&quot;data&quot;</span>:{<span class="hljs-string">&quot;amount&quot;</span>:<span class="hljs-number">50</span>,<span class="hljs-string">&quot;name&quot;</span>:<span class="hljs-string">&quot;ktlee&quot;</span>,<span class="hljs-string">&quot;op&quot;</span>:<span class="hljs-string">&quot;withdraw&quot;</span>}}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="8.-coinstack-open-assets.html" class="navigation navigation-prev " aria-label="Previous page: 8. Coinstack Open Assets">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="10.-coinstack-permission.html" class="navigation navigation-next " aria-label="Next page: 10. Coinstack Permission">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"9. Coinstack Smart Contract","level":"1.9","depth":1,"next":{"title":"10. Coinstack Permission","level":"1.10","depth":1,"path":"10.-coinstack-permission.md","ref":"10.-coinstack-permission.md","articles":[]},"previous":{"title":"8. Coinstack Open Assets","level":"1.8","depth":1,"path":"8.-coinstack-open-assets.md","ref":"8.-coinstack-open-assets.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hints","codeblock-filename"],"pluginsConfig":{"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"codeblock-filename":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":11,"fontFamily":"NanumGothic","paperSize":"a4","chapterMark":"both","pageBreaksBefore":"/","margin":{"right":42,"left":42,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"9.-coinstack-smart-contract.md","mtime":"2019-05-09T07:20:40.590Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-09T07:21:54.746Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,449 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4. Authentication · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-codeblock-filename/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="5.-coinstack-basic.html" />
+    
+    
+    <link rel="prev" href="3.-getting-started.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    1. Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="2.-quick-start-guide.html">
+            
+                <a href="2.-quick-start-guide.html">
+            
+                    
+                    2. Quick Start Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="3.-getting-started.html">
+            
+                <a href="3.-getting-started.html">
+            
+                    
+                    3. Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="4.-authentication.html">
+            
+                <a href="4.-authentication.html">
+            
+                    
+                    4. Authentication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="5.-coinstack-basic.html">
+            
+                <a href="5.-coinstack-basic.html">
+            
+                    
+                    5. Coinstack Basic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="6.-coinstack-stamping.html">
+            
+                <a href="6.-coinstack-stamping.html">
+            
+                    
+                    6. Coinstack Stamping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="7.-coinstack-multisig.html">
+            
+                <a href="7.-coinstack-multisig.html">
+            
+                    
+                    7. Coinstack Multisig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="8.-coinstack-open-assets.html">
+            
+                <a href="8.-coinstack-open-assets.html">
+            
+                    
+                    8. Coinstack Open Assets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="9.-coinstack-smart-contract.html">
+            
+                <a href="9.-coinstack-smart-contract.html">
+            
+                    
+                    9. Coinstack Smart Contract
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="10.-coinstack-permission.html">
+            
+                <a href="10.-coinstack-permission.html">
+            
+                    
+                    10. Coinstack Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="11.-additinal-features.html">
+            
+                <a href="11.-additinal-features.html">
+            
+                    
+                    11. Additinal Features
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="api-reference.html">
+            
+                <a href="api-reference.html">
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >4. Authentication</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="4-authentication">4. Authentication</h1>
+<h2 id="1-&#xAC1C;&#xC694;">1. &#xAC1C;&#xC694;</h2>
+<p>&#xCF54;&#xC778;&#xC2A4;&#xD0DD; API&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; &#xCF54;&#xC778;&#xC2A4;&#xD0DD; &#xC11C;&#xBC84;&#xC5D0; &#xC790;&#xACA9; &#xC99D;&#xBA85;(credential)&#xC744; &#xC81C;&#xACF5;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xC790;&#xACA9; &#xC99D;&#xBA85;&#xC740; &#xC0AC;&#xC6A9;&#xC790;&#xC758; &#xC694;&#xCCAD;&#xC774; &#xBCC0;&#xC870;&#xB418;&#xC9C0; &#xC54A;&#xC558;&#xC74C;&#xC744; &#xBCF4;&#xC7A5;&#xD558;&#xB294; &#xC5ED;&#xD560;&#xACFC;, &#xAC01; &#xC0AC;&#xC6A9;&#xC790;&#xC758; &#xC694;&#xCCAD;&#xC744; &#xAD6C;&#xBCC4;&#xD558;&#xB294; &#xC5ED;&#xD560;&#xC744; &#xC218;&#xD589;&#xD569;&#xB2C8;&#xB2E4;. &#xC790;&#xACA9; &#xC99D;&#xBA85; &#xC808;&#xCC28;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<ol>
+<li><a href="https://dashboard.blocko.io" target="_blank">&#xB300;&#xC2DC;&#xBCF4;&#xB4DC;</a>&#xC5D0;&#xC11C; API &#xD0A4; &#xBC1C;&#xAE09; &#xBC1B;&#xAE30;</li>
+<li>&#xC9C1;&#xC811; REST &#xD638;&#xCD9C;&#xC744; &#xC6D0;&#xD558;&#xB294; &#xACBD;&#xC6B0; &#xD1A0;&#xD070; &#xBC1C;&#xAE09;</li>
+<li>&#xC790;&#xC2E0;&#xC758; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC774;&#xB098; &#xD658;&#xACBD; &#xBCC0;&#xC218;&#xC5D0; &#xC124;&#xC815;&#xC744; &#xC6D0;&#xD560; &#xACBD;&#xC6B0; API&#xD0A4; &#xBC1C;&#xAE09;</li>
+<li>&#xBC1C;&#xAE09; &#xBC1B;&#xC740; &#xC790;&#xACA9;&#xC99D;&#xBA85;&#xC744; &#xC544;&#xB798;&#xC758; &#xC124;&#xBA85;&#xC5D0; &#xB530;&#xB77C; &#xC124;&#xC815;&#xD558;&#xC5EC; &#xCF54;&#xC778;&#xC2A4;&#xD0DD; API &#xD638;&#xCD9C;</li>
+</ol>
+<h2 id="2-&#xC790;&#xACA9;-&#xC99D;&#xBA85;-&#xBC29;&#xC2DD;">2. &#xC790;&#xACA9; &#xC99D;&#xBA85; &#xBC29;&#xC2DD;</h2>
+<p>&#xC790;&#xACA9; &#xC99D;&#xBA85;&#xC740; &#xC544;&#xB798; &#xB450; &#xAC00;&#xC9C0; &#xBC29;&#xC2DD;&#xC73C;&#xB85C; &#xC11C;&#xBC84;&#xC5D0; &#xC804;&#xB2EC;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<h3 id="21-&#xD1A0;&#xD070;">2.1. &#xD1A0;&#xD070;</h3>
+<p>REST API&#xB97C; &#xC9C1;&#xC811; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xACBD;&#xC6B0;&#xC5D0;&#xB294; &#xD1A0;&#xD070;&#xC744; HTTP &#xC694;&#xCCAD;&#xC758; &#xD5E4;&#xB354;&#xC5D0; &#xD3EC;&#xD568;&#xD558;&#xC5EC; &#xBCF4;&#xB0B4;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xC774; &#xACBD;&#xC6B0; &#xD1A0;&#xD070;&#xC774; &#xD3C9;&#xBB38;&#xC73C;&#xB85C; &#xC804;&#xB2EC;&#xB418;&#xAE30; &#xB54C;&#xBB38;&#xC5D0;, TLS &#xAC19;&#xC740; &#xC548;&#xC804;&#xD55C; &#xD504;&#xB85C;&#xD1A0;&#xCF5C;&#xC744; &#xAD8C;&#xC7A5;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<h3 id="22-&#xC11C;&#xBA85;">2.2. &#xC11C;&#xBA85;</h3>
+<p>SDK&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; API&#xB97C; &#xD638;&#xCD9C;&#xD558;&#xB294; &#xACBD;&#xC6B0; API &#xD0A4;&#xC640; &#xBE44;&#xBC00;&#xD0A4;&#xB85C; request&#xC5D0; &#xB300;&#xD55C; &#xC804;&#xC790; &#xC11C;&#xBA85;&#xC744; HMAC-SHA256 &#xBC29;&#xC2DD;&#xC73C;&#xB85C; &#xC0DD;&#xC131;&#xD558;&#xC5EC; &#xC804;&#xB2EC;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<h2 id="3-api-&#xD0A4;-&#xBC1C;&#xAE09;-&#xBC0F;-&#xC124;&#xC815;">3. API &#xD0A4; &#xBC1C;&#xAE09; &#xBC0F; &#xC124;&#xC815;</h2>
+<h3 id="31-api-&#xD0A4;-&#xBC1C;&#xAE09;">3.1. API &#xD0A4; &#xBC1C;&#xAE09;</h3>
+<p>&#xC704;&#xC5D0;&#xC11C; &#xC124;&#xBA85;&#xD55C; &#xBC14;&#xC640; &#xAC19;&#xC774;, &#xCF54;&#xC778;&#xC2A4;&#xD0DD; API&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; &#xBA3C;&#xC800; &#xC790;&#xACA9; &#xC99D;&#xBA85;&#xC774; &#xD544;&#xC694;&#xD569;&#xB2C8;&#xB2E4;. <a href="https://dashboard.blocko.io" target="_blank">&#xB300;&#xC2DC;&#xBCF4;&#xB4DC;</a>&#xC5D0;&#xC11C; API &#xD0A4; &#xB610;&#xB294; API &#xD1A0;&#xD070;&#xC744; &#xBC1C;&#xAE09;&#xBC1B;&#xC744; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. Java&#xC640; Node, Meteor&#xC5D0;&#xC11C;&#xB294; Access Key&#xC640; Secret Key&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xBA70;, curl &#xB4F1;&#xC744; &#xD1B5;&#xD574; &#xC9C1;&#xC811; REST API&#xB97C; &#xD638;&#xCD9C;&#xD558;&#xB294; &#xACBD;&#xC6B0;&#xC5D0;&#xB294; Access Token&#xC744; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<h3 id="32-api-&#xD0A4;-&#xC124;&#xC815;">3.2. API &#xD0A4; &#xC124;&#xC815;</h3>
+<h4 id="321-&#xD658;&#xACBD;-&#xBCC0;&#xC218;-&#xC0AC;&#xC6A9;">3.2.1. &#xD658;&#xACBD; &#xBCC0;&#xC218; &#xC0AC;&#xC6A9;</h4>
+<p>API &#xD0A4; &#xB610;&#xB294; API &#xD1A0;&#xD070;&#xC744; &#xD658;&#xACBD; &#xBCC0;&#xC218;&#xC5D0; &#xC124;&#xC815;&#xD558;&#xBA74; &#xCF54;&#xB4DC; &#xB0B4;&#xC5D0; &#xC774; &#xAC12;&#xB4E4;&#xC744; &#xC9C1;&#xC811; &#xC785;&#xB825;&#xD558;&#xB294; &#xC77C;&#xC744; &#xD53C;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xBC1C;&#xAE09;&#xBC1B;&#xC740; Access Key&#xB97C; COINSTACK_ACCESS_KEY_ID&#xB77C;&#xB294; &#xD658;&#xACBD; &#xBCC0;&#xC218;&#xC5D0;, Secret Key&#xB97C; COINSTACK_SECRET_ACCESS_KEY&#xC5D0; &#xAC01;&#xAC01; &#xD560;&#xB2F9;&#xD569;&#xB2C8;&#xB2E4;. &#xD658;&#xACBD; &#xBCC0;&#xC218;&#xB97C; &#xC124;&#xC815;&#xD558;&#xB294; &#xC790;&#xC138;&#xD55C; &#xBC29;&#xBC95;&#xC740; <a href="https://www.java.com/ko/download/help/path.xml" target="_blank">&#xD658;&#xACBD; &#xBCC0;&#xC218; &#xC124;&#xC815; &#xD398;&#xC774;&#xC9C0;</a>&#xB97C; &#xCC38;&#xC870; &#xBC14;&#xB78D;&#xB2C8;&#xB2E4;.</p>
+<p>&#xD658;&#xACBD; &#xBCC0;&#xC218;&#xB97C; &#xC124;&#xC815;&#xD558;&#xBA74;, &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xAE30;&#xBCF8; &#xC0DD;&#xC131;&#xC790;&#xB97C; &#xC774;&#xC6A9;&#xD574; CoinStackClient &#xAC1D;&#xCCB4;&#xB97C; &#xC0DD;&#xC131;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><strong>Java</strong></p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> io.blocko.coinstack.*
+
+CoinStackClient client = <span class="hljs-keyword">new</span> CoinStackClient();
+</code></pre>
+<p><strong>Node.js</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> CoinStack = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;coinstack-sdk-js&apos;</span>)
+<span class="hljs-keyword">var</span> client = <span class="hljs-keyword">new</span> CoinStack();
+</code></pre>
+<p><strong>Meteor</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">export</span> COINSTACK_ACCESS_KEY=<span class="hljs-string">&quot;YOUR_COINSTACK_ACCESS_KEY&quot;</span>;
+<span class="hljs-keyword">export</span> COINSTACK_SECRET_KEY=<span class="hljs-string">&quot;YOUR_COINSTACK_SECRET_KEY&quot;</span>;
+<span class="hljs-keyword">var</span> client = <span class="hljs-keyword">new</span> CoinStack();
+</code></pre>
+<h4 id="322-&#xCF54;&#xB4DC;-&#xB0B4;&#xC5D0;-&#xC9C1;&#xC811;-&#xC785;&#xB825;">3.2.2. &#xCF54;&#xB4DC; &#xB0B4;&#xC5D0; &#xC9C1;&#xC811; &#xC785;&#xB825;</h4>
+<p><strong>REST API</strong></p>
+<p>curl&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; REST API&#xB97C; &#xD1B5;&#xD574; &#xD0A4;&#xB97C; &#xC9C1;&#xC811; &#xC785;&#xB825;, &#xD638;&#xCD9C;&#xD558;&#xB294; &#xBC29;&#xBC95;&#xC740; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-bash">curl https://mainnet.cloudwallet.io/ \
+    -H <span class="hljs-string">&quot;apiKey: YOUR_API_TOKEN_KEY&quot;</span>
+</code></pre>
+<p><strong>Java</strong></p>
+<p>&#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xAC1D;&#xCCB4; &#xC0DD;&#xC131;&#xC790;&#xC5D0; &#xC9C1;&#xC811; &#xD0A4;&#xB97C; &#xC785;&#xB825;&#xD560; &#xC218;&#xB3C4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-java"><span class="hljs-comment">//import io.blocko.coinstack.*</span>
+<span class="hljs-comment">//import io.blocko.coinstack.model.*</span>
+
+CoinStackClient client = <span class="hljs-keyword">new</span> CoinStackClient(<span class="hljs-keyword">new</span> CredentialsProvider() {
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getAccessKey</span><span class="hljs-params">()</span> </span>{
+                <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;&#xBC1C;&#xAE09;&#xBC1B;&#xC740; access key&quot;</span>;
+            }
+
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getSecretKey</span><span class="hljs-params">()</span> </span>{
+                <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;&#xBC1C;&#xAE09;&#xBC1B;&#xC740; secret key&quot;</span>;
+            }
+        }, Endpoint.MAINNET);
+</code></pre>
+<p><strong>Node.js</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> accessKey = <span class="hljs-string">&quot;YOUR_COINSTACK_ACCESS_KEY&quot;</span>;
+<span class="hljs-keyword">var</span> secretKey = <span class="hljs-string">&quot;YOUR_COINSTACK_SECRET_KEY&quot;</span>;
+<span class="hljs-keyword">var</span> client = <span class="hljs-keyword">new</span> CoinStack(accessKey, secretKey);
+</code></pre>
+<p><strong>Meteor</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> accessKey = <span class="hljs-string">&quot;YOUR_COINSTACK_ACCESS_KEY&quot;</span>;
+<span class="hljs-keyword">var</span> secretKey = <span class="hljs-string">&quot;YOUR_COINSTACK_SECRET_KEY&quot;</span>;
+<span class="hljs-keyword">var</span> client = <span class="hljs-keyword">new</span> CoinStack(accessKey, secretKey);
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3.-getting-started.html" class="navigation navigation-prev " aria-label="Previous page: 3. Getting Started">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="5.-coinstack-basic.html" class="navigation navigation-next " aria-label="Next page: 5. Coinstack Basic">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4. Authentication","level":"1.4","depth":1,"next":{"title":"5. Coinstack Basic","level":"1.5","depth":1,"path":"5.-coinstack-basic.md","ref":"5.-coinstack-basic.md","articles":[]},"previous":{"title":"3. Getting Started","level":"1.3","depth":1,"path":"3.-getting-started.md","ref":"3.-getting-started.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hints","codeblock-filename"],"pluginsConfig":{"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"codeblock-filename":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":11,"fontFamily":"NanumGothic","paperSize":"a4","chapterMark":"both","pageBreaksBefore":"/","margin":{"right":42,"left":42,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"4.-authentication.md","mtime":"2019-05-09T07:20:40.590Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-09T07:21:54.746Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

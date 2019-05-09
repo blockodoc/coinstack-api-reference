@@ -1,0 +1,857 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>5. Coinstack Basic · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-codeblock-filename/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="6.-coinstack-stamping.html" />
+    
+    
+    <link rel="prev" href="4.-authentication.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    1. Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="2.-quick-start-guide.html">
+            
+                <a href="2.-quick-start-guide.html">
+            
+                    
+                    2. Quick Start Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="3.-getting-started.html">
+            
+                <a href="3.-getting-started.html">
+            
+                    
+                    3. Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="4.-authentication.html">
+            
+                <a href="4.-authentication.html">
+            
+                    
+                    4. Authentication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="5.-coinstack-basic.html">
+            
+                <a href="5.-coinstack-basic.html">
+            
+                    
+                    5. Coinstack Basic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="6.-coinstack-stamping.html">
+            
+                <a href="6.-coinstack-stamping.html">
+            
+                    
+                    6. Coinstack Stamping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="7.-coinstack-multisig.html">
+            
+                <a href="7.-coinstack-multisig.html">
+            
+                    
+                    7. Coinstack Multisig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="8.-coinstack-open-assets.html">
+            
+                <a href="8.-coinstack-open-assets.html">
+            
+                    
+                    8. Coinstack Open Assets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="9.-coinstack-smart-contract.html">
+            
+                <a href="9.-coinstack-smart-contract.html">
+            
+                    
+                    9. Coinstack Smart Contract
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="10.-coinstack-permission.html">
+            
+                <a href="10.-coinstack-permission.html">
+            
+                    
+                    10. Coinstack Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="11.-additinal-features.html">
+            
+                <a href="11.-additinal-features.html">
+            
+                    
+                    11. Additinal Features
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="api-reference.html">
+            
+                <a href="api-reference.html">
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >5. Coinstack Basic</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="5-coinstack-basic">5. Coinstack Basic</h1>
+<h2 id="1-blockchain&#xACFC;-block">1. Blockchain&#xACFC; Block</h2>
+<p>&#xBE14;&#xB85D;&#xCCB4;&#xC778;&#xC740; &#xBD84;&#xC0B0; &#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4; &#xAE30;&#xC220;&#xC758; &#xD558;&#xB098;&#xB85C;, &#xC6B4;&#xC601;&#xC790;&#xB098; &#xC0AC;&#xC6A9;&#xC790;&#xB77C; &#xD560;&#xC9C0;&#xB77C;&#xB3C4; &#xC800;&#xC7A5;&#xB41C; &#xB370;&#xC774;&#xD130;&#xB97C; &#xC784;&#xC758;&#xB85C; &#xC870;&#xC791;&#xD558;&#xC9C0; &#xBABB;&#xD558;&#xB3C4;&#xB85D; &#xACE0;&#xC548;&#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC77C;&#xBC18;&#xC801;&#xC778; &#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4;&#xC640;&#xB294; &#xB2EC;&#xB9AC; &#xBE14;&#xB85D;&#xCCB4;&#xC778;&#xC740; &#xC790;&#xBC1C;&#xC801;&#xC73C;&#xB85C; &#xCC38;&#xC5EC;&#xD558;&#xB294; &#xC218; &#xC2ED;, &#xC218; &#xBC31;, &#xB610;&#xB294; &#xC218; &#xCC9C; &#xAC1C;&#xC758; &#xB178;&#xB4DC;&#xB4E4;&#xC5D0; &#xC758;&#xD558;&#xC5EC; &#xC6B4;&#xC601;&#xB418;&#xBA70;, &#xC774;&#xB97C; &#xC81C;&#xC5B4;&#xD558;&#xAE30; &#xC704;&#xD55C; &#xC911;&#xC559; &#xAD00;&#xB9AC;&#xC790;&#xAC00; &#xC874;&#xC7AC;&#xD558;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;. &#xBE14;&#xB85D;&#xCCB4;&#xC778;&#xC740; &#xAC70;&#xB798;(transaction)&#xB4E4;&#xC774; &#xC800;&#xC7A5;&#xB418;&#xB294; &#xAC70;&#xB300;&#xD55C; &#xBD84;&#xC0B0; &#xC7A5;&#xBD80;&#xB85C;&#xC11C;, &#xAC70;&#xB798;&#xB294; &#xBE14;&#xB85D;(block)&#xC5D0; &#xB2F4;&#xACA8;&#xC11C; &#xB178;&#xB4DC;&#xAC04;&#xC5D0; &#xACF5;&#xC720;&#xB418;&#xACE0; &#xC774; &#xBE14;&#xB85D;&#xB4E4;&#xC774; &#xC0AC;&#xC2AC;&#xCC98;&#xB7FC; &#xC5F0;&#xACB0;&#xB41C; &#xAD6C;&#xC870;&#xAC00; &#xBC14;&#xB85C; &#xBE14;&#xB85D;&#xCCB4;&#xC778;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<h3 id="11-blockchain-&#xC0C1;&#xD0DC;-&#xC870;&#xD68C;">1.1. Blockchain &#xC0C1;&#xD0DC; &#xC870;&#xD68C;</h3>
+<p>&#xC55E;&#xC11C; Getting Started &#xC7A5;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xD55C; getBestBlockHash &#xBA54;&#xC18C;&#xB4DC;&#xB97C; &#xD1B5;&#xD574; &#xBE14;&#xB85D; &#xCCB4;&#xC778;&#xC758; &#xCD5C;&#xC2E0; &#xC0C1;&#xD0DC; &#xC815;&#xBCF4;&#xB97C; &#xC870;&#xD68C;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h4 id="java">JAVA</h4>
+<pre><code class="lang-java">String[] blockchainStatus = client.getBlockchainStatus();
+</code></pre>
+<h4 id="rest-api">REST API</h4>
+<pre><code class="lang-bash">YOUR_API_TOKEN_KEY=<span class="hljs-string">&quot;YOUR_API_TOKEN_KEY&quot;</span>
+
+curl https://mainnet.cloudwallet.io/blockchain \
+    -H <span class="hljs-string">&quot;apiKey: <span class="hljs-variable">$YOUR_API_TOKEN_KEY</span>&quot;</span>
+</code></pre>
+<blockquote>
+<p>&#xACB0;&#xACFC;&#xAC12;&#xC740; JSON&#xC73C;&#xB85C; &#xBC18;&#xD658;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-javascript">{
+  <span class="hljs-string">&quot;best_block_hash&quot;</span>: <span class="hljs-string">&quot;000000000000000007e5724849ad23a76aa9db734e9671b2b08c075ab017fb6c&quot;</span>,
+  <span class="hljs-string">&quot;best_height&quot;</span>: <span class="hljs-number">370353</span>
+}
+</code></pre>
+</blockquote>
+<h4 id="nodejs">Node.js</h4>
+<pre><code class="lang-javascript">client.getBlockchainStatus(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, status</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(status.best_block_hash, status.best_height);
+});
+</code></pre>
+<h4 id="meteor">Meteor</h4>
+<pre><code class="lang-javascript"><span class="hljs-comment">// server side</span>
+<span class="hljs-keyword">var</span> status = client.getBlockchainStatusSync()
+<span class="hljs-built_in">console</span>.log(status.best_block_hash, best_height)
+
+<span class="hljs-comment">// client side</span>
+client.getBlockchainStatus(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, status</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(status.best_block_hash, status.best_height);
+});
+</code></pre>
+<h3 id="12-block-&#xC870;&#xD68C;">1.2. Block &#xC870;&#xD68C;</h3>
+<p>&#xD2B9;&#xC815; &#xBE14;&#xB85D;&#xC758; &#xC815;&#xBCF4;&#xB97C; &#xC5BB;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; &#xBE14;&#xB85D;&#xC758; ID&#xC778; &#xBE14;&#xB85D; &#xD574;&#xC2DC; &#xAC12;&#xC774; &#xD544;&#xC694;&#xD569;&#xB2C8;&#xB2E4;. CoinStackClient &#xAC1D;&#xCCB4;&#xC758; getBlock &#xBA54;&#xC18C;&#xB4DC;&#xB97C; &#xD638;&#xCD9C;&#xD558;&#xBA74; &#xC785;&#xB825;&#xD55C; &#xBE14;&#xB85D; ID&#xC5D0; &#xD574;&#xB2F9;&#xD558;&#xB294; &#xBE14;&#xB85D;&#xC758; &#xC815;&#xBCF4;&#xAC00; &#xB2F4;&#xACA8; &#xC788;&#xB294; Block &#xAC1D;&#xCCB4;&#xB97C; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;. Block &#xAC1D;&#xCCB4;&#xC758; getBlockId, getParentId, getHeight &#xBA54;&#xC18C;&#xB4DC;&#xB97C; &#xD1B5;&#xD574; &#xAC01;&#xAC01; &#xBE14;&#xB85D; &#xD574;&#xC2DC;, &#xC774;&#xC804; &#xBE14;&#xB85D;&#xC758; &#xD574;&#xC2DC;, &#xBE14;&#xB85D; &#xBC88;&#xD638;&#xB97C; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h4 id="java">JAVA</h4>
+<pre><code class="lang-java">Block block = client.getBlock(<span class="hljs-string">&quot;BLOCK_ID&quot;</span>);
+System.out.println(<span class="hljs-string">&quot;blockId: &quot;</span> + block.getBlockId());
+System.out.println(<span class="hljs-string">&quot;parentId: &quot;</span> + block.getParentId());
+System.out.println(<span class="hljs-string">&quot;height: &quot;</span> + block.getHeight());
+System.out.println(<span class="hljs-string">&quot;time: &quot;</span> + block.getBlockConfirmationTime());
+</code></pre>
+<blockquote>
+<p>&#xC218;&#xD589; &#xACB0;&#xACFC;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-text">blockId: 0000000000000000017363cc0f6562f4e4552b94032c49ce37f5fb1309062fc6
+parentId: 00000000000000000428ec876f074bc7b34824bb11f8b00ec764622b3f54861d
+height: 433254
+time: Fri Oct 07 15:25:34 KST 2016
+</code></pre>
+</blockquote>
+<h4 id="rest-api">REST API</h4>
+<pre><code class="lang-bash">BLOCK_ID = <span class="hljs-string">&quot;BLOCK_ID&quot;</span>
+
+curl https://mainnet.cloudwallet.io/blocks/<span class="hljs-variable">$BLOCK_ID</span> \
+    -H <span class="hljs-string">&quot;apiKey: <span class="hljs-variable">$YOUR_API_TOKEN_KEY</span>&quot;</span>
+</code></pre>
+<blockquote>
+<p>&#xC218;&#xD589; &#xACB0;&#xACFC;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-text">{
+  &quot;block_hash&quot;: &quot;0000000000000000035bce787da99a937602b7b47367c1b4b026149eb699df72&quot;,
+  &quot;height&quot;: 433254,
+  &quot;confirmation_time&quot;: &quot;2016-10-07T06:25:34Z&quot;,
+  &quot;parent&quot;: &quot;00000000000000000428ec876f074bc7b34824bb11f8b00ec764622b3f54861d&quot;,
+  &quot;transaction_list&quot;: [
+    &quot;d855dea8da20fad1b6f0d1654f4fea0d933809f315216e4ea60b984ee947faed&quot;,
+    &quot;b613a39216eab6af00f29ef584bd4dd057497d4b8410a0dc97651d1a18b44878&quot;,
+    &quot;....&quot;
+  ]
+}
+</code></pre>
+</blockquote>
+<h4 id="nodejs">Node.js</h4>
+<pre><code class="lang-javascript">client.getBlock(<span class="hljs-string">&quot;BLOCK_ID&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, result</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;result&apos;</span>, result);
+});
+</code></pre>
+<h4 id="meteor">Meteor</h4>
+<pre><code class="lang-javascript"><span class="hljs-comment">// server</span>
+<span class="hljs-keyword">var</span> result = client.getBlock(<span class="hljs-string">&quot;BLOCK_ID&quot;</span>) {
+    <span class="hljs-built_in">console</span>.log(result.block_hash, result.height);
+});
+
+<span class="hljs-comment">// client</span>
+client.getBlock(<span class="hljs-string">&quot;BLOCK_ID&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, result</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;result&apos;</span>, result);
+});
+</code></pre>
+<h2 id="2-addresses">2. Addresses</h2>
+<p>&#xBE14;&#xB85D;&#xCCB4;&#xC778; &#xC11C;&#xBE44;&#xC2A4;&#xB098; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; &#xC8FC;&#xC18C;&#xB97C; &#xC0DD;&#xC131;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xC8FC;&#xC18C;&#xB294; &#xBE44;&#xD2B8;&#xCF54;&#xC778; &#xB124;&#xD2B8;&#xC6CC;&#xD06C; &#xC0C1;&#xC5D0;&#xC11C; &#xC790;&#xC2E0;&#xC758; &#xC2E0;&#xC6D0;&#xC744; &#xB098;&#xD0C0;&#xB0C5;&#xB2C8;&#xB2E4;. &#xC544;&#xB798; &#xC124;&#xBA85;&#xD560; &#xAC1C;&#xC778;&#xD0A4;&#xC640; &#xB2EC;&#xB9AC;, &#xBE44;&#xD2B8;&#xCF54;&#xC778; &#xC8FC;&#xC18C;&#xB294; &#xB2E4;&#xB978; &#xC0AC;&#xB78C;&#xB4E4;&#xACFC; &#xACF5;&#xC720;&#xD558;&#xC5EC; &#xC790;&#xC2E0;&#xC758; &#xC8FC;&#xC18C;&#xB85C; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC744; &#xBC1B;&#xAE30;&#xB3C4; &#xD558;&#xACE0; &#xC8FC;&#xC18C;&#xC5D0; &#xB2F4;&#xACA8;&#xC788;&#xB294; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC744; &#xB2E4;&#xB978; &#xC8FC;&#xC18C;&#xB85C; &#xBCF4;&#xB0B4;&#xAE30;&#xB3C4; &#xD569;&#xB2C8;&#xB2E4;. &#xBE14;&#xB85D;&#xCCB4;&#xC778; &#xC751;&#xC6A9; &#xC11C;&#xBE44;&#xC2A4;&#xC5D0;&#xC11C;&#xB294; &#xC880; &#xB354; &#xB2E4;&#xC591;&#xD558;&#xAC8C; &#xC8FC;&#xC18C;&#xB97C; &#xD65C;&#xC6A9;&#xD558;&#xAE30;&#xB3C4; &#xD558;&#xB294;&#xB370;, TSA(Time Stamp Authority)&#xB77C; &#xBD88;&#xB9AC;&#xB294; &#xBB38;&#xC11C; &#xC99D;&#xBA85;&#xC758; &#xACBD;&#xC6B0; &#xC774; &#xC8FC;&#xC18C;&#xB97C; &#xBB38;&#xC11C; hash&#xAC12;&#xC744; &#xB2F4;&#xB294; &#xC8FC;&#xC18C;&#xB85C; &#xD65C;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;. &#xAC1C;&#xC778; &#xC778;&#xC99D;&#xC73C;&#xB85C; &#xD65C;&#xC6A9;&#xD560; &#xACBD;&#xC6B0;&#xB294; &#xC774; &#xC8FC;&#xC18C;&#xB97C; &#xC778;&#xC99D;&#xC11C;&#xC758; &#xBCF4;&#xAD00; &#xC7A5;&#xC18C;&#xB85C; &#xD65C;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xBE44;&#xD2B8;&#xCF54;&#xC778; &#xC8FC;&#xC18C;&#xB294; ECDSA(Eliptic Curve Digital Signature Algorithm)&#xB97C; &#xAE30;&#xBC18;&#xC73C;&#xB85C; &#xD558;&#xACE0; &#xC788;&#xC73C;&#xBA70;, &#xADF8; &#xC8FC;&#xC18C; &#xC790;&#xCCB4;&#xAC00; &#xC554;&#xD638;&#xD654; &#xC131;&#xACA9;&#xC744; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xC73C;&#xBBC0;&#xB85C; &#xB2E4;&#xC591;&#xD55C; &#xBD84;&#xC57C;&#xC5D0; &#xC801;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h3 id="21-address-&#xC0DD;&#xC131;">2.1. Address &#xC0DD;&#xC131;</h3>
+<p>&#xBE44;&#xD2B8;&#xCF54;&#xC778; &#xC8FC;&#xC18C;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; ECDSA &#xC54C;&#xACE0;&#xB9AC;&#xC998; &#xAE30;&#xBC18;&#xC758;<br>&#xACF5;&#xAC1C;&#xD0A4;&#xC640; &#xAC1C;&#xC778;&#xD0A4;&#xB97C; &#xBA3C;&#xC800; &#xC0DD;&#xC131;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xC0DD;&#xC131; &#xC21C;&#xC11C;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<blockquote>
+<p>Random Number Generation -&gt; &#xAC1C;&#xC778;&#xD0A4; &#xC0DD;&#xC131; -&gt; &#xACF5;&#xAC1C;&#xD0A4; &#xC0DD;&#xC131; -&gt; &#xBE44;&#xD2B8;&#xCF54;&#xC778; &#xC8FC;&#xC18C; &#xC0DD;&#xC131;</p>
+</blockquote>
+<p>&#xCF54;&#xC778;&#xC2A4;&#xD0DD;&#xC5D0;&#xC11C;&#xB294; &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xC704; &#xACFC;&#xC815;&#xC744; &#xC774;&#xD574;&#xD558;&#xACE0; &#xC9C1;&#xC811; &#xC218;&#xD589;&#xD560; &#xD544;&#xC694; &#xC5C6;&#xC774; &#xC190;&#xC27D;&#xAC8C; &#xC8FC;&#xC18C;&#xB97C; &#xC0DD;&#xC131;&#xD560; &#xC218; &#xC788;&#xB294; API&#xB97C; &#xC81C;&#xACF5;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<h4 id="211-&#xAC1C;&#xC778;&#xD0A4;-&#xC0DD;&#xC131;">2.1.1. &#xAC1C;&#xC778;&#xD0A4; &#xC0DD;&#xC131;</h4>
+<p>1&#xC5D0;&#xC11C; 2^256 &#xC0AC;&#xC774;&#xC758; &#xC22B;&#xC790; &#xC911; &#xBB34;&#xC791;&#xC704;&#xB85C; &#xC815;&#xC218; &#xD558;&#xB098;&#xB97C; &#xACE0;&#xB974;&#xAC8C; &#xB418;&#xB294;&#xB370; &#xC774;&#xAC83;&#xC774; &#xBC14;&#xB85C; &#xAC1C;&#xC778;&#xD0A4;&#xAC00; &#xB429;&#xB2C8;&#xB2E4;.<br>&#xAC1C;&#xC778;&#xD0A4;&#xB294; &#xBCF4;&#xD1B5; Base58Check&#xC73C;&#xB85C; &#xC778;&#xCF54;&#xB529;&#xD558;&#xC5EC; &#xC0AC;&#xC6A9;&#xD558;&#xB294;&#xB370;, &#xC774;&#xAC83;&#xC744; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC5D0;&#xC11C;&#xB294; Private Key WIF<br>(wallet import format)&#xB77C;&#xACE0; &#xBD80;&#xB985;&#xB2C8;&#xB2E4;. WIF &#xD615;&#xC73C;&#xB85C; &#xBCC0;&#xD654;&#xD558;&#xBA74; &#xADF8; &#xAE38;&#xC774;&#xAC00; &#xC9E7;&#xC544;&#xC9C0;&#xACE0; &#xD63C;&#xB3D9; &#xD558;&#xAE30; &#xC26C;&#xC6B4; &#xBB38;&#xC790;&#xC5F4;<br>(1 &#xB610;&#xB294; i)&#xC774; &#xC81C;&#xAC70;&#xB418;&#xC5B4; &#xD3B8;&#xB9AC;&#xD55C; &#xD615;&#xD0DC;&#xAC00; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p><strong>&#xAC1C;&#xC778;&#xD0A4;&#xB294; &#xC720;&#xCD9C;&#xB418;&#xC9C0; &#xC54A;&#xB3C4;&#xB85D; &#xC8FC;&#xC758;&#xD558;&#xC5EC;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</strong> &#xAC1C;&#xC778;&#xD0A4;&#xAC00; &#xC720;&#xCD9C;&#xB418;&#xBA74; &#xB0B4; &#xC9C0;&#xAC11;&#xC758; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC744; &#xB3C4;&#xB09C;&#xB2F9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xCF54;&#xC778;&#xC2A4;&#xD0DD;&#xC774; &#xC81C;&#xACF5;&#xD558;&#xB294; &#xAC1C;&#xC778;&#xD0A4; &#xC0DD;&#xC131; &#xBA54;&#xC18C;&#xB4DC;&#xC785;&#xB2C8;&#xB2E4;. &#xC774;&#xCC98;&#xB7FC; &#xCF54;&#xC778;&#xC2A4;&#xD0DD;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xC784;&#xC758;&#xC758; &#xC0C8;&#xB85C;&#xC6B4; &#xAC1C;&#xC778;&#xD0A4;&#xB97C;<br>&#xBE60;&#xB974;&#xACE0; &#xAC04;&#xD3B8;&#xD558;&#xAC8C; &#xC0DD;&#xC131;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><strong>Java</strong></p>
+<pre><code class="lang-java"><span class="hljs-comment">// create a new private key</span>
+String newPrivateKeyWIF = ECKey.createNewPrivateKey();
+System.out.println(<span class="hljs-string">&quot;private key: &quot;</span> + newPrivateKeyWIF);
+</code></pre>
+<blockquote>
+<p>&#xACB0;&#xACFC;&#xAC12;&#xC740; &#xBB38;&#xC790;&#xC5F4;&#xB85C; &#xBC18;&#xD658;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-text">private key: L3nWhxhA68enYiXa2D1r4dj6bGDqXECEDoTgsgd4smBf8xrtnFED
+</code></pre>
+</blockquote>
+<h4 id="212-&#xACF5;&#xAC1C;&#xD0A4;-&#xBC0F;-&#xBE44;&#xD2B8;&#xCF54;&#xC778;-&#xC8FC;&#xC18C;-&#xC0DD;&#xC131;">2.1.2. &#xACF5;&#xAC1C;&#xD0A4; &#xBC0F; &#xBE44;&#xD2B8;&#xCF54;&#xC778; &#xC8FC;&#xC18C; &#xC0DD;&#xC131;</h4>
+<p>&#xACF5;&#xAC1C;&#xD0A4;&#xB294; ECDSA &#xD568;&#xC218; &#xC911; &#xD558;&#xB098;&#xC778; secp256k1&#xC5D0; &#xAC1C;&#xC778;&#xD0A4;&#xB97C; &#xC785;&#xB825;&#xAC12;&#xC73C;&#xB85C; &#xD55C; &#xACB0;&#xACFC; &#xC88C;&#xD45C; (x,y)&#xB85C; &#xD45C;&#xD604;&#xB429;&#xB2C8;&#xB2E4;.<br>&#xC6B0;&#xB9AC;&#xAC00; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xACF5;&#xAC1C;&#xD0A4;&#xC758; &#xD615;&#xC2DD;&#xC740; &#xC774; &#xC88C;&#xD45C;&#xAC12; x&#xC640; y&#xB97C; &#xC5F0;&#xACB0;&#xD55C; &#xD6C4; &#xC811;&#xB450;&#xC5B4;&#xB97C; &#xBD99;&#xC778; &#xD615;&#xD0DC;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><strong>Java</strong></p>
+<pre><code class="lang-java"><span class="hljs-comment">// derive a public key</span>
+String newPublicKey = Hex.encodeHexString(ECKey.derivePubKey(newPrivateKeyWIF));
+System.out.println(<span class="hljs-string">&quot;public key: &quot;</span> + newPublicKey);
+</code></pre>
+<blockquote>
+<p>&#xACB0;&#xACFC;&#xAC12;&#xC740; &#xBB38;&#xC790;&#xC5F4;&#xB85C; &#xBC18;&#xD658;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-text">public key: 04ed0f040740a2d2e60a9910b3bd94c92217d387a6bec8e9c78e246b78160fa64e9a4f1a82ec07ed7a9070cb26e32c3f770d31783a8f8456113c2d76f95d1166c2
+</code></pre>
+</blockquote>
+<p>&#xBE44;&#xD2B8;&#xCF54;&#xC778; &#xC8FC;&#xC18C;&#xB294; &#xC774; &#xACF5;&#xAC1C;&#xD0A4;&#xB97C; RIPEMD160(SHA256(K)) &#xD568;&#xC218;&#xB85C; &#xB2E4;&#xC2DC; &#xC778;&#xCF54;&#xB529;&#xD558;&#xC5EC; &#xC0DD;&#xC131;&#xD569;&#xB2C8;&#xB2E4;. &#xB2E4;&#xC74C;&#xC740; &#xCF54;&#xC778;&#xC2A4;&#xD0DD;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; &#xAC1C;&#xC778;&#xD0A4;&#xC5D0;&#xC11C; &#xBE44;&#xD2B8;&#xCF54;&#xC778; &#xC8FC;&#xC18C;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xB294; &#xC608;&#xC2DC;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><strong>Java</strong></p>
+<pre><code class="lang-java"><span class="hljs-comment">// derive an address</span>
+String your_wallet_address = ECKey.deriveAddress(newPrivateKeyWIF);
+System.out.println(<span class="hljs-string">&quot;address: &quot;</span> + your_wallet_address);
+</code></pre>
+<blockquote>
+<p>&#xACB0;&#xACFC;&#xAC12;&#xC740; &#xBB38;&#xC790;&#xC5F4;&#xB85C; &#xBC18;&#xD658;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-text">address: 1MG4Y8JwqrMyNHpot9xvj62v12aPwuBB6W
+</code></pre>
+</blockquote>
+<h3 id="24-address-balance-&#xC870;&#xD68C;">2.4. Address Balance &#xC870;&#xD68C;</h3>
+<p>&#xC8FC;&#xC18C;&#xB294; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC744; &#xB2F4;&#xACE0; &#xC788;&#xAC70;&#xB098; OP_RETURN data&#xB97C; &#xB2F4;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD769;&#xC5B4;&#xC838; &#xC788;&#xB294; UTXO(Unspent output)&#xC758;<br>&#xBE44;&#xD2B8;&#xCF54;&#xC778; &#xC218;&#xB7C9;&#xC744; &#xD569;&#xC0B0;&#xD558;&#xC5EC; &#xBCF4;&#xC5EC;&#xC8FC;&#xB294; &#xAE30;&#xB2A5;&#xC740; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;. (e.g. 0.0001 BTC = 10000 satoshi)</p>
+<p><strong>Java</strong></p>
+<pre><code class="lang-java"><span class="hljs-comment">// get a remaining balance</span>
+<span class="hljs-keyword">long</span> balance = client.getBalance(your_wallet_address);
+System.out.println(<span class="hljs-string">&quot;balance: &quot;</span> + balance);
+</code></pre>
+<blockquote>
+<p>&#xACB0;&#xACFC;&#xAC12;&#xC740; &#xC0AC;&#xD1A0;&#xC2DC; &#xB2E8;&#xC704;&#xC774;&#xBA70; Long &#xD0C0;&#xC785;&#xC73C;&#xB85C; &#xBC18;&#xD658;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-javascript">balance: <span class="hljs-number">566368820</span>
+</code></pre>
+</blockquote>
+<p><strong>REST API</strong></p>
+<pre><code class="lang-bash">YOUR_WALLET_ADDRESS=<span class="hljs-string">&quot;YOUR_WALLET_ADDRESS&quot;</span>
+
+curl https://mainnet.cloudwallet.io/addresses/<span class="hljs-variable">$YOUR_WALLET_ADDRESS</span>/balance \
+    -H <span class="hljs-string">&quot;apiKey: <span class="hljs-variable">$YOUR_API_TOKEN_KEY</span>&quot;</span>
+</code></pre>
+<blockquote>
+<p>&#xACB0;&#xACFC;&#xAC12;&#xC740; &#xC0AC;&#xD1A0;&#xC2DC; &#xB2E8;&#xC704;&#xC774;&#xBA70; JSON &#xD615;&#xC2DD;&#xC73C;&#xB85C; &#xBC18;&#xD658;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-javascript">{<span class="hljs-string">&quot;balance&quot;</span>:<span class="hljs-number">566368820</span>}
+</code></pre>
+</blockquote>
+<p><strong>Node.js</strong></p>
+<pre><code class="lang-javascript">coinstackclient.getBalance(<span class="hljs-string">&quot;YOUR_WALLET_ADDRESS&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, balance</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(balance);
+});
+</code></pre>
+<p><strong>Meteor</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// server</span>
+<span class="hljs-keyword">var</span> balance = coinstackclient.getBalanceSync(<span class="hljs-string">&quot;YOUR_WALLET_ADDRESS&quot;</span>);
+<span class="hljs-built_in">console</span>.log(balance);
+
+<span class="hljs-comment">// client</span>
+coinstackclient.getBalance(<span class="hljs-string">&quot;YOUR_BLOCKCHAIN_ADDRESS&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, balance</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(balance);
+});
+</code></pre>
+<h3 id="25-address&#xBCC4;-transaction-&#xC870;&#xD68C;">2.5. Address&#xBCC4; Transaction &#xC870;&#xD68C;</h3>
+<p>&#xC55E;&#xC11C; &#xC0B4;&#xD3B4;&#xBCF8; &#xBC14;&#xC640; &#xAC19;&#xC774; &#xC8FC;&#xC18C;&#xB294; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC744; &#xB2F4;&#xACE0; &#xC788;&#xAC70;&#xB098; OP_RETURN &#xB370;&#xC774;&#xD130;&#xB97C; &#xB2F4;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB2E4;&#xC74C;&#xC740; &#xD2B9;&#xC815; &#xC8FC;&#xC18C;&#xC5D0;&#xC11C; &#xC77C;&#xC5B4;&#xB09C; &#xBE44;&#xD2B8;&#xCF54;&#xC778; &#xAC70;&#xB798; &#xB0B4;&#xC5ED; &#xB610;&#xB294; OP_RETURN &#xB370;&#xC774;&#xD130;&#xC758; &#xB0B4;&#xC6A9;&#xC744; &#xC870;&#xD68C;&#xD558;&#xB294; &#xAE30;&#xB2A5;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><strong>Java</strong></p>
+<pre><code class="lang-java"><span class="hljs-comment">// print all transactions of a given wallet address</span>
+String[] transactionIds = client.getTransactions(your_wallet_address);
+System.out.println(<span class="hljs-string">&quot;transactions&quot;</span>);
+<span class="hljs-keyword">for</span> (String txId : transactionIds) {
+  System.out.println(<span class="hljs-string">&quot;txIds[]: &quot;</span> + txId);
+}
+</code></pre>
+<blockquote>
+<p>&#xACB0;&#xACFC; &#xAC12;&#xC740; &#xBB38;&#xC790;&#xC5F4;&#xC758; &#xBC30;&#xC5F4;&#xB85C; &#xBC18;&#xD658;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-text">transactions
+4fe42d98bdede1eedb504c48a7670b18b1d3691ae140d313e529ab92d53c7aa0
+ed7b57daba7621e726eab433823faa107cc20fdfe6c53c322288cb4161d850c1
+</code></pre>
+</blockquote>
+<p><strong>REST API</strong></p>
+<pre><code class="lang-bash">curl https://mainnet.cloudwallet.io/addresses/YOUR_WALLET_ADDRESS/<span class="hljs-built_in">history</span> \
+ -H <span class="hljs-string">&quot;apiKey: <span class="hljs-variable">$YOUR_API_TOKEN_KEY</span>&quot;</span>
+</code></pre>
+<blockquote>
+<p>&#xACB0;&#xACFC; &#xAC12;&#xC740; JSON &#xD615;&#xC2DD;&#xC73C;&#xB85C; &#xBC18;&#xD658;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-javascript">[<span class="hljs-string">&quot;4fe42d98bdede1eedb504c48a7670b18b1d3691ae140d313e529ab92d53c7aa0&quot;</span>,
+<span class="hljs-string">&quot;ed7b57daba7621e726eab433823faa107cc20fdfe6c53c322288cb4161d850c1&quot;</span>,
+...
+]
+</code></pre>
+</blockquote>
+<p><strong>Node.js</strong></p>
+<pre><code class="lang-javascript">coinstackclient.getTransactions(<span class="hljs-string">&quot;YOUR_WALLET_ADDRESS&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, result</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(result);
+});
+</code></pre>
+<p><strong>Meteor</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// server</span>
+<span class="hljs-keyword">var</span> result = coinstackclient.getTransactionsSync(<span class="hljs-string">&quot;YOUR_WALLET_ADDRESS&quot;</span>);
+<span class="hljs-built_in">console</span>.log(result);
+
+
+<span class="hljs-comment">// client</span>
+coinstackclient.getTransactions(<span class="hljs-string">&quot;YOUR_WALLET_ADDRESS&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, result</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(result);
+});
+</code></pre>
+<h3 id="26-address&#xBCC4;-unspent-outputs-&#xC870;&#xD68C;">2.6. Address&#xBCC4; unspent outputs &#xC870;&#xD68C;</h3>
+<p>&#xBE14;&#xB85D;&#xCCB4;&#xC778;&#xC740; &#xC8FC;&#xC18C; &#xBCC4;&#xB85C; &#xC794;&#xACE0;&#xB97C; &#xAD00;&#xB9AC;&#xD558;&#xACE0; &#xC788;&#xB294; &#xAC83;&#xC774; &#xC544;&#xB2C8;&#xB77C; &#xB2E8;&#xC21C;&#xD788; &#xAC70;&#xB798; &#xB0B4;&#xC5ED;&#xC744; &#xAE30;&#xB85D;&#xD558;&#xACE0; &#xC788;&#xC744; &#xBFD0;&#xC785;&#xB2C8;&#xB2E4;. &#xC790;&#xC2E0;&#xC758; &#xC8FC;&#xC18C;&#xC5D0; &#xD574;&#xB2F9;&#xD558;&#xB294; Transaction output&#xC740; &#xB450; &#xAC00;&#xC9C0; &#xC885;&#xB958;&#xB85C; &#xB098;&#xB20C; &#xC218; &#xC788;&#xB294;&#xB370;, &#xD55C; &#xAC00;&#xC9C0;&#xB294; Spent ouput, &#xB2E4;&#xB978; &#xD55C; &#xAC00;&#xC9C0;&#xB294; &#xC77C;&#xBC18;&#xC801;&#xC73C;&#xB85C; UTXO&#xB77C; &#xBD88;&#xB9AC;&#xB294; Unspent output&#xC785;&#xB2C8;&#xB2E4;. &#xC0C8;&#xB85C;&#xC6B4; &#xAC70;&#xB798;&#xB97C; &#xB9CC;&#xB4E4;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; &#xC774; UTXO&#xB97C; input&#xC73C;&#xB85C; &#xC785;&#xB825;&#xD574;&#xC57C; &#xD558;&#xB294;&#xB370;, &#xCF54;&#xC778;&#xC2A4;&#xD0DD;&#xC5D0;&#xC11C;&#xB294; &#xC774;&#xB97C; &#xC704;&#xD574; &#xD2B9;&#xC815; &#xC8FC;&#xC18C;&#xC640; &#xC5F0;&#xAD00;&#xB41C; UTXO&#xB4E4;&#xC744; &#xC870;&#xD68C;&#xD558;&#xB294; &#xAE30;&#xB2A5;&#xC744; &#xC81C;&#xACF5;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p><strong>Java</strong></p>
+<pre><code class="lang-java"><span class="hljs-comment">//print all utxos</span>
+Output[] outputs = client.getUnspentOutputs(your_wallet_address);
+System.out.println(<span class="hljs-string">&quot;unspent outputs&quot;</span>); 
+<span class="hljs-keyword">for</span> (Output utxo: outputs) { 
+    System.out.println(utxo.getValue());
+}
+</code></pre>
+<blockquote>
+<p>&#xACB0;&#xACFC;&#xAC12;&#xC740; Output &#xAC1D;&#xCCB4;&#xC758; &#xBC30;&#xC5F4;&#xB85C; &#xBC18;&#xD658;&#xB429;&#xB2C8;&#xB2E4;. &#xC608;&#xC81C;&#xC5D0;&#xC11C;&#xB294; Output&#xC774; &#xAC00;&#xC9C4; &#xC794;&#xACE0;&#xB97C; &#xCD9C;&#xB825;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-text">unspent outputs
+7259033307
+299990000
+961900000
+</code></pre>
+</blockquote>
+<p><strong>REST API</strong></p>
+<pre><code class="lang-bash">curl https://mainnet.cloudwallet.io/addresses/YOUR_WALLET_ADDRESS/unspentoutputs \
+ -H <span class="hljs-string">&quot;apiKey: <span class="hljs-variable">$YOUR_API_TOKEN_KEY</span>&quot;</span>
+</code></pre>
+<blockquote>
+<p>&#xACB0;&#xACFC;&#xAC12;&#xC740; JSON &#xD615;&#xC2DD;&#xC73C;&#xB85C; &#xBC18;&#xD658;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-javascript">[
+ {
+ <span class="hljs-string">&quot;transaction_hash&quot;</span>: <span class="hljs-string">&quot;f2020daaf62e03deb2c6f8a94988a6cca3d66273dc6fa2169e88f02b288520ea&quot;</span>,
+ <span class="hljs-string">&quot;index&quot;</span>: <span class="hljs-number">1</span>,
+ <span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-string">&quot;7259033307&quot;</span>,
+ <span class="hljs-string">&quot;script&quot;</span>: <span class="hljs-string">&quot;76a914a13ca67f70cc4afefd4057f87d1e433dab05a20788ac&quot;</span>,
+ <span class="hljs-string">&quot;confirmations&quot;</span>: <span class="hljs-number">2509</span>
+ },
+ {
+ <span class="hljs-string">&quot;transaction_hash&quot;</span>: <span class="hljs-string">&quot;9b30059da6517a08034c0faf3bd347a7a24189285fa80ede850ecc552d165620&quot;</span>,
+ <span class="hljs-string">&quot;index&quot;</span>: <span class="hljs-number">1</span>,
+ <span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-string">&quot;299990000&quot;</span>,
+ <span class="hljs-string">&quot;script&quot;</span>: <span class="hljs-string">&quot;76a914a13ca67f70cc4afefd4057f87d1e433dab05a20788ac&quot;</span>,
+ <span class="hljs-string">&quot;confirmations&quot;</span>: <span class="hljs-number">99</span>
+ },
+ {
+ <span class="hljs-string">&quot;transaction_hash&quot;</span>: <span class="hljs-string">&quot;9ac9ab9285ebb5107bfc2e086d35c3ebefd9a899722039fac667e6ece3b20c90&quot;</span>,
+ <span class="hljs-string">&quot;index&quot;</span>: <span class="hljs-number">1</span>,
+ <span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-string">&quot;961900000&quot;</span>,
+ <span class="hljs-string">&quot;script&quot;</span>: <span class="hljs-string">&quot;76a914a13ca67f70cc4afefd4057f87d1e433dab05a20788ac&quot;</span>,
+ <span class="hljs-string">&quot;confirmations&quot;</span>: <span class="hljs-number">91</span>
+ }
+]
+</code></pre>
+</blockquote>
+<p><strong>Node.js</strong></p>
+<pre><code class="lang-javascript">coinStackClient.getUnspentOutputs(<span class="hljs-string">&quot;YOUR_WALLET_ADDRESS&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, result</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;result&apos;</span>, result);
+});
+</code></pre>
+<p><strong>Meteor</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// server</span>
+<span class="hljs-keyword">var</span> result = coinstackclient.getUnspentOutputsSync(<span class="hljs-string">&quot;YOUR_WALLET_ADDRESS&quot;</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;result&apos;</span>, result);
+
+<span class="hljs-comment">// client</span>
+coinstackclient.getUnspentOutputs(<span class="hljs-string">&quot;YOUR_WALLET_ADDRESS&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, result</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;result&apos;</span>, result);
+});
+</code></pre>
+<h2 id="3-transactions">3. Transactions</h2>
+<h3 id="31-&#xD2B8;&#xB79C;&#xC7AD;&#xC158;-&#xC0DD;&#xC131;">3.1. &#xD2B8;&#xB79C;&#xC7AD;&#xC158; &#xC0DD;&#xC131;</h3>
+<p>&#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC744; &#xC774;&#xC6A9;&#xD558;&#xC5EC; &#xD2B9;&#xC815; &#xBE14;&#xB85D;&#xCCB4;&#xC778; &#xC8FC;&#xC18C;&#xB85C; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC744; &#xC804;&#xC1A1;&#xD558;&#xAC70;&#xB098;, &#xB370;&#xC774;&#xD130;&#xB97C; &#xC800;&#xC7A5;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h4 id="311-unspent-output-&#xC870;&#xD68C;">3.1.1. Unspent Output &#xC870;&#xD68C;</h4>
+<p>&#xC0C8;&#xB85C;&#xC6B4; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC744; &#xB9CC;&#xB4E4;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; &#xC77C;&#xB2E8; input&#xC73C;&#xB85C; &#xC0AC;&#xC6A9;&#xD560; unspent output&#xC744; &#xC870;&#xD68C;&#xD558;&#xC5EC; &#xC0AC;&#xC6A9; &#xAC00;&#xB2A5;&#xD55C; &#xC794;&#xACE0;&#xB97C; &#xD655;&#xC778;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. SDK&#xC5D0; &#xD3EC;&#xD568;&#xB41C; transaction builder&#xB97C; &#xC774;&#xC6A9;&#xD558;&#xBA74; &#xD2B8;&#xB79C;&#xC7AD;&#xC158; &#xC0DD;&#xC131;&#xC2DC; &#xC790;&#xB3D9;&#xC73C;&#xB85C; unspent output&#xC744; &#xC870;&#xD68C;&#xD558;&#xC5EC; &#xCD5C;&#xC801;&#xC758; unspent output&#xC744; &#xC120;&#xD0DD;&#xD574; &#xC90D;&#xB2C8;&#xB2E4;.</p>
+<h4 id="312-&#xD2B8;&#xB79C;&#xC7AD;&#xC158;-&#xC0DD;&#xC131;-&#xBC0F;-&#xC11C;&#xBA85;">3.1.2. &#xD2B8;&#xB79C;&#xC7AD;&#xC158; &#xC0DD;&#xC131; &#xBC0F; &#xC11C;&#xBA85;</h4>
+<p><strong>3.1.1.1. &#xC77C;&#xBC18; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;</strong></p>
+<p>&#xC77C;&#xBC18;&#xC801;&#xC73C;&#xB85C; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC740; &#xB0B4; &#xC8FC;&#xC18C;&#xC758; &#xC794;&#xC5EC; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC744; &#xD0C0; &#xC8FC;&#xC18C;&#xB85C; &#xC804;&#xC1A1;&#xD558;&#xAE30; &#xC704;&#xD574; &#xC0AC;&#xC6A9;&#xB429;&#xB2C8;&#xB2E4;. &#xC774; &#xACBD;&#xC6B0; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC744; &#xC804;&#xC1A1;&#xBC1B;&#xC744; &#xC8FC;&#xC18C;&#xC640; &#xC804;&#xC1A1;&#xD560; &#xAE08;&#xC561;, &#xC0AC;&#xC6A9;&#xD560; unspent output&#xC744; &#xC9C0;&#xC815;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. (unspent output&#xC740; SDK&#xAC00; &#xC790;&#xB3D9;&#xC801;&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xD574; &#xC90D;&#xB2C8;&#xB2E4;.) &#xADF8;&#xB9AC;&#xACE0; &#xAC1C;&#xC778;&#xD0A4;&#xB85C; &#xC11C;&#xBA85;&#xD558;&#xC5EC; &#xC9C0;&#xC815;&#xD55C; unspent output&#xC758; &#xC18C;&#xC720;&#xAD8C;&#xC744; &#xC99D;&#xBA85;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p><strong>java</strong></p>
+<pre><code class="lang-java"><span class="hljs-comment">// create a target address to send</span>
+String toPrivateKeyWIF = ECKey.createNewPrivateKey();
+String toAddress = ECKey.deriveAddress(toPrivateKeyWIF);
+
+<span class="hljs-comment">// create a transaction</span>
+<span class="hljs-keyword">long</span> amount = io.blocko.coinstack.Math.convertToSatoshi(<span class="hljs-string">&quot;0.0002&quot;</span>);
+<span class="hljs-keyword">long</span> fee = io.blocko.coinstack.Math.convertToSatoshi(<span class="hljs-string">&quot;0.0001&quot;</span>);
+
+TransactionBuilder builder = <span class="hljs-keyword">new</span> TransactionBuilder();
+builder.addOutput(toAddress, amount);
+builder.setFee(fee);
+
+<span class="hljs-comment">// sign the transaction using the private key</span>
+String rawSignedTx = client.createSignedTransaction(builder, <span class="hljs-string">&quot;YOUR_PRIVATE_KEY&quot;</span>);
+System.out.println(rawSignedTx);
+</code></pre>
+<blockquote>
+<p>&#xACB0;&#xACFC;&#xAC12;&#xC740; &#xBB38;&#xC790;&#xC5F4;&#xB85C; &#xBC18;&#xD658;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-text">01000000 01 be66e10da854e7aea9338c1f91cd489768d1d6d7189f586d7a3613f2a24d5396 00000000 8c 49 3046022100cf4d7571dd47a4d47f5cb767d54d6702530a3555726b27b6ac56117f5e7808fe0221008cbb42233bb04d7f28a715cf7c938e238afde90207e9d103dd9018e12cb7180e 01 41 042daa93315eebbe2cb9b5c3505df4c6fb6caca8b756786098567550d4820c09db988fe9997d049d687292f815ccd6e7fb5c1b1a91137999818d17c73d0f80aef9 ffffffff 01 23ce010000000000 19 76 a9 14 a2fd2e039a86dbcf0e1a664729e09e8007f89510 88 ac 00000000
+</code></pre>
+</blockquote>
+<p><strong>Node.js</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> txBuilder = coinstackclient.createTransactionBuilder();
+txBuilder.addOutput(<span class="hljs-string">&quot;TO_ADDRESS&quot;</span>, CoinStack.Math.toSatoshi(<span class="hljs-string">&quot;0.0001&quot;</span>));
+txBuilder.setInput(<span class="hljs-string">&quot;YOUR_WALLET_ADDRESS&quot;</span>);
+txBuilder.setFee(CoinStack.Math.toSatoshi(<span class="hljs-string">&quot;0.0001&quot;</span>));
+
+txBuilder.buildTransaction(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, tx</span>) </span>{
+    tx.sign(<span class="hljs-string">&quot;YOUR_PRIVATE_KEY&quot;</span>)
+    <span class="hljs-keyword">var</span> rawSignedTx = tx.serialize()
+    <span class="hljs-built_in">console</span>.log(rawSignedTx)
+});
+</code></pre>
+<p><strong>Meteor</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// server</span>
+<span class="hljs-keyword">var</span> txBuilder = coinstackclient.createTransactionBuilder();
+txBuilder.addOutput(<span class="hljs-string">&quot;TO_ADDRESS&quot;</span>, CoinStack.Math.toSatoshi(<span class="hljs-string">&quot;0.0001&quot;</span>));
+txBuilder.setInput(<span class="hljs-string">&quot;YOUR_WALLET_ADDRESS&quot;</span>);
+txBuilder.setFee(CoinStack.Math.toSatoshi(<span class="hljs-string">&quot;0.0001&quot;</span>));
+
+<span class="hljs-keyword">var</span> tx = coinstackclient.buildTransactionSync(txBuilder);
+tx.sign(<span class="hljs-string">&quot;YOUR_PRIVATE_KEY&quot;</span>);
+<span class="hljs-keyword">var</span> rawSignedTx = tx.serialize();
+<span class="hljs-built_in">console</span>.log(rawSignedTx)
+
+<span class="hljs-comment">// client</span>
+<span class="hljs-keyword">var</span> txBuilder = coinstackclient.createTransactionBuilder();
+txBuilder.addOutput(<span class="hljs-string">&quot;TO_ADDRESS&quot;</span>, CoinStack.Math.toSatoshi(<span class="hljs-string">&quot;0.0001&quot;</span>));
+txBuilder.setInput(<span class="hljs-string">&quot;YOUR_WALLET_ADDRESS&quot;</span>);
+txBuilder.setFee(CoinStack.Math.toSatoshi(<span class="hljs-string">&quot;0.0001&quot;</span>));
+
+txBuilder.buildTransaction(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, tx</span>) </span>{
+    tx.sign(<span class="hljs-string">&quot;YOUR_PRIVATE_KEY&quot;</span>);
+    <span class="hljs-keyword">var</span> rawSignedTx = tx.serialize();
+    <span class="hljs-built_in">console</span>.log(rawSignedTx)
+});
+</code></pre>
+<p>&#xBE44;&#xD2B8;&#xCF54;&#xC778; &#xD074;&#xB77C;&#xC774;&#xC5B8;&#xD2B8;&#xC5D0; &#xB530;&#xB77C; &#xB2E4;&#xB974;&#xC9C0;&#xB9CC;, &#xB108;&#xBB34; &#xC801;&#xC740; &#xC561;&#xC218;&#xC758; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC744; &#xC804;&#xC1A1;&#xD558;&#xB294; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC740; dust threshold&#xB77C;&#xB294; &#xC815;&#xCC45;&#xC5D0; &#xC758;&#xD574; &#xC804;&#xC1A1;&#xC774; &#xAC70;&#xBD80;&#xB2F9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>Coinstack SDK&#xC758; transaction builder&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xACBD;&#xC6B0; &#xB108;&#xBB34; &#xC801;&#xC740; &#xC561;&#xC218;&#xC758; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC744; &#xC1A1;&#xAE08;&#xD558;&#xB824;&#xACE0; &#xD558;&#xBA74; SDK&#xC5D0;&#xC11C; &#xC624;&#xB958;&#xAC00; &#xBC1C;&#xC0DD;&#xD569;&#xB2C8;&#xB2E4;. &#xD604;&#xC7AC; &#xCF54;&#xC778;&#xC2A4;&#xD0DD; SDK&#xC5D0; &#xAE30;&#xBCF8;&#xC73C;&#xB85C; &#xC124;&#xC815;&#xB41C; &#xCD5C;&#xC18C; &#xC804;&#xC1A1; &#xAC00;&#xB2A5; &#xC561;&#xC218;&#xB294; 5460 &#xC0AC;&#xD1A0;&#xC2DC;&#xC774;&#xBA70;, allowDustyOutput(true) &#xD568;&#xC218;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xC774; &#xC124;&#xC815;&#xC744; &#xBE44;&#xD65C;&#xC131;&#xD654;&#xD558;&#xC5EC; &#xB354; &#xC801;&#xC740; &#xC591;&#xC758; &#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xB3C4; &#xC804;&#xC1A1;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xADF8;&#xB7EC;&#xB098; &#xCF54;&#xC778;&#xC2A4;&#xD0DD; SDK&#xC640;&#xB294; &#xBCC4;&#xAC1C;&#xB85C; &#xAC01; &#xBE14;&#xB85D;&#xCCB4;&#xC778; &#xC11C;&#xBC84;&#xC5D0; &#xC0C1;&#xC774;&#xD55C; dust threshold &#xC815;&#xCC45;&#xC774; &#xC874;&#xC7AC;&#xD560; &#xC218; &#xC788;&#xC73C;&#xBBC0;&#xB85C; &#xC811;&#xC18D;&#xD558;&#xC2DC;&#xB294; &#xC11C;&#xBC84;&#xC758; &#xC815;&#xCC45; &#xB610;&#xD55C; &#xD655;&#xC778;&#xD558;&#xC5EC; &#xC0AC;&#xC6A9;&#xD558;&#xC2DC;&#xAE30; &#xBC14;&#xB78D;&#xB2C8;&#xB2E4;. &#xD604;&#xC7AC; &#xCF54;&#xC778;&#xC2A4;&#xD0DD;&#xC5D0;&#xC11C; &#xC81C;&#xACF5;&#xD558;&#xB294; &#xBE44;&#xD2B8;&#xCF54;&#xC778; &#xD074;&#xB77C;&#xC6B0;&#xB4DC; &#xC11C;&#xBE44;&#xC2A4;&#xC758; dust threshold&#xB294; 546 &#xC0AC;&#xD1A0;&#xC2DC;&#xC774;&#xBA70;, &#xAD6C;&#xCD95;&#xD615; &#xBAA8;&#xB378;&#xC5D0;&#xC11C;&#xB294; &#xC774; &#xAC12;&#xC744; &#xBCC0;&#xACBD;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-java">builder.allowDustyOutput(<span class="hljs-keyword">true</span>);
+</code></pre>
+<p><strong>3.1.1.2. Data &#xD2B8;&#xB79C;&#xC7AD;&#xC158;</strong></p>
+<p>&#xBE44;&#xD2B8;&#xCF54;&#xC778;&#xC744; &#xC804;&#xC1A1;&#xD558;&#xB294; &#xB300;&#xC2E0; OP_RETURN &#xC774;&#xB77C;&#xB294; output script&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC5D0; &#xB370;&#xC774;&#xD130;&#xB97C; &#xC800;&#xC7A5;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br>&#xCF54;&#xC778;&#xC2A4;&#xD0DD; SDK&#xC5D0; &#xD3EC;&#xD568;&#xB41C; transaction builder&#xC5D0;&#xC11C; &#xC81C;&#xACF5;&#xD558;&#xB294; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xBE14;&#xB85D;&#xCCB4;&#xC778;&#xC5D0; &#xB370;&#xC774;&#xD130;&#xB97C; &#xC190;&#xC27D;&#xAC8C; &#xC800;&#xC7A5;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br>&#xCF54;&#xC778;&#xC2A4;&#xD0DD;&#xC5D0;&#xC11C; &#xC81C;&#xACF5;&#xD558;&#xB294; stamping &#xBC0F; Open Assets &#xAD00;&#xB828; &#xAE30;&#xB2A5;&#xC740; &#xBC14;&#xB85C; &#xC774; OP_RETURN&#xC744; &#xC774;&#xC6A9;&#xD558;&#xC5EC; &#xAD6C;&#xD604;&#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-java">builder.setData(<span class="hljs-string">&quot;DATA_AT_OP_RETURN&quot;</span>.getBytes());
+</code></pre>
+<h3 id="32-&#xD2B8;&#xB79C;&#xC7AD;&#xC158;-&#xC804;&#xC1A1;">3.2. &#xD2B8;&#xB79C;&#xC7AD;&#xC158; &#xC804;&#xC1A1;</h3>
+<p>&#xC11C;&#xBA85;&#xB41C; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC740; &#xC774;&#xC81C; &#xB124;&#xD2B8;&#xC6CC;&#xD06C;&#xC5D0; &#xC804;&#xC1A1;&#xB420; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB9CC;&#xC57D; &#xC804;&#xC1A1; &#xACFC;&#xC815;&#xC5D0;&#xC11C; &#xBB38;&#xC81C;&#xAC00; &#xBC1C;&#xC0DD;&#xD558;&#xAC70;&#xB098;, &#xD2B8;&#xB79C;&#xC7AD;&#xC158; &#xC790;&#xCCB4;&#xC5D0; &#xC624;&#xB958;&#xAC00; &#xC788;&#xC73C;&#xBA74; &#xAD00;&#xB828;&#xB41C; &#xC624;&#xB958; &#xCF54;&#xB4DC;&#xB85C; &#xC6D0;&#xC778;&#xC744; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD558;&#xC9C0;&#xB9CC; &#xD2B8;&#xB79C;&#xC7AD;&#xC158; &#xC790;&#xCCB4;&#xC5D0; &#xC624;&#xB958;&#xAC00; &#xC5C6;&#xB294; &#xACBD;&#xC6B0;&#xC5D0;&#xB3C4; &#xBE14;&#xB85D;&#xCCB4;&#xC778; &#xB124;&#xD2B8;&#xC6CC;&#xD06C;&#xC758; &#xD2B9;&#xC131;&#xC0C1; &#xC77C;&#xC2DC;&#xC801;&#xC73C;&#xB85C; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC774; &#xAC70;&#xBD80;&#xB418;&#xB294; &#xACBD;&#xC6B0;&#xAC00; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC774; &#xB54C;&#xB294; &#xB124;&#xD2B8;&#xC6CC;&#xD06C;&#xC5D0; &#xC131;&#xACF5;&#xC801;&#xC73C;&#xB85C; &#xC804;&#xD30C;&#xB420; &#xB54C;&#xAE4C;&#xC9C0; &#xC7AC;&#xC804;&#xC1A1;&#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p><strong>Java</strong></p>
+<pre><code class="lang-java"><span class="hljs-comment">// send the signed transaction</span>
+client.sendTransaction(rawSignedTx);
+</code></pre>
+<p><strong>Node.js</strong></p>
+<pre><code class="lang-javascript">txBuilder.buildTransaction(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, tx</span>) </span>{
+    tx.sign(<span class="hljs-string">&quot;YOUR_PRIVATE_KEY&quot;</span>)
+    <span class="hljs-keyword">var</span> rawSignedTx = tx.serialize()
+    <span class="hljs-comment">// send transaction</span>
+    coinstackclient.sendTransaction(rawSignedTx, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
+        <span class="hljs-keyword">if</span> (<span class="hljs-literal">null</span> != err) {
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;failed to send tx&quot;</span>);
+        }
+    });
+});
+</code></pre>
+<p><strong>Meteor</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// server</span>
+<span class="hljs-keyword">try</span> {
+    <span class="hljs-comment">// send tx</span>
+    coinstackclient.sendTransactionSync(rawSignedTx);
+} <span class="hljs-keyword">catch</span> (e) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;failed to send tx&quot;</span>);
+}
+
+<span class="hljs-comment">// client</span>
+txBuilder.buildTransaction(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, tx</span>) </span>{
+    tx.sign(<span class="hljs-string">&quot;YOUR_PRIVATE_KEY&quot;</span>);
+    <span class="hljs-keyword">var</span> rawSignedTx = tx.serialize();
+    <span class="hljs-comment">// send tx</span>
+    coinstackclient.sendTransaction(rawSignedTx, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
+        <span class="hljs-keyword">if</span> (<span class="hljs-literal">null</span> != err) {
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;failed to send tx&quot;</span>);
+        }
+    });
+});
+</code></pre>
+<h3 id="33-&#xD2B8;&#xB79C;&#xC7AD;&#xC158;-&#xC870;&#xD68C;">3.3. &#xD2B8;&#xB79C;&#xC7AD;&#xC158; &#xC870;&#xD68C;</h3>
+<p>&#xC0DD;&#xC131;&#xD55C; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC758; ID&#xB97C; &#xC870;&#xD68C;&#xD558;&#xB294; &#xBC29;&#xBC95;&#xC740; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><strong>Java</strong></p>
+<pre><code class="lang-java">String transactionId = TransactionUtil.getTransactionHash(rawSignedTx);
+</code></pre>
+<p><strong>Node.js</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> transactionId = CoinStack.Transaction.fromHex(rawSignedTx).getHash();
+</code></pre>
+<p><strong>Meteor</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> transactionId = CoinStack.Transaction.fromHex(rawSignedTx).getHash();
+</code></pre>
+<p>&#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC774; &#xB124;&#xD2B8;&#xC6CC;&#xD06C;&#xC5D0; &#xC131;&#xACF5;&#xC801;&#xC73C;&#xB85C; &#xBC18;&#xC601;&#xB41C; &#xACBD;&#xC6B0;, &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xD574;&#xB2F9; ID&#xB85C; &#xD2B8;&#xB79C;&#xC7AD;&#xC158; &#xC815;&#xBCF4;&#xB97C; &#xC870;&#xD68C;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><strong>Java</strong></p>
+<pre><code class="lang-java"><span class="hljs-comment">// print transaction</span>
+Transaction tx = client.getTransaction(<span class="hljs-string">&quot;YOUR_TRANSACTION_ID&quot;</span>);
+System.out.println(tx.getConfirmationTime())
+</code></pre>
+<blockquote>
+<p>&#xACB0;&#xACFC; &#xAC12;&#xC740; Transaction &#xAC1D;&#xCCB4;&#xB85C; &#xBC18;&#xD658;&#xB429;&#xB2C8;&#xB2E4;. &#xC608;&#xC81C;&#xC5D0;&#xC11C;&#xB294; Transaction&#xC774; &#xD655;&#xC815;&#xB41C; &#xC2DC;&#xAC04;&#xC744; &#xCD9C;&#xB825;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-text">Mon Oct 10 18:13:34 KST 2016
+</code></pre>
+</blockquote>
+<p><strong>REST API</strong></p>
+<pre><code class="lang-bash">curl https://mainnet.cloudwallet.io/transactions/YOUR_TRANSACTION_ID \
+    -H <span class="hljs-string">&quot;apiKey: <span class="hljs-variable">$YOUR_API_TOKEN_KEY</span>&quot;</span>
+</code></pre>
+<blockquote>
+<p>&#xACB0;&#xACFC;&#xAC12;&#xC740; JSON&#xC73C;&#xB85C; &#xBC18;&#xD658;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-javascript">{
+ <span class="hljs-string">&quot;transaction_hash&quot;</span>: <span class="hljs-string">&quot;8c14f0db3df150123e6f3dbbf30f8b955a8249b62ac1d1ff16284aefa3d06d87&quot;</span>,
+ <span class="hljs-string">&quot;block_hash&quot;</span>: [
+ {
+ <span class="hljs-string">&quot;block_hash&quot;</span>: <span class="hljs-string">&quot;000000000003ba27aa200b1cecaad478d2b00432346c3f1f3986da1afd33e506&quot;</span>,
+ <span class="hljs-string">&quot;block_height&quot;</span>: <span class="hljs-number">100000</span>
+ }
+ ],
+ <span class="hljs-string">&quot;coinbase&quot;</span>: <span class="hljs-literal">true</span>,
+ <span class="hljs-string">&quot;inputs&quot;</span>: [
+ {
+ <span class="hljs-string">&quot;transaction_hash&quot;</span>: <span class="hljs-string">&quot;0000000000000000000000000000000000000000000000000000000000000000&quot;</span>,
+ <span class="hljs-string">&quot;output_index&quot;</span>: <span class="hljs-number">-1</span>,
+ <span class="hljs-string">&quot;address&quot;</span>: [
+ ],
+ <span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+ }
+ ],
+ <span class="hljs-string">&quot;outputs&quot;</span>: [
+ {
+ <span class="hljs-string">&quot;index&quot;</span>: <span class="hljs-number">0</span>,
+ <span class="hljs-string">&quot;address&quot;</span>: [
+ <span class="hljs-string">&quot;1HWqMzw1jfpXb3xyuUZ4uWXY4tqL2cW47J&quot;</span>
+ ],
+ <span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-string">&quot;5000000000&quot;</span>,
+ <span class="hljs-string">&quot;script&quot;</span>: <span class="hljs-string">&quot;41041b0e8c2567c12536aa13357b79a073dc4444acb83c4ec7a0e2f99dd7457516c5817242da796924ca4e99947d087fedf9ce467cb9f7c6287078f801df276fdf84ac&quot;</span>,
+ <span class="hljs-string">&quot;used&quot;</span>: <span class="hljs-literal">false</span>
+ }
+ ],
+ <span class="hljs-string">&quot;time&quot;</span>: <span class="hljs-string">&quot;2010-12-29T11:57:43Z&quot;</span>,
+ <span class="hljs-string">&quot;broadcast_time&quot;</span>: <span class="hljs-string">&quot;0001-01-01T00:00:00Z&quot;</span>,
+ <span class="hljs-string">&quot;addresses&quot;</span>: [
+ <span class="hljs-string">&quot;1HWqMzw1jfpXb3xyuUZ4uWXY4tqL2cW47J&quot;</span>
+ ]
+}
+</code></pre>
+</blockquote>
+<p><strong>Node.js</strong></p>
+<pre><code class="lang-javascript">coinstackclient.getTransaction(<span class="hljs-string">&quot;YOUR_TRANSACTION_ID&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, result</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;result&apos;</span>, result);
+});
+</code></pre>
+<p><strong>Meteor</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// server</span>
+<span class="hljs-keyword">var</span> result = coinstackclient.getTransactionSync(<span class="hljs-string">&quot;YOUR_TRANSACTION_ID&quot;</span>);
+<span class="hljs-built_in">console</span>.log(result.transaction_hash, result.inputs);
+
+<span class="hljs-comment">// client</span>
+coinstackclient.getTransaction(<span class="hljs-string">&quot;YOUR_TRANSACTION_ID&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, result</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;result&apos;</span>, result);
+});
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="4.-authentication.html" class="navigation navigation-prev " aria-label="Previous page: 4. Authentication">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="6.-coinstack-stamping.html" class="navigation navigation-next " aria-label="Next page: 6. Coinstack Stamping">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"5. Coinstack Basic","level":"1.5","depth":1,"next":{"title":"6. Coinstack Stamping","level":"1.6","depth":1,"path":"6.-coinstack-stamping.md","ref":"6.-coinstack-stamping.md","articles":[]},"previous":{"title":"4. Authentication","level":"1.4","depth":1,"path":"4.-authentication.md","ref":"4.-authentication.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hints","codeblock-filename"],"pluginsConfig":{"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"codeblock-filename":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":11,"fontFamily":"NanumGothic","paperSize":"a4","chapterMark":"both","pageBreaksBefore":"/","margin":{"right":42,"left":42,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"5.-coinstack-basic.md","mtime":"2019-05-09T07:20:40.590Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-09T07:21:54.746Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
